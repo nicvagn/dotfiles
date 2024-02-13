@@ -1,0 +1,1 @@
+/home/nrv/.bash_profile
