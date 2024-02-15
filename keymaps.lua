@@ -1,4 +1,4 @@
-local opts = {
+local opts = { 
     noremap = true,      -- non-recursive
     silent = true,       -- do not show message
 }
@@ -20,6 +20,13 @@ vim.keymap.set('n', 'e', 'l')
 vim.keymap.set('n', 'cc', 'dd')
 -- switch c and d
 vim.keymap.set('n', 'c', 'd')
+
+-- switching buffers with F keys
+vim.keymap.set('n', '<F1>', '<Cmd>bn<CR>')
+vim.keymap.set('!', '<F1>', '<Cmd>bn<CR>')
+vim.keymap.set('n','<F2>', '<Cmd>bp<CR>')
+vim.keymap.set('!', '<F2>', '<Cmd>bp<CR>')
+
 
 -- visual and select mode  
 vim.keymap.set('v', 'd', 'h')
