@@ -1,0 +1,5 @@
+source ~/.vimrc
+
+call plug#begin('~/local/share/nvim/plugged')
+    Plug 'hrsh7th/vim-vsnip'
+call plug#end()

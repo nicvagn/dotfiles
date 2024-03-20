@@ -10,3 +10,5 @@ fi
 # >>> coursier install directory >>>
 export PATH="$PATH:/home/nrv/.local/share/coursier/bin"
 # <<< coursier install directory <<<
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
