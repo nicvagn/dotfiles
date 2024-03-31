@@ -1,26 +1,31 @@
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
--- good colours
 vim.opt.termguicolors = true
+require('lazy').setup("plugins")
 
 require("options")
 require("keymaps")
-require("plugins")
+-- require("l-devorak-keymaps")
 require("commands")
---require("config/nvim-black")
-require("config/nvim-cmp")
--- smooth scroll
-require("neoscroll").setup()
--- info line
+
+
 require( "lualine-config" )
 
--- buffer tabs
-require("bufferline").setup{}
 
 -- file explorer
 require("nvim-tree").setup()
+
 
 -- programming context
 require'treesitter-context'.setup {
@@ -36,4 +41,16 @@ require'treesitter-context'.setup {
   separator = nil,
   zindex = 20, -- The Z-index of the context window
   on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
-}
+} 
+
+require("config/nvim-cmp")
+
+-- buffer tabs
+require("bufferline").setup{}
+
+-- something scrolling
+require("neoscroll").setup()
+
+--[[
+--require("config/nvim-black")
+]]
