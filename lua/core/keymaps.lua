@@ -1,6 +1,5 @@
 local opts = { 
     noremap = true,      -- non-recursive
-    silent = true,       -- do not show message
 }
 
 -------------
@@ -12,10 +11,10 @@ local opts = {
 ----------------
 
 -- switching buffers with F keys
-vim.keymap.set('n', '<F1>', '<Cmd>bp<CR>')
-vim.keymap.set('!', '<F1>', '<Cmd>bp<CR>')
-vim.keymap.set('n','<F2>', '<Cmd>bn<CR>')
-vim.keymap.set('!', '<F2>', '<Cmd>bn<CR>')
+vim.keymap.set('n', '<F1>', '<Cmd>bn<CR>')
+vim.keymap.set('!', '<F1>', '<Cmd>bn<CR>')
+vim.keymap.set('n','<F4>', '<Cmd>bp<CR>')
+vim.keymap.set('!', '<F4>', '<Cmd>bp<CR>')
 -- toggle nvim tree with F3 
 vim.keymap.set('n','<F3>', '<Cmd>NvimTreeToggle<CR>')
 vim.keymap.set('!', '<F3>', '<Cmd>NvimTreeToggle<CR>')
