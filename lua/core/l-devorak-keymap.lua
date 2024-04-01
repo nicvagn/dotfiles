@@ -1,6 +1,6 @@
-local opts = { 
-    noremap = true,      -- non-recursive
-    silent = true,       -- do not show message
+local opts = {
+	noremap = true, -- non-recursive
+	silent = true,  -- do not show message
 }
 
 -------------
@@ -20,7 +20,7 @@ vim.keymap.set('n', 'e', 'l')
 vim.keymap.set('n', 'cc', 'dd')
 -- switch c and d
 
--- visual and select mode  
+-- visual and select mode
 vim.keymap.set('v', 'd', 'h')
 vim.keymap.set('v', 't', 'j')
 vim.keymap.set('v', 'h', 'k')
