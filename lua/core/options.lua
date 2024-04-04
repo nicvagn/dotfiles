@@ -24,6 +24,7 @@ set.smarttab = true    -- 4 spaces are deleted on backspace
 
 -- UI config
 set.cursorline = true
+set.cursorcolumn = true
 set.termguicolors = true
 set.colorcolumn = "96"
 set.number = true -- show absolute number
