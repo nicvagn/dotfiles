@@ -26,8 +26,8 @@ set.smarttab = true    -- 4 spaces are deleted on backspace
 set.cursorline = true
 set.cursorcolumn = true
 set.termguicolors = true
-set.colorcolumn = "96"
-set.number = true -- show absolute number
+set.colorcolumn = "88" -- black default
+set.number = true      -- show absolute number
 -- set.relativenumber = true       -- add numbers to each line on the left side
 
 -- Searching
