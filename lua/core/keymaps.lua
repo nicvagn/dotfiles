@@ -1,17 +1,11 @@
+-- are we using an l-devorak keyboard?
+L_DEVORAK = true
+
 local opts = {
 	noremap = true, -- non-recursive
 }
 
--------------
------nrv-----
--------------
-
--- are we using an ldevorak keyboard?
-L_DEVORAK = false
-
-----------------
--- normal mode--
-----------------
+-- normal mode --
 
 -- switching buffers with F keys
 vim.keymap.set("n", "<F1>", "<Cmd>bn<CR>")
@@ -37,6 +31,7 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
+-- l-devorak area
 if L_DEVORAK then
 	vim.keymap.set("n", "d", "h")
 	vim.keymap.set("n", "t", "j")
