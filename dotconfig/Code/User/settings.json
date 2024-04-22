@@ -1,0 +1,71 @@
+{
+    "workbench.colorTheme": "Better Material Theme Darker High Contrast",
+    "git.autofetch": true,
+    "editor.tabSize": 2,
+    "git.suggestSmartCommit": false,
+    "cSpell.userWords": [
+        "BAUDRATE",
+        "btn",
+        "Chessground",
+        "chesslink",
+        "chessops",
+        "colour",
+        "Dests",
+        "importmap",
+        "Lichess",
+        "Nic's",
+        "niclink",
+        "PGN",
+        "readchar",
+        "readkey",
+        "SASKHORIZONCHESSCLUB",
+        "setuptools",
+        "SHCC",
+        "sidenav",
+        "skhorizonchess",
+        "snabbdom",
+        "tokenfile",
+        "uvicorn",
+        "Vaagen",
+        "venv",
+        "vnode",
+        "yourmovenumber"
+    ],
+    "git.confirmSync": false,
+    "redhat.telemetry.enabled": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "githubPullRequests.pushBranch": "always",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.fontSize": 16,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.semicolons": "insert",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.semicolons": "insert",
+    "editor.fontWeight": "normal",
+    "editor.renderWhitespace": "trailing",
+    "editor.cursorStyle": "block",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.host": "localhost",
+    "cmake.showOptionsMovedNotification": false,
+    "git.openRepositoryInParentFolders": "always",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ]
+}

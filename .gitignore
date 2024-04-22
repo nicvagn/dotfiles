@@ -1,0 +1,11 @@
+dotconfig/nvim
+**/History/*
+**/node_modules/*
+**/Default/*
+**/logs
+**/workspaceStorage
+**/Service Worker
+**/*Cache*
+dotconfig/libreoffice
+dotconfig/chromium
+**/arduino-ide

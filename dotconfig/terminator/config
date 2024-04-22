@@ -1,0 +1,39 @@
+[global_config]
+[keybindings]
+  zoom_in = <Primary>bracketright
+  zoom_out = <Primary>bracketleft
+  new_tab = <Primary>asciitilde
+  split_auto = <Primary>q
+  split_horiz = <Primary>apostrophe
+  split_vert = <Primary>minus
+  copy = <Primary>c
+  close_window = <Primary>question
+  resize_up = <Primary><Alt>q
+  resize_down = <Primary><Alt>k
+  resize_left = <Primary><Alt>minus
+  resize_right = <Primary><Alt>c
+  next_tab = <Primary>grave
+  edit_tab_title = <Primary>plus
+  edit_terminal_title = <Primary>underscore
+  preferences_keybindings = <Primary><Shift><Alt>k
+[profiles]
+  [[default]]
+    audible_bell = True
+    cursor_fg_color = "#000000"
+    cursor_bg_color = "#ffffff"
+    font = Source Code Pro Heavy 11
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#000000:#cd0000:#57e389:#cdcd00:#1c71d8:#f5c211:#00cdcd:#e5e5e5:#9a9996:#ff0000:#1c71d8:#ffff00:#986a44:#c061cb:#00ffff:#ffffff"
+    use_system_font = False
+    bold_is_bright = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]

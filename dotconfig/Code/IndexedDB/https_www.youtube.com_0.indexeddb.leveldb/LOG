@@ -1,0 +1,7 @@
+2024/03/12-21:05:53.643 3a41 Reusing MANIFEST /home/nrv/.config/Code/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/03/12-21:05:53.643 3a41 Recovering log #3
+2024/03/12-21:05:53.648 3a41 Reusing old log /home/nrv/.config/Code/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2024/03/12-21:06:03.509 3a43 Level-0 table #5: started
+2024/03/12-21:06:03.526 3a43 Level-0 table #5: 382285 bytes OK
+2024/03/12-21:06:03.532 3a43 Delete type=0 #3
+2024/03/12-21:06:03.533 3a43 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

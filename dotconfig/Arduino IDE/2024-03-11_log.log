@@ -1,0 +1,665 @@
+2024-03-11 14:20:54 Arduino IDE 2.3.2
+2024-03-11 14:20:54 Checking for frontend application configuration customizations. Module path: /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/electron-main.js, destination 'package.json': /home/nrv/Arduino/arduino-IDE/resources/app/package.json
+2024-03-11 14:20:54 Setting 'theia.frontend.config.appVersion' application configuration value to: "2.3.2" (type of string)
+2024-03-11 14:20:54 Setting 'theia.frontend.config.cliVersion' application configuration value to: "0.35.3" (type of string)
+2024-03-11 14:20:54 Setting 'theia.frontend.config.buildDate' application configuration value to: "2024-02-20T09:54:08.669Z" (type of string)
+2024-03-11 14:20:54 Frontend application configuration after modifications: {"applicationName":"Arduino IDE","defaultTheme":{"light":"arduino-theme","dark":"arduino-theme-dark"},"defaultIconTheme":"none","electron":{"windowOptions":{}},"defaultLocale":"","validatePreferencesSchema":false,"preferences":{"window.title":"${rootName}${activeEditorShort}${appName}","files.autoSave":"afterDelay","editor.minimap.enabled":false,"editor.tabSize":2,"editor.scrollBeyondLastLine":false,"editor.quickSuggestions":{"other":false,"comments":false,"strings":false},"editor.maxTokenizationLineLength":500,"editor.bracketPairColorization.enabled":false,"breadcrumbs.enabled":false,"workbench.tree.renderIndentGuides":"none","explorer.compactFolders":false},"appVersion":"2.3.2","cliVersion":"0.35.3","buildDate":"2024-02-20T09:54:08.669Z"}
+2024-03-11 14:20:54 Starting backend process. PID: 29535
+2024-03-11 14:20:56 Using browser-only version of superagent in non-browser environment
+2024-03-11 14:20:56 Configuration directory URI: 'file:///home/nrv/.arduinoIDE'
+2024-03-11 14:20:56 Configuring to accept webviews on '^.+\.webview\..+$' hostname.
+2024-03-11 14:20:56 2024-03-11T20:20:56.227Z root INFO Backend Object.initialize: 16.0 ms [Finished 1.524 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.228Z root INFO Backend Object.configure: 13.5 ms [Finished 1.525 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.228Z root INFO Backend s.onStart: 4.5 ms [Finished 1.525 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.229Z root INFO Backend s.configure: 1.0 ms [Finished 1.605 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.231Z root INFO Backend d.onStart: 0.7 ms [Finished 1.605 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.233Z root INFO Backend d.configure: 0.2 ms [Finished 1.606 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.236Z root WARN Backend d.initialize took longer than the expected maximum 50 milliseconds: 80.5 ms [Finished 1.606 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.236Z root INFO Backend c.onStart: 0.8 ms [Finished 1.606 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.238Z root INFO Backend a.configure: 1.6 ms [Finished 1.608 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.242Z config INFO >>> Initializing CLI configuration...
+2024-03-11 14:20:56 2024-03-11T20:20:56.243Z root INFO Backend c.initialize: 1.6 ms [Finished 1.609 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.243Z root INFO Backend R.onStart: 1.8 ms [Finished 1.610 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.246Z config INFO Loading CLI configuration from /home/nrv/.arduinoIDE/arduino-cli.yaml...
+2024-03-11 14:20:56 2024-03-11T20:20:56.247Z daemon INFO Starting daemon from /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/resources/arduino-cli...
+2024-03-11 14:20:56 2024-03-11T20:20:56.247Z root INFO Backend a.initialize: 1.0 ms [Finished 1.612 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.247Z root INFO Backend w.onStart: 3.8 ms [Finished 1.615 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.247Z root INFO Backend r.configure: 5.9 ms [Finished 1.616 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z discovery-log INFO start
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z discovery-log INFO start new deferred
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend d.initialize: 1.3 ms [Finished 1.617 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend y.onStart: 5.2 ms [Finished 1.622 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend r.configure: 4.6 ms [Finished 1.622 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend a.onStart: 1.2 ms [Finished 1.627 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend h.configure: 1.0 ms [Finished 1.627 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend s.configure: 0.2 ms [Finished 1.627 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.248Z root INFO Backend l.configure: 0.1 ms [Finished 1.627 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.253Z root INFO Theia app listening on http://127.0.0.1:38885.
+2024-03-11 14:20:56 2024-03-11T20:20:56.253Z root INFO Finished starting backend application: 5.3 ms [Finished 1.632 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.255Z root WARN The local plugin referenced by local-dir:/home/nrv/.arduinoIDE/plugins does not exist.
+2024-03-11 14:20:56 2024-03-11T20:20:56.255Z root WARN The local plugin referenced by local-dir:/home/nrv/.arduinoIDE/extensions does not exist.
+2024-03-11 14:20:56 2024-03-11T20:20:56.268Z config INFO Loaded CLI configuration: {"board_manager":{"additional_urls":[]},"build_cache":{"compilations_before_purge":10,"ttl":"720h0m0s"},"daemon":{"port":"50051"},"directories":{"data":"/home/nrv/.arduino15","downloads":"/home/nrv/.arduino15/staging","user":"/home/nrv/Arduino"},"library":{"enable_unsafe_install":false},"logging":{"file":"","format":"text","level":"info"},"metrics":{"addr":":9090","enabled":true},"output":{"no_color":false},"sketch":{"always_export_binaries":false},"updater":{"enable_notification":true}}
+2024-03-11 14:20:56 2024-03-11T20:20:56.268Z config INFO 'directories.data' and 'directories.user' are set in the CLI configuration model.
+2024-03-11 14:20:56 2024-03-11T20:20:56.268Z config INFO Loaded the CLI configuration.
+2024-03-11 14:20:56 Restoring workspace roots: /home/nrv/Arduino/chess_clock
+2024-03-11 14:20:56 2024-03-11T20:20:56.326Z config INFO Mapped the CLI configuration: {"dataDirUri":"file:///home/nrv/.arduino15","sketchDirUri":"file:///home/nrv/Arduino","additionalUrls":[],"network":"none","locale":"en"}
+2024-03-11 14:20:56 2024-03-11T20:20:56.326Z config INFO Validating the CLI configuration...
+2024-03-11 14:20:56 isTempSketch: false. Input was /home/nrv/Arduino/chess_clock/chess_clock.ino
+2024-03-11 14:20:56 2024-03-11T20:20:56.344Z config INFO The CLI config is valid.
+2024-03-11 14:20:56 2024-03-11T20:20:56.345Z config INFO <<< Initialized the CLI configuration.
+2024-03-11 14:20:56 2024-03-11T20:20:56.391Z daemon INFO time="2024-03-11T14:20:56-06:00" level=info msg="Using config file: /home/nrv/.arduinoIDE/arduino-cli.yaml"
+time="2024-03-11T14:20:56-06:00" level=info msg="arduino-cli version 0.35.3"
+time="2024-03-11T14:20:56-06:00" level=info msg="Executing `arduino-cli daemon`"
+Daemon is now listening on 127.0.0.1:33143
+{"IP":"127.0.0.1","Port":"33143"}
+2024-03-11 14:20:56 2024-03-11T20:20:56.391Z daemon INFO Daemon is running.
+2024-03-11 14:20:56 2024-03-11T20:20:56.489Z root INFO Resolve plugins list: 245.3 ms [Finished 1.868 s after backend start]
+2024-03-11 14:20:56 2024-03-11T20:20:56.507Z daemon INFO time="2024-03-11T14:20:56-06:00" level=info msg="Checking signature" index=/home/nrv/.arduino15/package_index.json signatureFile=/home/nrv/.arduino15/package_index.json.sig trusted=true
+time="2024-03-11T14:20:56-06:00" level=info msg="Loading hardware from: /home/nrv/.arduino15/packages"
+2024-03-11 14:20:56 2024-03-11T20:20:56.510Z daemon INFO time="2024-03-11T14:20:56-06:00" level=info msg="Loading package arduino from: /home/nrv/.arduino15/packages/arduino/hardware"
+2024-03-11 14:20:56 2024-03-11T20:20:56.516Z daemon INFO time="2024-03-11T14:20:56-06:00" level=info msg="Missing signature file" index=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/installed.json
+2024-03-11 14:20:56 2024-03-11T20:20:56.526Z daemon INFO time="2024-03-11T14:20:56-06:00" level=info msg="Adding monitor tool" protocol=serial tool="builtin:serial-monitor"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded platform" platform="arduino:avr@1.8.6"
+time="2024-03-11T14:20:56-06:00" level=info msg="Checking existence of 'tools' path: /home/nrv/.arduino15/packages/arduino/tools"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loading tools from dir: /home/nrv/.arduino15/packages/arduino/tools"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loading package builtin from: /home/nrv/.arduino15/packages/builtin"
+time="2024-03-11T14:20:56-06:00" level=info msg="Checking existence of 'tools' path: /home/nrv/.arduino15/packages/builtin/tools"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loading tools from dir: /home/nrv/.arduino15/packages/builtin/tools"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.13.0"
+time="2024-03-11T14:20:56-06:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.14.1"
+2024-03-11 14:20:56 2024-03-11T20:20:56.534Z daemon INFO time="2024-03-11T14:20:56-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:20:56-06:00" level=info msg="Loading libraries index file" index=/home/nrv/.arduino15/library_index.json
+2024-03-11 14:20:57 2024-03-11T20:20:57.465Z daemon INFO time="2024-03-11T14:20:57-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:20:57-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:20:57 2024-03-11T20:20:57.538Z discovery-log INFO start resolved watching
+2024-03-11 14:20:57 2024-03-11T20:20:57.691Z daemon INFO time="2024-03-11T14:20:57-06:00" level=info msg="starting discovery builtin:mdns-discovery process"
+time="2024-03-11T14:20:57-06:00" level=info msg="starting discovery builtin:serial-discovery process"
+time="2024-03-11T14:20:57-06:00" level=info msg="started discovery builtin:serial-discovery process"
+time="2024-03-11T14:20:57-06:00" level=info msg="sending command HELLO 1 \"arduino-cli 0.35.3\" to discovery builtin:serial-discovery"
+time="2024-03-11T14:20:57-06:00" level=info msg="started discovery builtin:mdns-discovery process"
+time="2024-03-11T14:20:57-06:00" level=info msg="sending command HELLO 1 \"arduino-cli 0.35.3\" to discovery builtin:mdns-discovery"
+time="2024-03-11T14:20:57-06:00" level=info msg="from discovery builtin:mdns-discovery received message type: hello, message: OK, protocol version: 1"
+time="2024-03-11T14:20:57-06:00" level=info msg="sending command START_SYNC to discovery builtin:mdns-discovery"
+time="2024-03-11T14:20:57-06:00" level=info msg="from discovery builtin:mdns-discovery received message type: start_sync, message: OK"
+time="2024-03-11T14:20:57-06:00" level=info msg="from discovery builtin:serial-discovery received message type: hello, message: OK, protocol version: 1"
+time="2024-03-11T14:20:57-06:00" level=info msg="sending command START_SYNC to discovery builtin:serial-discovery"
+time="2024-03-11T14:20:57-06:00" level=info msg="from discovery builtin:serial-discovery received message type: start_sync, message: OK"
+time="2024-03-11T14:20:57-06:00" level=info msg="from discovery builtin:serial-discovery received message type: add, port: /dev/ttyACM0"
+2024-03-11 14:20:57 2024-03-11T20:20:57.697Z discovery-log INFO {"eventType":"add","port":{"matchingBoardsList":[{"name":"Arduino Uno","fqbn":"arduino:avr:uno","isHidden":false}],"port":{"address":"/dev/ttyACM0","label":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","propertiesMap":[["pid","0x0043"],["serialNumber","9573632383235150F192"],["vid","0x2341"]],"hardwareId":"9573632383235150F192"}},"error":""}
+2024-03-11 14:20:59 2024-03-11T20:20:59.585Z root INFO Deploy plugins list: 245.3 ms [Finished 4.964 s after backend start]
+2024-03-11 14:21:00 Opening channel for service path '/services/electron-window'.
+2024-03-11 14:21:00 Opening channel for service path '/services/ide-updater'.
+2024-03-11 14:21:00 2024-03-11T20:21:00.912Z root WARN Frontend a.configure took longer than the expected maximum 100 milliseconds: 430.7 ms [Finished 4.301 s after frontend start]
+2024-03-11 14:21:00 2024-03-11T20:21:00.918Z root WARN A command editor.action.toggleStickyScroll is already registered.
+2024-03-11 14:21:00 2024-03-11T20:21:00.959Z sketches-service WARN Warning! The request sketch path was different than the response sketch path from the CLI. This could be a potential bug. Request: </home/nrv/Arduino/chess_clock/chess_clock.ino>, response: </home/nrv/Arduino/chess_clock>.
+2024-03-11 14:21:01 2024-03-11T20:21:01.647Z root WARN Frontend c.onStart took longer than the expected maximum 100 milliseconds: 384.9 ms [Finished 5.105 s after frontend start]
+2024-03-11 14:21:01 2024-03-11T20:21:01.748Z root INFO Start frontend contributions: 1451.7 ms [Finished 5.125 s after frontend start]
+2024-03-11 14:21:01 2024-03-11T20:21:01.748Z root INFO Changed application state from 'init' to 'started_contributions'.
+2024-03-11 14:21:01 2024-03-11T20:21:01.805Z root INFO Changed application state from 'started_contributions' to 'attached_shell'.
+2024-03-11 14:21:01 2024-03-11T20:21:01.810Z root INFO >>> Restoring the layout state...
+2024-03-11 14:21:01 2024-03-11T20:21:01.811Z root INFO ------- SERIALIZED LAYOUT DATA -------
+2024-03-11 14:21:01 2024-03-11T20:21:01.811Z root INFO {"version":5,"mainPanel":{"main":{"type":"tab-area","widgets":[{"constructionOptions":{"factoryId":"code-editor-opener","options":{"counter":0,"kind":"navigatable","uri":"file:///home/nrv/Arduino/chess_clock/chess_clock.ino"}},"innerWidgetState":"{\"cursorState\":[{\"inSelectionMode\":false,\"selectionStart\":{\"lineNumber\":8,\"column\":1},\"position\":{\"lineNumber\":8,\"column\":1}}],\"viewState\":{\"scrollLeft\":0,\"firstPosition\":{\"lineNumber\":89,\"column\":1},\"firstPositionDeltaTop\":-17},\"contributionsState\":{\"editor.contrib.folding\":{\"lineCount\":833,\"provider\":\"indent\",\"foldedImports\":false},\"editor.contrib.wordHighlighter\":false}}"}],"currentIndex":0}},"mainPanelPinned":[false],"bottomPanel":{"config":{"main":{"type":"tab-area","widgets":[{"constructionOptions":{"factoryId":"outputView"},"innerWidgetState":"{\"locked\":false}"}],"currentIndex":0}},"pinned":[false],"size":286,"expanded":true},"leftPanel":{"type":"sidepanel","items":[{"widget":{"constructionOptions":{"factoryId":"arduino-sketchbook-widget"}},"rank":1,"expanded":true,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"boards-list-widget"}},"rank":2,"expanded":false,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"library-list-widget"}},"rank":3,"expanded":false,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"debug"},"innerWidgetState":"{\"parts\":[{\"partId\":\"debug:threads:-1\",\"collapsed\":true,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:threads\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:frames:-1\",\"collapsed\":true,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:frames\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:variables:-1\",\"collapsed\":true,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:variables\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:watch:-1\",\"collapsed\":true,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:watch\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:breakpoints:-1\",\"collapsed\":true,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:breakpoints\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"plugin-view:cortex-debug.peripherals\",\"collapsed\":true,\"hidden\":true,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"plugin-view\",\"options\":{\"id\":\"plugin-view:cortex-debug.peripherals\",\"viewId\":\"cortex-debug.peripherals\"}},\"innerWidgetState\":\"{\\\"label\\\":\\\"Cortex Peripherals\\\",\\\"widgets\\\":[],\\\"suppressUpdateViewVisibility\\\":false,\\\"currentViewContainerId\\\":\\\"debug\\\"}\"}},{\"partId\":\"plugin-view:cortex-debug.registers\",\"collapsed\":true,\"hidden\":true,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"plugin-view\",\"options\":{\"id\":\"plugin-view:cortex-debug.registers\",\"viewId\":\"cortex-debug.registers\"}},\"innerWidgetState\":\"{\\\"label\\\":\\\"Cortex Registers\\\",\\\"widgets\\\":[],\\\"suppressUpdateViewVisibility\\\":false,\\\"currentViewContainerId\\\":\\\"debug\\\"}\"}}],\"title\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true}}"},"rank":4,"expanded":false,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"search-view-container"},"innerWidgetState":"{\"parts\":[{\"partId\":\"search-in-workspace\",\"collapsed\":false,\"hidden\":false,\"relativeSize\":1,\"originalContainerId\":\"search-view-container\",\"originalContainerTitle\":{\"label\":\"Search\",\"iconClass\":\"codicon codicon-search\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"search-in-workspace\"},\"innerWidgetState\":\"{\\\"matchCaseState\\\":{\\\"className\\\":\\\"codicon codicon-case-sensitive\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Match Case\\\"},\\\"wholeWordState\\\":{\\\"className\\\":\\\"codicon codicon-whole-word\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Match Whole Word\\\"},\\\"regExpState\\\":{\\\"className\\\":\\\"codicon codicon-regex\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Use Regular Expression\\\"},\\\"includeIgnoredState\\\":{\\\"className\\\":\\\"codicon codicon-eye\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Include Ignored Files\\\"},\\\"showSearchDetails\\\":false,\\\"searchInWorkspaceOptions\\\":{\\\"matchCase\\\":false,\\\"matchWholeWord\\\":false,\\\"useRegExp\\\":false,\\\"includeIgnored\\\":false,\\\"include\\\":[],\\\"exclude\\\":[],\\\"maxResults\\\":2000},\\\"searchTerm\\\":\\\"\\\",\\\"replaceTerm\\\":\\\"\\\",\\\"showReplaceField\\\":false,\\\"searchHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0},\\\"replaceHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0},\\\"includeHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0},\\\"excludeHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0}}\"}}],\"title\":{\"label\":\"Search\",\"iconClass\":\"fa fa-arduino-search\",\"closeable\":true}}"},"rank":5,"expanded":false,"pinned":false}],"size":352},"rightPanel":{"type":"sidepanel","items":[]}}
+2024-03-11 14:21:01 2024-03-11T20:21:01.812Z root INFO ------- END SERIALIZED LAYOUT DATA -------
+2024-03-11 14:21:01 2024-03-11T20:21:01.926Z root INFO [f4f327c9-6622-4c58-b8e1-722ced58ffd1] Waiting for backend deployment: 265.3 ms [Finished 5.374 s after frontend start]
+2024-03-11 14:21:03 2024-03-11T20:21:03.595Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633) starting instance
+2024-03-11 14:21:05 2024-03-11T20:21:05.161Z root INFO [f4f327c9-6622-4c58-b8e1-722ced58ffd1] Sync of 23 plugins: 3250.8 ms [Finished 8.625 s after frontend start]
+2024-03-11 14:21:06 2024-03-11T20:21:06.116Z root INFO <<< The layout has been successfully restored.
+2024-03-11 14:21:06 2024-03-11T20:21:06.322Z root INFO Initialize the workbench layout: 4342.0 ms [Finished 9.581 s after frontend start]
+2024-03-11 14:21:06 2024-03-11T20:21:06.330Z root INFO Changed application state from 'attached_shell' to 'initialized_layout'.
+2024-03-11 14:21:06 2024-03-11T20:21:06.330Z root INFO [f4f327c9-6622-4c58-b8e1-722ced58ffd1] Loading plugin contributions
+2024-03-11 14:21:06 2024-03-11T20:21:06.334Z root INFO [f4f327c9-6622-4c58-b8e1-722ced58ffd1] Load contributions of 23 plugins: 199.1 ms [Finished 9.783 s after frontend start]
+2024-03-11 14:21:06 2024-03-11T20:21:06.370Z root WARN 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope
+2024-03-11 14:21:06 2024-03-11T20:21:06.370Z root WARN a registered grammar configuration for 'cpp' language is overridden
+2024-03-11 14:21:08 Checking for update
+2024-03-11 14:21:08 2024-03-11T20:21:08.372Z root INFO Replace loading indicator with ready workbench UI (animation): 1303.8 ms [Finished 11.097 s after frontend start]
+2024-03-11 14:21:08 2024-03-11T20:21:08.372Z root INFO Changed application state from 'initialized_layout' to 'ready'.
+2024-03-11 14:21:08 2024-03-11T20:21:08.372Z root WARN Linked preference "workbench.colorCustomizations" not found.
+2024-03-11 14:21:08 2024-03-11T20:21:08.377Z root INFO Frontend application start: 7398.4 ms [Finished 13.591 s after backend start]
+2024-03-11 14:21:08 2024-03-11T20:21:08.782Z daemon INFO time="2024-03-11T14:21:08-06:00" level=info msg="Updating libraries index"
+time="2024-03-11T14:21:08-06:00" level=info msg="Starting download" url="https://downloads.arduino.cc/libraries/library_index.tar.bz2"
+time="2024-03-11T14:21:08-06:00" level=info msg="Updating index" url="https://downloads.arduino.cc/packages/package_index.tar.bz2"
+time="2024-03-11T14:21:08-06:00" level=info msg="Starting download" url="https://downloads.arduino.cc/packages/package_index.tar.bz2"
+2024-03-11 14:21:08 2024-03-11T20:21:08.815Z root INFO core-client-provider [library-index] Downloading index: library_index.tar.bz2
+
+2024-03-11 14:21:08 2024-03-11T20:21:08.819Z root INFO core-client-provider [platform-index] Downloading index: package_index.tar.bz2
+
+2024-03-11 14:21:09 Update for version 2.3.2 is not available (latest version: 2.3.2, downgrade is allowed).
+2024-03-11 14:21:09 2024-03-11T20:21:09.509Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:09 2024-03-11T20:21:09.509Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:09 2024-03-11T20:21:09.513Z daemon INFO time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:21:09-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+2024-03-11 14:21:09 2024-03-11T20:21:09.514Z root ERROR [hosted-plugin: 29633] Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.linux as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.osx as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.windows as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.linux as cortex-debug.JLinkGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.osx as cortex-debug.JLinkGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.windows as cortex-debug.JLinkGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.openocdPath.linux as cortex-debug.openocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.openocdPath.osx as cortex-debug.openocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.openocdPath.windows as cortex-debug.openocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.linux as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.osx as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.windows as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.linux as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.osx as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.windows as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.linux as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.osx as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.windows as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.linux as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.osx as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.windows as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.linux as cortex-debug.stm32cubeprogrammer is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.osx as cortex-debug.stm32cubeprogrammer is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.windows as cortex-debug.stm32cubeprogrammer is null
+2024-03-11 14:21:09 2024-03-11T20:21:09.695Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633): PluginManagerExtImpl/init()
+PLUGIN_HOST(29633): initializing(vscode-arduino-api@0.1.2 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+2024-03-11 14:21:10 2024-03-11T20:21:10.694Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633): initializing(cortex-debug@1.5.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+Debugger contribution has been registered: cortex-debug
+PLUGIN_HOST(29633): initializing(vscode-arduino-tools@0.1.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(cpp@1.52.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(json@1.46.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(json-language-features@1.46.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-bg@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-cs@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-de@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-es@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-fr@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-hu@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-it@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-ja@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-ko@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-nl@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-pl@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-pt-BR@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-ru@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-tr@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-uk@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-zh-hans@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29633): initializing(vscode-language-pack-zh-hant@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+2024-03-11 14:21:11 2024-03-11T20:21:11.176Z fwuploader ERROR Error: Process exited with exit code: 1
+    at ChildProcess.<anonymous> (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:639833)
+    at ChildProcess.emit (node:events:514:28)
+    at Process.onexit (node:internal/child_process:291:12)
+2024-03-11 14:21:11 2024-03-11T20:21:11.176Z root ERROR Request updatableBoards failed with error: Process exited with exit code: 1 Error: Process exited with exit code: 1
+    at ChildProcess.<anonymous> (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:639833)
+    at ChildProcess.emit (node:events:514:28)
+    at Process.onexit (node:internal/child_process:291:12)
+2024-03-11 14:21:11 2024-03-11T20:21:11.484Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/vscode-arduino-api/extension/dist/extension.js)
+calling activation function on Arduino IDE API for VS Code extensions
+2024-03-11 14:21:12 2024-03-11T20:21:12.960Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/jsonMain)
+calling activation function on JSON Language Features (built-in)
+2024-03-11 14:21:13 2024-03-11T20:21:13.007Z discovery-log INFO {"eventType":"remove","port":{"matchingBoardsList":[],"port":{"address":"/dev/ttyACM0","label":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","propertiesMap":[],"hardwareId":""}},"error":""}
+2024-03-11 14:21:13 2024-03-11T20:21:13.012Z discovery-log INFO {"eventType":"add","port":{"matchingBoardsList":[{"name":"Arduino Uno","fqbn":"arduino:avr:uno","isHidden":false}],"port":{"address":"/dev/ttyACM0","label":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","propertiesMap":[["pid","0x0043"],["serialNumber","9573632383235150F192"],["vid","0x2341"]],"hardwareId":"9573632383235150F192"}},"error":""}
+2024-03-11 14:21:13 2024-03-11T20:21:13.014Z daemon INFO time="2024-03-11T14:21:12-06:00" level=info msg="Checking signature" index=/home/nrv/.arduino15/package_index.json signatureFile=/home/nrv/.arduino15/package_index.json.sig trusted=true
+time="2024-03-11T14:21:12-06:00" level=info msg="Loading hardware from: /home/nrv/.arduino15/packages"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loading package arduino from: /home/nrv/.arduino15/packages/arduino/hardware"
+time="2024-03-11T14:21:12-06:00" level=info msg="Missing signature file" index=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/installed.json
+time="2024-03-11T14:21:12-06:00" level=info msg="Adding monitor tool" protocol=serial tool="builtin:serial-monitor"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded platform" platform="arduino:avr@1.8.6"
+time="2024-03-11T14:21:12-06:00" level=info msg="Checking existence of 'tools' path: /home/nrv/.arduino15/packages/arduino/tools"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loading tools from dir: /home/nrv/.arduino15/packages/arduino/tools"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loading package builtin from: /home/nrv/.arduino15/packages/builtin"
+time="2024-03-11T14:21:12-06:00" level=info msg="Checking existence of 'tools' path: /home/nrv/.arduino15/packages/builtin/tools"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loading tools from dir: /home/nrv/.arduino15/packages/builtin/tools"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.13.0"
+time="2024-03-11T14:21:12-06:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:21:12-06:00" level=info msg="sending command QUIT to discovery builtin:serial-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:serial-discovery received message type: quit, message: OK"
+time="2024-03-11T14:21:12-06:00" level=info msg="killing discovery builtin:serial-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="killed discovery builtin:serial-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="Closed and removed discovery builtin:serial-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="sending command QUIT to discovery builtin:mdns-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="Discovery event channel closed builtin:serial-discovery. Exiting goroutine."
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:mdns-discovery received message type: quit, message: OK"
+time="2024-03-11T14:21:12-06:00" level=info msg="killing discovery builtin:mdns-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="Discovery event channel closed builtin:mdns-discovery. Exiting goroutine."
+time="2024-03-11T14:21:12-06:00" level=info msg="Closed and removed discovery builtin:mdns-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="starting discovery builtin:serial-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="started discovery builtin:serial-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="sending command HELLO 1 \"arduino-cli 0.35.3\" to discovery builtin:serial-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:serial-discovery received message type: hello, message: OK, protocol version: 1"
+time="2024-03-11T14:21:12-06:00" level=info msg="sending command START_SYNC to discovery builtin:serial-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:serial-discovery received message type: start_sync, message: OK"
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:serial-discovery received message type: add, port: /dev/ttyACM0"
+time="2024-03-11T14:21:12-06:00" level=info msg="starting discovery builtin:mdns-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="started discovery builtin:mdns-discovery process"
+time="2024-03-11T14:21:12-06:00" level=info msg="sending command HELLO 1 \"arduino-cli 0.35.3\" to discovery builtin:mdns-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:mdns-discovery received message type: hello, message: OK, protocol version: 1"
+time="2024-03-11T14:21:12-06:00" level=info msg="sending command START_SYNC to discovery builtin:mdns-discovery"
+time="2024-03-11T14:21:12-06:00" level=info msg="from discovery builtin:mdns-discovery received message type: start_sync, message: OK"
+time="2024-03-11T14:21:12-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:21:12-06:00" level=info msg="Loading libraries index file" index=/home/nrv/.arduino15/library_index.json
+2024-03-11 14:21:13 2024-03-11T20:21:13.187Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/vscode-arduino-tools/extension/dist/extension.js)
+2024-03-11 14:21:13 2024-03-11T20:21:13.300Z root INFO [hosted-plugin: 29633] calling activation function on VS Code Arduino Tools
+2024-03-11 14:21:13 2024-03-11T20:21:13.415Z root INFO [f4f327c9-6622-4c58-b8e1-722ced58ffd1] Starting plugins.
+2024-03-11 14:21:13 2024-03-11T20:21:13.438Z root INFO [hosted-plugin: 29633] PLUGIN_HOST(29633): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/cortex-debug/extension/dist/extension.js)
+2024-03-11 14:21:14 2024-03-11T20:21:14.184Z root ERROR ---- !!!SLOW!!! DURATION: search took 5790.410 ms. Args: [{"type":"Updatable"}] ----
+2024-03-11 14:21:14 2024-03-11T20:21:14.186Z root INFO [hosted-plugin: 29633] Debug configuration provider has been registered: cortex-debug, trigger: 1
+calling activation function on Cortex-Debug
+GDB server console created
+2024-03-11 14:21:14 2024-03-11T20:21:14.188Z daemon INFO time="2024-03-11T14:21:13-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:21:13-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:21:14 2024-03-11T20:21:14.213Z root INFO [f4f327c9-6622-4c58-b8e1-722ced58ffd1] Start of 23 plugins: 7874.4 ms [Finished 17.674 s after frontend start]
+2024-03-11 14:21:14 2024-03-11T20:21:14.276Z root INFO Starting language server: arduino:avr:uno
+2024-03-11 14:21:14 2024-03-11T20:21:14.409Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:21:14 2024-03-11T20:21:14.409Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:21:14-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:21:14 2024-03-11T20:21:14.570Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="Resolving include Boards.h for arch avr"
+time="2024-03-11T14:21:14-06:00" level=info msg="  found better lib" lib=Firmata prio=3E8
+2024-03-11 14:21:14 2024-03-11T20:21:14.628Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+2024-03-11 14:21:14 2024-03-11T20:21:14.628Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+time="2024-03-11T14:21:14-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:21:14 2024-03-11T20:21:14.685Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="Resolving include Servo.h for arch avr"
+time="2024-03-11T14:21:14-06:00" level=info msg="  found better lib" lib=Servo prio=6AE
+2024-03-11 14:21:14 2024-03-11T20:21:14.746Z daemon INFO time="2024-03-11T14:21:14-06:00" level=info msg="Resolving include Wire.h for arch avr"
+time="2024-03-11T14:21:14-06:00" level=info msg="  found better lib" lib=Wire prio=6B0
+2024-03-11 14:21:15 2024-03-11T20:21:15.032Z daemon INFO time="2024-03-11T14:21:15-06:00" level=info msg="Resolving include SoftwareSerial.h for arch avr"
+time="2024-03-11T14:21:15-06:00" level=info msg="  found better lib" lib=SoftwareSerial prio=6B0
+2024-03-11 14:21:15 2024-03-11T20:21:15.871Z daemon INFO time="2024-03-11T14:21:15-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:21:15-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:21:15-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:21:19 Opening channel for service path '/services/electron-window'.
+2024-03-11 14:21:19 Opening channel for service path '/services/ide-updater'.
+2024-03-11 14:21:20 2024-03-11T20:21:20.370Z root WARN Frontend a.configure took longer than the expected maximum 100 milliseconds: 464.3 ms [Finished 4.302 s after frontend start]
+2024-03-11 14:21:20 2024-03-11T20:21:20.384Z root WARN A command editor.action.toggleStickyScroll is already registered.
+2024-03-11 14:21:20 2024-03-11T20:21:20.505Z root WARN Frontend keybindings.onStart took longer than the expected maximum 100 milliseconds: 101.9 ms [Finished 4.480 s after frontend start]
+2024-03-11 14:21:20 2024-03-11T20:21:20.831Z root WARN Frontend c.onStart took longer than the expected maximum 100 milliseconds: 111.8 ms [Finished 4.836 s after frontend start]
+2024-03-11 14:21:20 2024-03-11T20:21:20.900Z root INFO Start frontend contributions: 1269.0 ms [Finished 4.851 s after frontend start]
+2024-03-11 14:21:20 2024-03-11T20:21:20.900Z root INFO Changed application state from 'init' to 'started_contributions'.
+2024-03-11 14:21:20 2024-03-11T20:21:20.969Z root INFO Changed application state from 'started_contributions' to 'attached_shell'.
+2024-03-11 14:21:20 2024-03-11T20:21:20.969Z root INFO >>> Restoring the layout state...
+2024-03-11 14:21:20 2024-03-11T20:21:20.977Z root INFO ------- SERIALIZED LAYOUT DATA -------
+2024-03-11 14:21:20 2024-03-11T20:21:20.977Z root INFO {"version":5,"mainPanel":{"main":{"type":"tab-area","widgets":[{"constructionOptions":{"factoryId":"code-editor-opener","options":{"counter":0,"kind":"navigatable","uri":"file:///home/nrv/Arduino/HelloWorldLCD/HelloWorldLCD.ino"}},"innerWidgetState":"{\"cursorState\":[{\"inSelectionMode\":false,\"selectionStart\":{\"lineNumber\":53,\"column\":21},\"position\":{\"lineNumber\":53,\"column\":21}}],\"viewState\":{\"scrollLeft\":0,\"firstPosition\":{\"lineNumber\":44,\"column\":1},\"firstPositionDeltaTop\":-5},\"contributionsState\":{\"editor.contrib.folding\":{\"lineCount\":68,\"provider\":\"indent\",\"foldedImports\":false},\"editor.contrib.wordHighlighter\":false}}"}],"currentIndex":0}},"mainPanelPinned":[false],"bottomPanel":{"config":{"main":{"type":"tab-area","widgets":[{"constructionOptions":{"factoryId":"outputView"},"innerWidgetState":"{\"locked\":false}"}],"currentIndex":0}},"pinned":[false],"size":333,"expanded":true},"leftPanel":{"type":"sidepanel","items":[{"widget":{"constructionOptions":{"factoryId":"arduino-sketchbook-widget"}},"rank":1,"expanded":true,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"boards-list-widget"}},"rank":2,"expanded":false,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"library-list-widget"}},"rank":3,"expanded":false,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"debug"},"innerWidgetState":"{\"parts\":[{\"partId\":\"debug:threads:-1\",\"collapsed\":false,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:threads\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:frames:-1\",\"collapsed\":false,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:frames\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:variables:-1\",\"collapsed\":false,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:variables\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:watch:-1\",\"collapsed\":false,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:watch\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"debug:breakpoints:-1\",\"collapsed\":false,\"hidden\":false,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"debug:breakpoints\"},\"innerWidgetState\":\"{}\"}},{\"partId\":\"plugin-view:cortex-debug.peripherals\",\"collapsed\":true,\"hidden\":true,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"plugin-view\",\"options\":{\"id\":\"plugin-view:cortex-debug.peripherals\",\"viewId\":\"cortex-debug.peripherals\"}},\"innerWidgetState\":\"{\\\"label\\\":\\\"Cortex Peripherals\\\",\\\"widgets\\\":[],\\\"suppressUpdateViewVisibility\\\":false,\\\"currentViewContainerId\\\":\\\"debug\\\"}\"}},{\"partId\":\"plugin-view:cortex-debug.registers\",\"collapsed\":true,\"hidden\":true,\"originalContainerId\":\"debug:view-container:-1\",\"originalContainerTitle\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"plugin-view\",\"options\":{\"id\":\"plugin-view:cortex-debug.registers\",\"viewId\":\"cortex-debug.registers\"}},\"innerWidgetState\":\"{\\\"label\\\":\\\"Cortex Registers\\\",\\\"widgets\\\":[],\\\"suppressUpdateViewVisibility\\\":false,\\\"currentViewContainerId\\\":\\\"debug\\\"}\"}}],\"title\":{\"label\":\"debug\",\"iconClass\":\"codicon codicon-debug-alt\",\"closeable\":true}}"},"rank":4,"expanded":false,"pinned":false},{"widget":{"constructionOptions":{"factoryId":"search-view-container"},"innerWidgetState":"{\"parts\":[{\"partId\":\"search-in-workspace\",\"collapsed\":false,\"hidden\":false,\"originalContainerId\":\"search-view-container\",\"originalContainerTitle\":{\"label\":\"Search\",\"iconClass\":\"codicon codicon-search\",\"closeable\":true},\"widget\":{\"constructionOptions\":{\"factoryId\":\"search-in-workspace\"},\"innerWidgetState\":\"{\\\"matchCaseState\\\":{\\\"className\\\":\\\"codicon codicon-case-sensitive\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Match Case\\\"},\\\"wholeWordState\\\":{\\\"className\\\":\\\"codicon codicon-whole-word\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Match Whole Word\\\"},\\\"regExpState\\\":{\\\"className\\\":\\\"codicon codicon-regex\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Use Regular Expression\\\"},\\\"includeIgnoredState\\\":{\\\"className\\\":\\\"codicon codicon-eye\\\",\\\"enabled\\\":false,\\\"title\\\":\\\"Include Ignored Files\\\"},\\\"showSearchDetails\\\":false,\\\"searchInWorkspaceOptions\\\":{\\\"matchCase\\\":false,\\\"matchWholeWord\\\":false,\\\"useRegExp\\\":false,\\\"includeIgnored\\\":false,\\\"include\\\":[],\\\"exclude\\\":[],\\\"maxResults\\\":2000},\\\"searchTerm\\\":\\\"\\\",\\\"replaceTerm\\\":\\\"\\\",\\\"showReplaceField\\\":false,\\\"searchHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0},\\\"replaceHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0},\\\"includeHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0},\\\"excludeHistoryState\\\":{\\\"history\\\":[],\\\"index\\\":0}}\"}}],\"title\":{\"label\":\"Search\",\"iconClass\":\"fa fa-arduino-search\",\"closeable\":true}}"},"rank":5,"expanded":false,"pinned":false}],"size":268},"rightPanel":{"type":"sidepanel","items":[]}}
+2024-03-11 14:21:20 2024-03-11T20:21:20.977Z root INFO ------- END SERIALIZED LAYOUT DATA -------
+2024-03-11 14:21:21 2024-03-11T20:21:21.463Z root INFO [7706cb29-291b-4f1f-a6cf-f991daf34885] Waiting for backend deployment: 624.4 ms [Finished 5.463 s after frontend start]
+2024-03-11 14:21:22 2024-03-11T20:21:22.855Z root INFO [hosted-plugin: 29868] PLUGIN_HOST(29868) starting instance
+2024-03-11 14:21:24 2024-03-11T20:21:24.600Z root INFO [7706cb29-291b-4f1f-a6cf-f991daf34885] Sync of 23 plugins: 3142.5 ms [Finished 8.606 s after frontend start]
+2024-03-11 14:21:25 2024-03-11T20:21:25.239Z root INFO <<< The layout has been successfully restored.
+2024-03-11 14:21:25 2024-03-11T20:21:25.471Z root INFO Initialize the workbench layout: 4325.2 ms [Finished 9.249 s after frontend start]
+2024-03-11 14:21:25 2024-03-11T20:21:25.476Z root INFO Changed application state from 'attached_shell' to 'initialized_layout'.
+2024-03-11 14:21:25 2024-03-11T20:21:25.476Z root INFO [7706cb29-291b-4f1f-a6cf-f991daf34885] Loading plugin contributions
+2024-03-11 14:21:25 2024-03-11T20:21:25.476Z root INFO [7706cb29-291b-4f1f-a6cf-f991daf34885] Load contributions of 23 plugins: 218.3 ms [Finished 9.477 s after frontend start]
+2024-03-11 14:21:25 2024-03-11T20:21:25.510Z root WARN 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope
+2024-03-11 14:21:25 2024-03-11T20:21:25.513Z root WARN a registered grammar configuration for 'cpp' language is overridden
+2024-03-11 14:21:27 2024-03-11T20:21:27.414Z root INFO Frontend application start: 7130.5 ms [Finished 32.763 s after backend start]
+2024-03-11 14:21:27 2024-03-11T20:21:27.457Z root INFO Replace loading indicator with ready workbench UI (animation): 1317.0 ms [Finished 10.801 s after frontend start]
+2024-03-11 14:21:27 2024-03-11T20:21:27.457Z root INFO Changed application state from 'initialized_layout' to 'ready'.
+2024-03-11 14:21:27 2024-03-11T20:21:27.457Z root WARN Linked preference "workbench.colorCustomizations" not found.
+2024-03-11 14:21:27 2024-03-11T20:21:27.506Z root INFO Executing startup tasks:
+2024-03-11 14:21:27 2024-03-11T20:21:27.507Z root INFO  - 'arduino-use-inherited-boards-data' , args: [{"fqbn":"arduino:avr:uno","data":{"configOptions":[],"programmers":[{"id":"arduinoisp","name":"ArduinoISP","platform":"arduino:avr@1.8.6"},{"id":"usbasp","name":"USBasp","platform":"arduino:avr@1.8.6"},{"id":"atmel_ice","name":"Atmel-ICE (AVR)","platform":"arduino:avr@1.8.6"},{"id":"parallel","name":"Parallel Programmer","platform":"arduino:avr@1.8.6"},{"id":"usbGemma","name":"Arduino Gemma","platform":"arduino:avr@1.8.6"},{"id":"stk500","name":"Atmel STK500 development board","platform":"arduino:avr@1.8.6"},{"id":"jtag3","name":"Atmel JTAGICE3 (JTAG mode)","platform":"arduino:avr@1.8.6"},{"id":"avrisp","name":"AVR ISP","platform":"arduino:avr@1.8.6"},{"id":"jtag3isp","name":"Atmel JTAGICE3 (ISP mode)","platform":"arduino:avr@1.8.6"},{"id":"usbtinyisp","name":"USBtinyISP","platform":"arduino:avr@1.8.6"},{"id":"arduinoasisp","name":"Arduino as ISP","platform":"arduino:avr@1.8.6"},{"id":"arduinoasispatmega32u4","name":"Arduino as ISP (ATmega32U4)","platform":"arduino:avr@1.8.6"},{"id":"arduinoisporg","name":"ArduinoISP.org","platform":"arduino:avr@1.8.6"},{"id":"avrispmkii","name":"AVRISP mkII","platform":"arduino:avr@1.8.6"},{"id":"buspirate","name":"BusPirate as ISP","platform":"arduino:avr@1.8.6"}]}}]
+2024-03-11 14:21:27 2024-03-11T20:21:27.508Z root INFO  - 'arduino-use-inherited-boards-config' , args: [{"selectedBoard":{"fqbn":"arduino:avr:uno","name":"Arduino Uno"},"selectedPort":{"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}},{"arduino+serial:///dev/ttyACM0":{"fqbn":"arduino:avr:uno","name":"Arduino Uno"}}]
+2024-03-11 14:21:27 2024-03-11T20:21:27.508Z root INFO  - 'arduino-sketchbook--reveal-sketch-node' , args: ["sketchbook-composite-widget","file:///home/nrv/Arduino/HelloWorldLCD"]
+2024-03-11 14:21:27 2024-03-11T20:21:27.786Z root WARN Could not find tree node with URI: file:///home/nrv/Arduino/HelloWorldLCD
+2024-03-11 14:21:28 2024-03-11T20:21:28.330Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:28 2024-03-11T20:21:28.330Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:28 2024-03-11T20:21:28.331Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:28 2024-03-11T20:21:28.332Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:28 2024-03-11T20:21:28.354Z daemon INFO time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+2024-03-11 14:21:28 2024-03-11T20:21:28.885Z root ERROR [hosted-plugin: 29868] Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.linux as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.osx as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.windows as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.linux as cortex-debug.JLinkGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.osx as cortex-debug.JLinkGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.windows as cortex-debug.JLinkGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.openocdPath.linux as cortex-debug.openocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.openocdPath.osx as cortex-debug.openocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.openocdPath.windows as cortex-debug.openocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.linux as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.osx as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.windows as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.linux as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.osx as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.windows as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.linux as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.osx as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.windows as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.linux as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.osx as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.windows as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.linux as cortex-debug.stm32cubeprogrammer is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.osx as cortex-debug.stm32cubeprogrammer is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.windows as cortex-debug.stm32cubeprogrammer is null
+2024-03-11 14:21:29 2024-03-11T20:21:29.649Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:29 2024-03-11T20:21:29.649Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:21:29 2024-03-11T20:21:29.650Z daemon INFO time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:21:28-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+2024-03-11 14:21:29 2024-03-11T20:21:29.873Z root INFO [hosted-plugin: 29868] PLUGIN_HOST(29868): PluginManagerExtImpl/init()
+PLUGIN_HOST(29868): initializing(vscode-arduino-api@0.1.2 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(cortex-debug@1.5.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+Debugger contribution has been registered: cortex-debug
+PLUGIN_HOST(29868): initializing(vscode-arduino-tools@0.1.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(cpp@1.52.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(json@1.46.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(json-language-features@1.46.1 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-bg@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-cs@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-de@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-es@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-fr@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-hu@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-it@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-ja@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-ko@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-nl@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-pl@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-pt-BR@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-ru@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-tr@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-uk@1.48.3 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-zh-hans@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+PLUGIN_HOST(29868): initializing(vscode-language-pack-zh-hant@1.80.0 with /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/plugin-vscode-init)
+2024-03-11 14:21:31 2024-03-11T20:21:31.008Z root INFO [hosted-plugin: 29868] PLUGIN_HOST(29868): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/vscode-arduino-api/extension/dist/extension.js)
+calling activation function on Arduino IDE API for VS Code extensions
+2024-03-11 14:21:31 2024-03-11T20:21:31.241Z root INFO [hosted-plugin: 29868] PLUGIN_HOST(29868): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/jsonMain)
+2024-03-11 14:21:31 2024-03-11T20:21:31.311Z root INFO [hosted-plugin: 29868] calling activation function on JSON Language Features (built-in)
+2024-03-11 14:21:31 2024-03-11T20:21:31.462Z root INFO [hosted-plugin: 29868] PLUGIN_HOST(29868): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/vscode-arduino-tools/extension/dist/extension.js)
+2024-03-11 14:21:31 2024-03-11T20:21:31.603Z root INFO [hosted-plugin: 29868] calling activation function on VS Code Arduino Tools
+2024-03-11 14:21:31 2024-03-11T20:21:31.613Z root INFO [7706cb29-291b-4f1f-a6cf-f991daf34885] Starting plugins.
+2024-03-11 14:21:31 2024-03-11T20:21:31.693Z root INFO [hosted-plugin: 29868] PLUGIN_HOST(29868): PluginManagerExtImpl/loadPlugin(/home/nrv/Arduino/arduino-IDE/resources/app/plugins/cortex-debug/extension/dist/extension.js)
+2024-03-11 14:21:31 2024-03-11T20:21:31.771Z root INFO [hosted-plugin: 29868] Debug configuration provider has been registered: cortex-debug, trigger: 1
+2024-03-11 14:21:31 2024-03-11T20:21:31.772Z root INFO [hosted-plugin: 29868] calling activation function on Cortex-Debug
+2024-03-11 14:21:31 2024-03-11T20:21:31.778Z root INFO [hosted-plugin: 29868] GDB server console created
+2024-03-11 14:21:31 2024-03-11T20:21:31.799Z root INFO [7706cb29-291b-4f1f-a6cf-f991daf34885] Start of 23 plugins: 6305.1 ms [Finished 15.796 s after frontend start]
+2024-03-11 14:21:31 2024-03-11T20:21:31.842Z root INFO Starting language server: arduino:avr:uno
+2024-03-11 14:21:31 2024-03-11T20:21:31.976Z daemon INFO time="2024-03-11T14:21:31-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:21:31-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:21:31-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:21:32 2024-03-11T20:21:32.068Z daemon INFO time="2024-03-11T14:21:32-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+time="2024-03-11T14:21:32-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+2024-03-11 14:21:32 2024-03-11T20:21:32.068Z daemon INFO time="2024-03-11T14:21:32-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:21:32 2024-03-11T20:21:32.512Z daemon INFO time="2024-03-11T14:21:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:21:32 2024-03-11T20:21:32.512Z daemon INFO time="2024-03-11T14:21:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:21:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:21:37 2024-03-11T20:21:37.896Z root ERROR ---- !!!SLOW!!! DURATION: search took 904.784 ms. Args: [{"query":"","type":"All","topic":"All"}] ----
+2024-03-11 14:22:00 2024-03-11T20:22:00.922Z root ERROR ---- !!!SLOW!!! DURATION: search took 926.009 ms. Args: [{"query":"li","type":"All","topic":"All"}] ----
+2024-03-11 14:22:02 2024-03-11T20:22:02.210Z root ERROR ---- !!!SLOW!!! DURATION: search took 228.880 ms. Args: [{"query":"liq","type":"All","topic":"All"}] ----
+2024-03-11 14:22:32 2024-03-11T20:22:32.044Z daemon INFO time="2024-03-11T14:22:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:22:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:22:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:22:32 2024-03-11T20:22:32.158Z daemon INFO time="2024-03-11T14:22:32-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+2024-03-11 14:22:32 2024-03-11T20:22:32.158Z daemon INFO time="2024-03-11T14:22:32-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+2024-03-11 14:22:32 2024-03-11T20:22:32.159Z daemon INFO time="2024-03-11T14:22:32-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:22:34 2024-03-11T20:22:34.182Z root INFO Executing 'arduino.languageserver.notifyBuildDidComplete' with "file:///tmp/arduino/sketches/DB51CFFC9284E54D4EDDCA450EE59534"
+2024-03-11 14:22:34 2024-03-11T20:22:34.354Z daemon INFO time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:22:34-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+2024-03-11 14:22:34 2024-03-11T20:22:34.357Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:22:34 2024-03-11T20:22:34.357Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:22:35 2024-03-11T20:22:35.308Z daemon INFO time="2024-03-11T14:22:35-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:22:35-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:22:35-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:22:47 2024-03-11T20:22:47.162Z daemon INFO time="2024-03-11T14:22:47-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:22:47-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:22:47-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:22:47 2024-03-11T20:22:47.287Z daemon INFO time="2024-03-11T14:22:47-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+time="2024-03-11T14:22:47-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+time="2024-03-11T14:22:47-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:22:47 2024-03-11T20:22:47.829Z root INFO Executing 'arduino.languageserver.notifyBuildDidComplete' with "file:///tmp/arduino/sketches/DB51CFFC9284E54D4EDDCA450EE59534"
+2024-03-11 14:22:47 2024-03-11T20:22:47.997Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:22:47 2024-03-11T20:22:47.997Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:22:48 2024-03-11T20:22:47.997Z daemon INFO time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:22:47-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+2024-03-11 14:22:48 2024-03-11T20:22:48.931Z daemon INFO time="2024-03-11T14:22:48-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:22:48 2024-03-11T20:22:48.931Z daemon INFO time="2024-03-11T14:22:48-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:22:48-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:22:50 2024-03-11T20:22:50.436Z root INFO Received port after upload [arduino+serial:///dev/ttyACM0, arduino:avr:uno, HelloWorldLCD]. Before port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}, after port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}
+2024-03-11 14:31:20 2024-03-11T20:31:20.814Z daemon INFO time="2024-03-11T14:31:20-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-03-11T14:31:20-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:31:20-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:31:20 2024-03-11T20:31:20.857Z daemon INFO time="2024-03-11T14:31:20-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+2024-03-11 14:31:20 2024-03-11T20:31:20.857Z daemon INFO time="2024-03-11T14:31:20-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+time="2024-03-11T14:31:20-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:31:21 2024-03-11T20:31:21.094Z root INFO Executing 'arduino.languageserver.notifyBuildDidComplete' with "file:///tmp/arduino/sketches/DB51CFFC9284E54D4EDDCA450EE59534"
+2024-03-11 14:31:21 2024-03-11T20:31:21.161Z daemon INFO time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+2024-03-11 14:31:21 2024-03-11T20:31:21.161Z daemon INFO time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+2024-03-11 14:31:21 2024-03-11T20:31:21.161Z daemon INFO time="2024-03-11T14:31:21-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+2024-03-11 14:31:21 2024-03-11T20:31:21.162Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:31:21 2024-03-11T20:31:21.162Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:31:22 2024-03-11T20:31:22.138Z daemon INFO time="2024-03-11T14:31:22-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:31:22 2024-03-11T20:31:22.138Z daemon INFO time="2024-03-11T14:31:22-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:31:22-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:31:23 2024-03-11T20:31:23.634Z root INFO Received port after upload [arduino+serial:///dev/ttyACM0, arduino:avr:uno, HelloWorldLCD]. Before port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}, after port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}
+2024-03-11 14:31:30 2024-03-11T20:31:30.611Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:31:30 2024-03-11T20:31:30.611Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:31:30-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:31:30 2024-03-11T20:31:30.648Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Resolving include Boards.h for arch avr"
+time="2024-03-11T14:31:30-06:00" level=info msg="  found better lib" lib=Firmata prio=3E8
+2024-03-11 14:31:30 2024-03-11T20:31:30.673Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+time="2024-03-11T14:31:30-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+2024-03-11 14:31:30 2024-03-11T20:31:30.673Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:31:30 2024-03-11T20:31:30.697Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Resolving include Servo.h for arch avr"
+2024-03-11 14:31:30 2024-03-11T20:31:30.697Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="  found better lib" lib=Servo prio=6AE
+2024-03-11 14:31:30 2024-03-11T20:31:30.720Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Resolving include Wire.h for arch avr"
+time="2024-03-11T14:31:30-06:00" level=info msg="  found better lib" lib=Wire prio=6B0
+2024-03-11 14:31:30 2024-03-11T20:31:30.829Z daemon INFO time="2024-03-11T14:31:30-06:00" level=info msg="Resolving include SoftwareSerial.h for arch avr"
+time="2024-03-11T14:31:30-06:00" level=info msg="  found better lib" lib=SoftwareSerial prio=6B0
+2024-03-11 14:31:31 2024-03-11T20:31:31.918Z root INFO Executing 'arduino.languageserver.notifyBuildDidComplete' with "file:///tmp/arduino/sketches/667794A7AAAFEFD29D6E412ED6D95C24"
+2024-03-11 14:31:31 2024-03-11T20:31:31.981Z daemon INFO time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+2024-03-11 14:31:31 2024-03-11T20:31:31.981Z daemon INFO time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+2024-03-11 14:31:31 2024-03-11T20:31:31.981Z daemon INFO time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+time="2024-03-11T14:31:31-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+2024-03-11 14:31:31 2024-03-11T20:31:31.982Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:31:31 2024-03-11T20:31:31.982Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:31:32 2024-03-11T20:31:32.964Z daemon INFO time="2024-03-11T14:31:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:31:32 2024-03-11T20:31:32.964Z daemon INFO time="2024-03-11T14:31:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:31:32-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:31:36 2024-03-11T20:31:36.213Z root INFO Received port after upload [arduino+serial:///dev/ttyACM0, arduino:avr:uno, chess_clock]. Before port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}, after port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}
+2024-03-11 14:31:45 2024-03-11T20:31:45.587Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:31:45 2024-03-11T20:31:45.587Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:31:45-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:31:45 2024-03-11T20:31:45.632Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Resolving include Boards.h for arch avr"
+time="2024-03-11T14:31:45-06:00" level=info msg="  found better lib" lib=Firmata prio=3E8
+2024-03-11 14:31:45 2024-03-11T20:31:45.656Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Resolving include LiquidCrystal.h for arch avr"
+time="2024-03-11T14:31:45-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A4
+2024-03-11 14:31:45 2024-03-11T20:31:45.656Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="  found better lib" lib=LiquidCrystal prio=6A7
+2024-03-11 14:31:45 2024-03-11T20:31:45.678Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Resolving include Servo.h for arch avr"
+time="2024-03-11T14:31:45-06:00" level=info msg="  found better lib" lib=Servo prio=6AE
+2024-03-11 14:31:45 2024-03-11T20:31:45.700Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Resolving include Wire.h for arch avr"
+time="2024-03-11T14:31:45-06:00" level=info msg="  found better lib" lib=Wire prio=6B0
+2024-03-11 14:31:45 2024-03-11T20:31:45.723Z daemon INFO time="2024-03-11T14:31:45-06:00" level=info msg="Resolving include SoftwareSerial.h for arch avr"
+time="2024-03-11T14:31:45-06:00" level=info msg="  found better lib" lib=SoftwareSerial prio=6B0
+2024-03-11 14:31:46 2024-03-11T20:31:46.358Z root INFO Executing 'arduino.languageserver.notifyBuildDidComplete' with "file:///tmp/arduino/sketches/667794A7AAAFEFD29D6E412ED6D95C24"
+2024-03-11 14:31:46 2024-03-11T20:31:46.451Z daemon INFO time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="arduino:arduinoOTA@1.3.0"
+time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+2024-03-11 14:31:46 2024-03-11T20:31:46.451Z daemon INFO time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="builtin:dfu-discovery@0.1.2"
+time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="builtin:ctags@5.8-arduino11"
+time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="builtin:serial-discovery@1.4.0"
+time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="builtin:mdns-discovery@1.0.9"
+time="2024-03-11T14:31:46-06:00" level=info msg="Tool required for debug" tool="builtin:serial-monitor@0.14.1"
+2024-03-11 14:31:46 2024-03-11T20:31:46.451Z root ERROR Failed to get debug config: arduino:avr:uno, undefined Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:31:46 2024-03-11T20:31:46.451Z root ERROR Request checkDebugEnabled failed with error: Debugging is not supported. Error: Debugging is not supported.
+    at Object.callback (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:81196)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:788562)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:784513)
+    at Object.onReceiveStatus (/home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:783958)
+    at /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/main.js:2:870080
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-03-11 14:31:47 2024-03-11T20:31:47.430Z daemon INFO time="2024-03-11T14:31:47-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+2024-03-11 14:31:47 2024-03-11T20:31:47.430Z daemon INFO time="2024-03-11T14:31:47-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-03-11T14:31:47-06:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-03-11 14:31:50 2024-03-11T20:31:50.662Z root INFO Received port after upload [arduino+serial:///dev/ttyACM0, arduino:avr:uno, chess_clock]. Before port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}, after port: {"address":"/dev/ttyACM0","addressLabel":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","properties":{"pid":"0x0043","serialNumber":"9573632383235150F192","vid":"0x2341"},"hardwareId":"9573632383235150F192"}
+2024-03-11 14:32:45 2024-03-11T20:32:45.509Z daemon INFO time="2024-03-11T14:32:45-06:00" level=info msg="from discovery builtin:serial-discovery received message type: remove, port: /dev/ttyACM0"
+2024-03-11 14:32:45 2024-03-11T20:32:45.511Z discovery-log INFO {"eventType":"remove","port":{"matchingBoardsList":[],"port":{"address":"/dev/ttyACM0","label":"","protocol":"serial","protocolLabel":"","propertiesMap":[],"hardwareId":""}},"error":""}
+2024-03-11 14:33:53 isTempSketch: false. Input was /home/nrv/Arduino/chess_clock
+2024-03-11 14:33:53 Marking workspace as a closed sketch. Workspace URI: file:///home/nrv/Arduino/chess_clock. Date: 1710189233571.
+2024-03-11 14:33:53 isTempSketch: false. Input was /home/nrv/Arduino/chess_clock
+2024-03-11 14:33:53 Marking workspace as a closed sketch. Workspace URI: file:///home/nrv/Arduino/chess_clock. Date: 1710189233617.
+2024-03-11 14:33:53 Closing channel on service path '/services/electron-window'.
+2024-03-11 14:33:53 Closing channel on service path '/services/ide-updater'.
+2024-03-11 14:33:55 isTempSketch: false. Input was /home/nrv/Arduino/HelloWorldLCD
+2024-03-11 14:33:55 Marking workspace as a closed sketch. Workspace URI: file:///home/nrv/Arduino/HelloWorldLCD. Date: 1710189235200.
+2024-03-11 14:33:55 isTempSketch: false. Input was /home/nrv/Arduino/HelloWorldLCD
+2024-03-11 14:33:55 Marking workspace as a closed sketch. Workspace URI: file:///home/nrv/Arduino/HelloWorldLCD. Date: 1710189235203.
+2024-03-11 14:33:55 Closing channel on service path '/services/electron-window'.
+2024-03-11 14:33:55 Closing channel on service path '/services/ide-updater'.
+2024-03-11 14:33:55 Skipped storing sketch as workspace root. Expected minimum threshold: <1710189234219>. Was: <1710189233571>.
+2024-03-11 14:33:55 Skipped storing sketch as workspace root. Expected minimum threshold: <1710189234219>. Was: <1710189233617>.
+2024-03-11 14:33:55 Storing the sketch as a workspace root: </home/nrv/Arduino/HelloWorldLCD>.
+2024-03-11 14:33:55 Skipped storing sketch as workspace root. Already visited: </home/nrv/Arduino/HelloWorldLCD>.
+2024-03-11 14:33:55 Stored workspaces roots: /home/nrv/Arduino/HelloWorldLCD
+2024-03-11 14:33:55 No sketches were scheduled for deletion.

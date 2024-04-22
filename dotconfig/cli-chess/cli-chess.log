@@ -1,0 +1,5 @@
+04/11/2024 07:10:03.830 | INFO  | cli-chess | main_model._start_loggers | cli-chess v1.1.1 // python 3.12.2
+04/11/2024 07:10:03.831 | INFO  | cli-chess | main_model._start_loggers | System information: system=Linux // release=6.7.10-200.fc39.x86_64 // machine=x86_64
+04/11/2024 07:10:03.834 | DEBUG | cli-chess | argparse.parse_args | Parsed arguments: Namespace(token=None, reset_config=False, base_url='https://lichess.org', print_config=False)
+04/11/2024 07:10:03.834 | DEBUG | cli-chess | token_manager_model.set_base_url | Base URL set to: https://lichess.org
+04/11/2024 07:10:03.857 | CRITICAL | cli-chess | main_view._handle_startup_exceptions | Error starting cli-chess: name 'connect_eboard' is not defined

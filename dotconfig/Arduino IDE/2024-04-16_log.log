@@ -1,0 +1,100 @@
+2024-04-16 21:14:58 Arduino IDE 2.3.2
+2024-04-16 21:14:58 Checking for frontend application configuration customizations. Module path: /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/electron-main.js, destination 'package.json': /home/nrv/Arduino/arduino-IDE/resources/app/package.json
+2024-04-16 21:14:58 Setting 'theia.frontend.config.appVersion' application configuration value to: "2.3.2" (type of string)
+2024-04-16 21:14:58 Setting 'theia.frontend.config.cliVersion' application configuration value to: "0.35.3" (type of string)
+2024-04-16 21:14:58 Setting 'theia.frontend.config.buildDate' application configuration value to: "2024-02-20T09:54:08.669Z" (type of string)
+2024-04-16 21:14:58 Frontend application configuration after modifications: {"applicationName":"Arduino IDE","defaultTheme":{"light":"arduino-theme","dark":"arduino-theme-dark"},"defaultIconTheme":"none","electron":{"windowOptions":{}},"defaultLocale":"","validatePreferencesSchema":false,"preferences":{"window.title":"${rootName}${activeEditorShort}${appName}","files.autoSave":"afterDelay","editor.minimap.enabled":false,"editor.tabSize":2,"editor.scrollBeyondLastLine":false,"editor.quickSuggestions":{"other":false,"comments":false,"strings":false},"editor.maxTokenizationLineLength":500,"editor.bracketPairColorization.enabled":false,"breadcrumbs.enabled":false,"workbench.tree.renderIndentGuides":"none","explorer.compactFolders":false},"appVersion":"2.3.2","cliVersion":"0.35.3","buildDate":"2024-02-20T09:54:08.669Z"}
+2024-04-16 21:14:58 Starting backend process. PID: 5450
+2024-04-16 21:15:00 Using browser-only version of superagent in non-browser environment
+2024-04-16 21:15:00 Configuration directory URI: 'file:///home/nrv/.arduinoIDE'
+2024-04-16 21:15:00 Configuring to accept webviews on '^.+\.webview\..+$' hostname.
+2024-04-16 21:15:00 2024-04-17T01:15:00.735Z root INFO Backend Object.initialize: 15.7 ms [Finished 1.786 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.736Z root INFO Backend Object.configure: 12.4 ms [Finished 1.787 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.736Z root INFO Backend s.onStart: 6.6 ms [Finished 1.787 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.739Z root INFO Backend s.configure: 1.2 ms [Finished 1.876 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.741Z root INFO Backend d.onStart: 0.8 ms [Finished 1.876 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.745Z root INFO Backend d.configure: 0.4 ms [Finished 1.877 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.747Z root WARN Backend d.initialize took longer than the expected maximum 50 milliseconds: 89.7 ms [Finished 1.878 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.747Z root INFO Backend c.onStart: 1.2 ms [Finished 1.878 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.749Z root INFO Backend a.configure: 2.1 ms [Finished 1.880 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.755Z config INFO >>> Initializing CLI configuration...
+2024-04-16 21:15:00 2024-04-17T01:15:00.755Z root INFO Backend c.initialize: 2.3 ms [Finished 1.882 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.755Z root INFO Backend R.onStart: 3.6 ms [Finished 1.884 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.757Z config INFO Loading CLI configuration from /home/nrv/.arduinoIDE/arduino-cli.yaml...
+2024-04-16 21:15:00 2024-04-17T01:15:00.759Z daemon INFO Starting daemon from /home/nrv/Arduino/arduino-IDE/resources/app/lib/backend/resources/arduino-cli...
+2024-04-16 21:15:00 2024-04-17T01:15:00.759Z root INFO Backend a.initialize: 2.1 ms [Finished 1.888 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.759Z root INFO Backend w.onStart: 4.2 ms [Finished 1.890 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.759Z root INFO Backend r.configure: 6.7 ms [Finished 1.891 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z discovery-log INFO start
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z discovery-log INFO start new deferred
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z root INFO Backend d.initialize: 1.4 ms [Finished 1.893 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z root INFO Backend y.onStart: 6.6 ms [Finished 1.898 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z root INFO Backend r.configure: 5.7 ms [Finished 1.898 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z root INFO Backend a.onStart: 1.7 ms [Finished 1.903 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z root INFO Backend h.configure: 1.5 ms [Finished 1.903 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.760Z root INFO Backend s.configure: 0.4 ms [Finished 1.903 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.761Z root INFO Backend l.configure: 0.2 ms [Finished 1.904 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.768Z root INFO Theia app listening on http://127.0.0.1:34529.
+2024-04-16 21:15:00 2024-04-17T01:15:00.768Z root INFO Finished starting backend application: 8.0 ms [Finished 1.911 s after backend start]
+2024-04-16 21:15:00 2024-04-17T01:15:00.770Z root WARN The local plugin referenced by local-dir:/home/nrv/.arduinoIDE/plugins does not exist.
+2024-04-16 21:15:00 2024-04-17T01:15:00.771Z root WARN The local plugin referenced by local-dir:/home/nrv/.arduinoIDE/extensions does not exist.
+2024-04-16 21:15:00 2024-04-17T01:15:00.796Z config INFO Loaded CLI configuration: {"board_manager":{"additional_urls":[]},"build_cache":{"compilations_before_purge":10,"ttl":"720h0m0s"},"daemon":{"port":"50051"},"directories":{"data":"/home/nrv/.arduino15","downloads":"/home/nrv/.arduino15/staging","user":"/home/nrv/Arduino"},"library":{"enable_unsafe_install":false},"logging":{"file":"","format":"text","level":"info"},"metrics":{"addr":":9090","enabled":true},"output":{"no_color":false},"sketch":{"always_export_binaries":false},"updater":{"enable_notification":true}}
+2024-04-16 21:15:00 2024-04-17T01:15:00.796Z config INFO 'directories.data' and 'directories.user' are set in the CLI configuration model.
+2024-04-16 21:15:00 2024-04-17T01:15:00.796Z config INFO Loaded the CLI configuration.
+2024-04-16 21:15:00 Restoring workspace roots: /home/nrv/dev/NicLink/arduino_chess_clock/chess_clock
+2024-04-16 21:15:00 isTempSketch: false. Input was /home/nrv/dev/NicLink/arduino_chess_clock/chess_clock/chess_clock.ino
+2024-04-16 21:15:01 2024-04-17T01:15:00.861Z config INFO Mapped the CLI configuration: {"dataDirUri":"file:///home/nrv/.arduino15","sketchDirUri":"file:///home/nrv/Arduino","additionalUrls":[],"network":"none","locale":"en"}
+2024-04-16 21:15:01 2024-04-17T01:15:00.861Z config INFO Validating the CLI configuration...
+2024-04-16 21:15:01 2024-04-17T01:15:00.867Z config INFO The CLI config is valid.
+2024-04-16 21:15:01 2024-04-17T01:15:00.867Z config INFO <<< Initialized the CLI configuration.
+2024-04-16 21:15:01 2024-04-17T01:15:00.927Z daemon INFO time="2024-04-16T21:15:00-04:00" level=info msg="Using config file: /home/nrv/.arduinoIDE/arduino-cli.yaml"
+time="2024-04-16T21:15:00-04:00" level=info msg="arduino-cli version 0.35.3"
+time="2024-04-16T21:15:00-04:00" level=info msg="Executing `arduino-cli daemon`"
+Daemon is now listening on 127.0.0.1:40869
+{"IP":"127.0.0.1","Port":"40869"}
+2024-04-16 21:15:01 2024-04-17T01:15:00.927Z daemon INFO Daemon is running.
+2024-04-16 21:15:01 2024-04-17T01:15:01.024Z root INFO Resolve plugins list: 265.8 ms [Finished 2.164 s after backend start]
+2024-04-16 21:15:01 2024-04-17T01:15:01.057Z daemon INFO time="2024-04-16T21:15:01-04:00" level=info msg="Checking signature" index=/home/nrv/.arduino15/package_index.json signatureFile=/home/nrv/.arduino15/package_index.json.sig trusted=true
+2024-04-16 21:15:01 2024-04-17T01:15:01.060Z daemon INFO time="2024-04-16T21:15:01-04:00" level=info msg="Loading hardware from: /home/nrv/.arduino15/packages"
+2024-04-16 21:15:01 2024-04-17T01:15:01.064Z daemon INFO time="2024-04-16T21:15:01-04:00" level=info msg="Loading package arduino from: /home/nrv/.arduino15/packages/arduino/hardware"
+2024-04-16 21:15:01 2024-04-17T01:15:01.072Z daemon INFO time="2024-04-16T21:15:01-04:00" level=info msg="Missing signature file" index=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/installed.json
+2024-04-16 21:15:01 2024-04-17T01:15:01.103Z daemon INFO time="2024-04-16T21:15:01-04:00" level=info msg="Adding monitor tool" protocol=serial tool="builtin:serial-monitor"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded platform" platform="arduino:avr@1.8.6"
+time="2024-04-16T21:15:01-04:00" level=info msg="Checking existence of 'tools' path: /home/nrv/.arduino15/packages/arduino/tools"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loading tools from dir: /home/nrv/.arduino15/packages/arduino/tools"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="arduino:arduinoOTA@1.3.0"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="arduino:avr-gcc@7.3.0-atmel3.6.1-arduino7"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="arduino:avrdude@6.3.0-arduino17"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loading package builtin from: /home/nrv/.arduino15/packages/builtin"
+time="2024-04-16T21:15:01-04:00" level=info msg="Checking existence of 'tools' path: /home/nrv/.arduino15/packages/builtin/tools"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loading tools from dir: /home/nrv/.arduino15/packages/builtin/tools"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="builtin:ctags@5.8-arduino11"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="builtin:dfu-discovery@0.1.2"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="builtin:mdns-discovery@1.0.9"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="builtin:serial-discovery@1.4.0"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.13.0"
+time="2024-04-16T21:15:01-04:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.14.1"
+2024-04-16 21:15:01 2024-04-17T01:15:01.103Z daemon INFO time="2024-04-16T21:15:01-04:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/packages/arduino/hardware/avr/1.8.6/libraries location=platform
+time="2024-04-16T21:15:01-04:00" level=info msg="Loading libraries index file" index=/home/nrv/.arduino15/library_index.json
+2024-04-16 21:15:02 2024-04-17T01:15:02.264Z daemon INFO time="2024-04-16T21:15:02-04:00" level=info msg="Adding libraries dir" dir=/home/nrv/.arduino15/libraries location=ide
+time="2024-04-16T21:15:02-04:00" level=info msg="Adding libraries dir" dir=/home/nrv/Arduino/libraries location=user
+2024-04-16 21:15:02 2024-04-17T01:15:02.276Z discovery-log INFO start resolved watching
+2024-04-16 21:15:02 2024-04-17T01:15:02.278Z daemon INFO time="2024-04-16T21:15:02-04:00" level=info msg="starting discovery builtin:serial-discovery process"
+2024-04-16 21:15:02 2024-04-17T01:15:02.279Z daemon INFO time="2024-04-16T21:15:02-04:00" level=info msg="starting discovery builtin:mdns-discovery process"
+2024-04-16 21:15:02 2024-04-17T01:15:02.287Z daemon INFO time="2024-04-16T21:15:02-04:00" level=info msg="started discovery builtin:serial-discovery process"
+time="2024-04-16T21:15:02-04:00" level=info msg="sending command HELLO 1 \"arduino-cli 0.35.3\" to discovery builtin:serial-discovery"
+time="2024-04-16T21:15:02-04:00" level=info msg="started discovery builtin:mdns-discovery process"
+time="2024-04-16T21:15:02-04:00" level=info msg="sending command HELLO 1 \"arduino-cli 0.35.3\" to discovery builtin:mdns-discovery"
+2024-04-16 21:15:02 2024-04-17T01:15:02.305Z daemon INFO time="2024-04-16T21:15:02-04:00" level=info msg="from discovery builtin:serial-discovery received message type: hello, message: OK, protocol version: 1"
+time="2024-04-16T21:15:02-04:00" level=info msg="sending command START_SYNC to discovery builtin:serial-discovery"
+2024-04-16 21:15:02 2024-04-17T01:15:02.326Z daemon INFO time="2024-04-16T21:15:02-04:00" level=info msg="from discovery builtin:mdns-discovery received message type: hello, message: OK, protocol version: 1"
+time="2024-04-16T21:15:02-04:00" level=info msg="sending command START_SYNC to discovery builtin:mdns-discovery"
+time="2024-04-16T21:15:02-04:00" level=info msg="from discovery builtin:mdns-discovery received message type: start_sync, message: OK"
+time="2024-04-16T21:15:02-04:00" level=info msg="from discovery builtin:serial-discovery received message type: start_sync, message: OK"
+time="2024-04-16T21:15:02-04:00" level=info msg="from discovery builtin:serial-discovery received message type: add, port: /dev/ttyACM0"
+2024-04-16 21:15:02 2024-04-17T01:15:02.337Z discovery-log INFO {"eventType":"add","port":{"matchingBoardsList":[{"name":"Arduino Uno","fqbn":"arduino:avr:uno","isHidden":false}],"port":{"address":"/dev/ttyACM0","label":"/dev/ttyACM0","protocol":"serial","protocolLabel":"Serial Port (USB)","propertiesMap":[["pid","0x0043"],["serialNumber","9573632383235150F192"],["vid","0x2341"]],"hardwareId":"9573632383235150F192"}},"error":""}
+2024-04-16 21:15:03 isTempSketch: false. Input was /home/nrv/dev/NicLink/arduino_chess_clock/chess_clock/chess_clock.ino
+2024-04-16 21:15:03 Marking workspace as a closed sketch. Workspace URI: file:///home/nrv/dev/NicLink/arduino_chess_clock/chess_clock/chess_clock.ino. Date: 1713316503852.
+2024-04-16 21:15:03 Storing the sketch as a workspace root: </home/nrv/dev/NicLink/arduino_chess_clock/chess_clock/chess_clock.ino>.
+2024-04-16 21:15:03 Stored workspaces roots: /home/nrv/dev/NicLink/arduino_chess_clock/chess_clock/chess_clock.ino
+2024-04-16 21:15:03 No sketches were scheduled for deletion.

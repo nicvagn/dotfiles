@@ -1,0 +1,42 @@
+{
+	"notifications": [
+		{
+			"guid": "5886d4e2-9a0c-4d2b-b314-b42d993e9c50",
+			"timestamp": 1709087581993,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"type": "update",
+				"ephemeral": false,
+				"icon": "download",
+				"message": "Docker Desktop 4.28.0 is available.",
+				"actionText": "Download",
+				"action": {
+					"action": "update-available"
+				}
+			}
+		},
+		{
+			"guid": "e73299ad-2eaa-4bb5-a58d-8f9eed0c92e5",
+			"timestamp": 1711758082981,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "Cannot remove Docker Compose application. Reason: compose [down --remove-orphans] exit status 1. could not find lila: not found\n",
+				"icon": "error",
+				"type": "error"
+			}
+		},
+		{
+			"guid": "f6df1f2d-0892-4418-bbf9-f120ec18703a",
+			"timestamp": 1711759897379,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "Volume efb90f6f5e2927ba3b29878188debbe5a9e7ba32f3b89b2ac7fe5216621fe7cf removed",
+				"icon": "success",
+				"type": "general-purpose"
+			}
+		}
+	]
+}
