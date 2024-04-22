@@ -9,3 +9,6 @@ dotconfig/nvim
 dotconfig/libreoffice
 dotconfig/chromium
 **/arduino-ide
+**/IndexedDB
+**/Crashpad
+**/*.log
