@@ -1,3 +1,5 @@
+" my native vimrc
+
 " ===== key mappings ====
 " nnoremap - normal mode only, nonrecursive
 " noremap - non-recursive most modes
