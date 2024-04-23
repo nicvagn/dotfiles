@@ -62,13 +62,14 @@ export NVM_DIR="$HOME/.nvm"
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
-# export PATH with yarn global bin
-export PATH="$(yarn global bin):$PATH"
-# add lua language server to the path
-export PATH="$HOME/tools/lua-language-server/bin:$PATH"
+# export PATH with yarn global bin and add lua language server to the path
+export PATH="$HOME/tools/lua-language-server/bin:$(yarn global bin):$PATH"
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
+# nvim as man pager
+export MANPAGER="nvim +Man!"
+export PAGER="NVIM +Man!"
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
