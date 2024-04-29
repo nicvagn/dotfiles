@@ -1,8 +1,8 @@
 local M = {
 	"numToStr/FTerm.nvim",
 	keys = {
-		{ "<F2>", "<cmd>lua require('FTerm').toggle()<CR>" },
-		{ "<F2>", "<C-\\><C-n><cmd>lua require('FTerm').toggle()<CR>", mode = "t" },
+		{ "<F4>", "<cmd>lua require('FTerm').toggle()<CR>" },
+		{ "<F4>", "<C-\\><C-n><cmd>lua require('FTerm').toggle()<CR>", mode = "t" },
 	},
 }
 

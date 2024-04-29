@@ -8,6 +8,7 @@ alias status="git status"
 alias checkout="git checkout"
 alias add="git add"
 alias gdiff="git diff"
+alias log="git log"
 
 # conviniantly enter nl pyenv
 alias nl_env=". ~/dev/NicLink/pyenv_up.sh; cd ~/dev/NicLink/"

@@ -69,7 +69,7 @@ export PATH="$HOME/tools/lua-language-server/bin:$(yarn global bin):$PATH"
 # export SYSTEMD_PAGER=
 # nvim as man pager
 export MANPAGER="nvim +Man!"
-export PAGER="NVIM +Man!"
+export PAGER="nvim +Man!"
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
