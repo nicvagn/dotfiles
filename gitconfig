@@ -7,7 +7,6 @@
 	helper = !/usr/bin/gh auth git-credential
 [core]
     editor = vim
-    pager = less -FX
 	autocrlf = input
 	whitespace = trailing-space
 
@@ -39,8 +38,7 @@
 	process = git-lfs filter-process
 [pull]
 	rebase = false
-[color]
-	ui = true
-	pager = true
 [merge]
 	tool = nvimdiff
+[color]
+	ui = auto

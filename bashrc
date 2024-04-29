@@ -54,22 +54,25 @@ unset LESS
 
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-21.0.2.0.13-1.fc39.x86_64"
 
+### nvim stuff ###
 export EDITOR='vim'
+# nvim as pager
+export MANPAGER="nvim +Man!"
+export PAGER="nvim +Man!"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
+
+NRV_PATH="$HOME/tools:$(yarn global bin):$HOME/.local/bin:$HOME/bin:$PATH" 
 # export PATH with yarn global bin and add lua language server to the path
-export PATH="$HOME/tools/lua-language-server/bin:$(yarn global bin):$PATH"
+# and the kichen sink
+if ! [[ "$PATH" =~ "$NRV_PATH" ]]; then
+    PATH=$NRV_PATH
+fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
-# nvim as man pager
-export MANPAGER="nvim +Man!"
-export PAGER="nvim +Man!"
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
