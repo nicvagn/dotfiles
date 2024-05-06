@@ -10,6 +10,7 @@ text/markdown=code.desktop
 audio/mpeg=vlc.desktop
 audio/x-vorbis+ogg=vlc.desktop
 video/x-msvideo=vlc.desktop
+video/mpeg=vlc.desktop
 
 [Added Associations]
 text/x-python=code.desktop;
@@ -23,3 +24,4 @@ text/markdown=code.desktop;
 audio/mpeg=vlc.desktop;
 audio/x-vorbis+ogg=vlc.desktop;
 video/x-msvideo=vlc.desktop;
+video/mpeg=vlc.desktop;

@@ -5,6 +5,7 @@
     "http-server": "^14.1.1",
     "node": "^18.20.1",
     "pnpm": "^8.15.1",
+    "prettier": "^3.2.5",
     "pyright": "^1.1.356",
     "typescript": "^5.4.5",
     "typescript-language-server": "^4.3.3",

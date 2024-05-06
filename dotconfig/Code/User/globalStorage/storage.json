@@ -33,7 +33,7 @@
             "file:///home/nrv/dev/websites/chess-website/website": "7015a63f"
         },
         "emptyWindows": {
-            "1713357339391": "7015a63f"
+            "1714862375099": "7015a63f"
         }
     },
     "profileAssociationsMigration": true,
@@ -48,7 +48,7 @@
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1713357339391"
+                "backupFolder": "1714862375099"
             }
         ]
     },
@@ -1372,8 +1372,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1549,7 +1548,6 @@
             },
             "workbench.action.openSettings": {
                 "label": "Ctrl+,",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+,"
             },
             "workbench.view.extensions": {
@@ -1574,7 +1572,7 @@
             "workbench.action.closeFolder": {
                 "label": "Ctrl+K F",
                 "isNative": false,
-                "userSettingsLabel": "ctrl+k 5"
+                "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
@@ -1604,17 +1602,25 @@
                 "label": "Ctrl+V",
                 "userSettingsLabel": "ctrl+v"
             },
+            "actions.find": {
+                "label": "Ctrl+F",
+                "userSettingsLabel": "ctrl+f"
+            },
             "editor.action.startFindReplaceAction": {
                 "label": "Ctrl+H",
                 "userSettingsLabel": "ctrl+h"
             },
             "workbench.action.findInFiles": {
-                "label": "Ctrl+Shift+5",
-                "userSettingsLabel": "ctrl+shift+5"
+                "label": "Ctrl+Shift+F",
+                "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.action.replaceInFiles": {
                 "label": "Ctrl+Shift+H",
                 "userSettingsLabel": "ctrl+shift+h"
+            },
+            "editor.action.commentLine": {
+                "label": "Ctrl+/",
+                "userSettingsLabel": "ctrl+/"
             },
             "editor.action.blockComment": {
                 "label": "Ctrl+Shift+A",
@@ -1669,12 +1675,12 @@
                 "userSettingsLabel": "ctrl+d"
             },
             "editor.action.selectHighlights": {
-                "label": "Ctrl+Shift+7",
-                "userSettingsLabel": "ctrl+shift+7"
+                "label": "Ctrl+Shift+L",
+                "userSettingsLabel": "ctrl+shift+l"
             },
             "workbench.action.showCommands": {
-                "label": "Ctrl+Shift+4",
-                "userSettingsLabel": "ctrl+shift+4"
+                "label": "Ctrl+Shift+P",
+                "userSettingsLabel": "ctrl+shift+p"
             },
             "workbench.action.toggleFullScreen": {
                 "label": "F11",
@@ -1694,18 +1700,17 @@
                 "userSettingsLabel": "ctrl+alt+b"
             },
             "workbench.action.togglePanel": {
-                "label": "Ctrl+8",
-                "userSettingsLabel": "ctrl+8"
+                "label": "Ctrl+J",
+                "userSettingsLabel": "ctrl+j"
             },
             "workbench.action.zoomIn": {
                 "label": "Ctrl+=",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+="
             },
             "workbench.action.zoomOut": {
-                "label": "Ctrl+-",
+                "label": "Ctrl+NumPad_Subtract",
                 "isNative": false,
-                "userSettingsLabel": "ctrl+-"
+                "userSettingsLabel": "ctrl+numpad_subtract"
             },
             "workbench.action.zoomReset": {
                 "label": "Ctrl+NumPad0",
@@ -1741,8 +1746,8 @@
                 "userSettingsLabel": "ctrl+shift+e"
             },
             "workbench.view.search": {
-                "label": "Ctrl+Shift+5",
-                "userSettingsLabel": "ctrl+shift+5"
+                "label": "Ctrl+Shift+F",
+                "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.view.scm": {
                 "label": "Ctrl+Shift+G",
@@ -1753,8 +1758,8 @@
                 "userSettingsLabel": "ctrl+shift+d"
             },
             "workbench.actions.view.problems": {
-                "label": "Ctrl+Shift+6",
-                "userSettingsLabel": "ctrl+shift+6"
+                "label": "Ctrl+Shift+M",
+                "userSettingsLabel": "ctrl+shift+m"
             },
             "workbench.action.output.toggleOutput": {
                 "label": "Ctrl+K Ctrl+H",
@@ -1767,7 +1772,6 @@
             },
             "workbench.action.terminal.toggleTerminal": {
                 "label": "Ctrl+`",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+`"
             },
             "editor.action.toggleWordWrap": {
@@ -1776,12 +1780,10 @@
             },
             "workbench.action.navigateBack": {
                 "label": "Ctrl+Alt+-",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+alt+-"
             },
             "workbench.action.navigateForward": {
                 "label": "Ctrl+Shift+-",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+-"
             },
             "workbench.action.navigateToLastEditLocation": {
@@ -1819,6 +1821,10 @@
                 "label": "Ctrl+3",
                 "userSettingsLabel": "ctrl+3"
             },
+            "workbench.action.focusFourthEditorGroup": {
+                "label": "Ctrl+4",
+                "userSettingsLabel": "ctrl+4"
+            },
             "workbench.action.focusFifthEditorGroup": {
                 "label": "Ctrl+5",
                 "userSettingsLabel": "ctrl+5"
@@ -1849,8 +1855,8 @@
                 "userSettingsLabel": "ctrl+k ctrl+down"
             },
             "workbench.action.quickOpen": {
-                "label": "Ctrl+4",
-                "userSettingsLabel": "ctrl+4"
+                "label": "Ctrl+P",
+                "userSettingsLabel": "ctrl+p"
             },
             "workbench.action.showAllSymbols": {
                 "label": "Ctrl+T",
@@ -1878,7 +1884,6 @@
             },
             "editor.action.jumpToBracket": {
                 "label": "Ctrl+Shift+\\",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+\\"
             },
             "editor.action.marker.nextInFiles": {
@@ -1931,7 +1936,6 @@
             },
             "workbench.action.terminal.new": {
                 "label": "Ctrl+Shift+`",
-                "isNative": false,
                 "userSettingsLabel": "ctrl+shift+`"
             },
             "workbench.action.terminal.split": {
@@ -1980,10 +1984,10 @@
             "backupPath": "/home/nrv/.config/Code/Backups/f4d5d73ec3ce9d42d41cfa17269b2e31",
             "uiState": {
                 "mode": 0,
-                "x": 1979,
-                "y": 61,
-                "width": 796,
-                "height": 800
+                "x": 2855,
+                "y": 29,
+                "width": 801,
+                "height": 593
             }
         },
         "openedWindows": []

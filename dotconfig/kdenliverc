@@ -1,8 +1,3 @@
-[KFileDialog Settings]
-Recent Files[$e]=youtube_content,file:$HOME/youtube_content/NicLink/lcd/ardino,file:$HOME/youtube_content/NicLink/exernal_chessclock,file:$HOME/youtube_content/NicLink/lcd,file:$HOME/youtube_content/NicLink/chessclock/chessclock_lcdinit.mp4,file:$HOME/youtube_content/NicLink/chessclock/niclink_clock_prelude.mkv,file:$HOME/Downloads/20240311_170219.mp4,file:$HOME/youtube_content/NicLink/niclink_updatefeb6_24.mpg,file:$HOME/youtube_content/NicLink/nl_state_24-03-11,file:$HOME/youtube_content/NicLink/release_0.7,file:$HOME/youtube_content/NicLink/960,file:$HOME/dev/linktree_NicLink/niclink_icon.png,file:$HOME/youtube_content/NicLink/nl_bluetoth,file:$HOME/youtube_content/NicLink/chessconnect.mkv,file:$HOME/youtube_content
-Recent URLs[$e]=file:$HOME/,file:$HOME/youtube_content/NicLink/,file:$HOME/dev/linktree_NicLink/,file:$HOME/youtube_content/,file:$HOME/Downloads/,file:$HOME/youtube_content/NicLink/chessclock/,file:$HOME/youtube_content/NicLink/exernal_chessclock/
-detailViewIconSize=16
-
 [MainWindow]
 1920x1080 screen: Height=751
 1920x1080 screen: Width=1079
@@ -29,8 +24,8 @@ provider=Freesound
 zoom=7
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/youtube_content/NicLink/lcd/,$HOME/youtube_content/NicLink/,$HOME/youtube_content/NicLink/chessclock/
-KdenliveProjectsFolder[$e]=$HOME/youtube_content/NicLink/lcd,$HOME/youtube_content/NicLink/chessclock,$HOME/youtube_content/NicLink/nl_state_24-03-11
+KdenliveClipFolder[$e]=$HOME/youtube_content/reviews/omnifixo/,$HOME/youtube_content/NicLink/lcd/,$HOME/youtube_content/NicLink/
+KdenliveProjectsFolder[$e]=$HOME/youtube_content/reviews/omnifixo,$HOME/youtube_content/NicLink/lcd,$HOME/youtube_content/NicLink/chessclock
 
 [Recent Files]
 File1[$e]=$HOME/youtube_content/NicLink/nl_bluetoth/NickLink_Bluetooth.kdenlive
@@ -39,12 +34,14 @@ File3[$e]=$HOME/youtube_content/NicLink/release_0.7/0.7
 File4[$e]=$HOME/youtube_content/NicLink/nl_state_24-03-11/kden_live.kdenlive
 File5[$e]=$HOME/youtube_content/NicLink/chessclock/chessclock_real_fin.kdenlive
 File6[$e]=$HOME/youtube_content/NicLink/lcd/lcd.kdenlive
+File7[$e]=$HOME/youtube_content/reviews/omnifixo/omnifixs_review.kdenlive
 Name1[$e]=NickLink_Bluetooth.kdenlive
 Name2[$e]=move_detect.kdenlive
 Name3[$e]=0.7
 Name4[$e]=kden_live.kdenlive
 Name5[$e]=chessclock_real_fin.kdenlive
 Name6[$e]=lcd.kdenlive
+Name7[$e]=omnifixs_review.kdenlive
 
 [RenderWidget]
 showoptions=true
@@ -89,7 +86,7 @@ ColorSchemePath=BreezeDark.colors
 
 [bin]
 hoverPreview=true
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAACAAAAGQAAAAHAAAAQAAAAAYAAAAqAAAABQAAAF0AAAAEAAAANwAAAAMAAABAAAAAAgAAAHMAAAABAAAAPgAAAgwAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAACDAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABH
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAACoAAAADAAAAQAAAAAcAAABAAAAAAQAAAD4AAAAIAAAAZAAAAAIAAABzAAAABQAAAF0AAAAEAAAANwAAAQIAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABAgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABHAAAAAA==
 
 [capture]
 decklink_extension=mov
@@ -102,11 +99,12 @@ v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
 [env]
 defaultimageapp=/usr/bin/gimp
 defaultprojectfolder[$e]=$HOME/Videos
+encodethreads=3
 ffmpegpath[$e]=/usr/bin/ffmpeg
 ffplaypath[$e]=/usr/bin/ffplay
 ffprobepath[$e]=/usr/bin/ffprobe
 kdenliverendererpath[$e]=/usr/bin/kdenlive_render
-lastCacheCheck=2024,4,2,17,25,2.271
+lastCacheCheck=2024,5,3,16,0,37.91
 meltpath[$e]=/usr/bin/melt-7
 mltpath[$e]=/usr/share/mlt-7/profiles
 
@@ -136,8 +134,10 @@ previewScaling=0
 producerslist=avformat,avformat-novalidate,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,decklink,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,pango,pixbuf,glaxnimate,ladspa.1047,ladspa.1050,framebuffer,blipflash,count,pgm,qimage,qtext,kdenlivetitle,vorbis,xml,xml-string,xml-nogl
 project_fps=29.97002997002997
 properties_panel_page=1
+renderProfile=MPEG-2
+showSubtitles=true
 use_dark_breeze=true
 widgetstyle=Default
 
 [version]
-version=23.08.5
+version=24.02.2

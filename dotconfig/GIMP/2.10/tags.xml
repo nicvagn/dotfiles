@@ -1180,7 +1180,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="bcb5c89648c7926fd37f17e5899e9b00">
+  <resource identifier="gimp-palette-color-history" checksum="5a4699b1cd476b252a4605b0017c3ccc">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -2152,6 +2152,21 @@
   <resource identifier="Noto Sans Medium Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Sans Meetei Mayek" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Meetei Mayek" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Meetei Mayek Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Meetei Mayek Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Meetei Mayek Semi-Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Sans Mono" checksum="(null)">
   </resource>
 
@@ -2225,6 +2240,21 @@
   </resource>
 
   <resource identifier="Noto Sans Mono Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ol Chiki" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ol Chiki" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ol Chiki Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ol Chiki Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ol Chiki Semi-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Oriya" checksum="(null)">
@@ -2570,6 +2600,21 @@
   </resource>
 
   <resource identifier="Noto Serif Devanagari Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic Semi-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Georgian" checksum="(null)">
