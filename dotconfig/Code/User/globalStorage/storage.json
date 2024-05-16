@@ -32,9 +32,7 @@
             "file:///home/nrv/dev/websites/horizon_store": "7015a63f",
             "file:///home/nrv/dev/websites/chess-website/website": "7015a63f"
         },
-        "emptyWindows": {
-            "1714862375099": "7015a63f"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -46,11 +44,7 @@
                 "folderUri": "file:///home/nrv/dev/websites/chess-website/website"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1714862375099"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -90,7 +84,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -1047,7 +1042,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1056,7 +1052,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1372,7 +1369,8 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal"
+                        "label": "&&Split Terminal",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1983,11 +1981,11 @@
             "folder": "file:///home/nrv/dev/websites/chess-website/website",
             "backupPath": "/home/nrv/.config/Code/Backups/f4d5d73ec3ce9d42d41cfa17269b2e31",
             "uiState": {
-                "mode": 0,
-                "x": 2855,
-                "y": 29,
-                "width": 801,
-                "height": 593
+                "mode": 1,
+                "x": 732,
+                "y": 64,
+                "width": 804,
+                "height": 596
             }
         },
         "openedWindows": []

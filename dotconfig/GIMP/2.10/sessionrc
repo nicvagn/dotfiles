@@ -91,7 +91,7 @@
     (monitor 2))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 0 40))
+    (position 0 44))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 0 7))

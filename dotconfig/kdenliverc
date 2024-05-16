@@ -24,24 +24,30 @@ provider=Freesound
 zoom=7
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/youtube_content/reviews/omnifixo/,$HOME/youtube_content/NicLink/lcd/,$HOME/youtube_content/NicLink/
-KdenliveProjectsFolder[$e]=$HOME/youtube_content/reviews/omnifixo,$HOME/youtube_content/NicLink/lcd,$HOME/youtube_content/NicLink/chessclock
+KdenliveClipFolder[$e]=$HOME/youtube_content/NicLink/,$HOME/youtube_content/reviews/omnifixo/,$HOME/youtube_content/NicLink/lcd/
+KdenliveProjectsFolder[$e]=$HOME/youtube_content/NicLink/NicLink_0.9_may_15,$HOME/youtube_content/NicLink/may_15_movelights,$HOME/youtube_content/reviews/omnifixo
 
 [Recent Files]
 File1[$e]=$HOME/youtube_content/NicLink/nl_bluetoth/NickLink_Bluetooth.kdenlive
+File10[$e]=$HOME/youtube_content/NicLink/NicLink_0.9_may_15/wip.kdenlive
 File2[$e]=$HOME/youtube_content/NicLink/Move_Detection/move_detect.kdenlive
 File3[$e]=$HOME/youtube_content/NicLink/release_0.7/0.7
 File4[$e]=$HOME/youtube_content/NicLink/nl_state_24-03-11/kden_live.kdenlive
 File5[$e]=$HOME/youtube_content/NicLink/chessclock/chessclock_real_fin.kdenlive
 File6[$e]=$HOME/youtube_content/NicLink/lcd/lcd.kdenlive
 File7[$e]=$HOME/youtube_content/reviews/omnifixo/omnifixs_review.kdenlive
+File8[$e]=$HOME/youtube_content/NicLink/may_15_movelights/0.9NicLink
+File9[$e]=$HOME/youtube_content/NicLink/NicLink_0.9_may_15/NicLink_0.9
 Name1[$e]=NickLink_Bluetooth.kdenlive
+Name10[$e]=wip.kdenlive
 Name2[$e]=move_detect.kdenlive
 Name3[$e]=0.7
 Name4[$e]=kden_live.kdenlive
 Name5[$e]=chessclock_real_fin.kdenlive
 Name6[$e]=lcd.kdenlive
 Name7[$e]=omnifixs_review.kdenlive
+Name8[$e]=0.9NicLink
+Name9[$e]=NicLink_0.9
 
 [RenderWidget]
 showoptions=true
@@ -86,7 +92,7 @@ ColorSchemePath=BreezeDark.colors
 
 [bin]
 hoverPreview=true
-treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAACoAAAADAAAAQAAAAAcAAABAAAAAAQAAAD4AAAAIAAAAZAAAAAIAAABzAAAABQAAAF0AAAAEAAAANwAAAQIAAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAABAgAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABHAAAAAA==
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAJ/gEAAAAIAAAABgAAACoAAAADAAAAQAAAAAcAAABAAAAAAQAAAD4AAAAIAAAAZAAAAAIAAABzAAAABQAAAF0AAAAEAAAANwAABO8AAAAJAQEAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAAJAAAE7wAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAABHAAAAAA==
 
 [capture]
 decklink_extension=mov
@@ -131,11 +137,10 @@ force_breeze=true
 guidesCategories=Category 1:0:#9b59b6,Category 2:1:#3daee9,Category 3:2:#1abc9c,Category 4:3:#1cdc9a,Category 5:4:#c9ce3b,Category 6:5:#fdbc4b,Category 7:6:#f39c1f,Category 8:7:#f47750,Category 9:8:#da4453
 monitor_audio=false
 previewScaling=0
-producerslist=avformat,avformat-novalidate,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,decklink,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,pango,pixbuf,glaxnimate,ladspa.1047,ladspa.1050,framebuffer,blipflash,count,pgm,qimage,qtext,kdenlivetitle,vorbis,xml,xml-string,xml-nogl
+producerslist=glaxnimate,qimage,qtext,kdenlivetitle,avformat,avformat-novalidate,abnormal,blank,color,colour,consumer,hold,loader,loader-nogl,melt,melt_file,noise,timewarp,tone,decklink,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,pango,pixbuf,ladspa.1047,ladspa.1050,framebuffer,blipflash,count,pgm,vorbis,xml,xml-string,xml-nogl
 project_fps=29.97002997002997
 properties_panel_page=1
 renderProfile=MPEG-2
-showSubtitles=true
 use_dark_breeze=true
 widgetstyle=Default
 

@@ -1,5 +1,5 @@
 -- are we using an l-devorak keyboard?
-L_DEVORAK = false
+L_DEVORAK = true
 
 local opts = {
 	noremap = true, -- non-recursive

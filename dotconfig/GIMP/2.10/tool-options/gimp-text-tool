@@ -3,6 +3,5 @@
 (palette "Color History")
 (font "Source Code Pro Heavy Italic")
 (justify center)
-(box-mode fixed)
 
 # end of gimp-text-tool options
