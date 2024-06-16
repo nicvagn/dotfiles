@@ -1,5 +1,6 @@
 -- are we using an l-devorak keyboard?
-L_DEVORAK = true
+-- L_DEVORAK = true
+L_DEVORAK = false
 
 local opts = {
 	noremap = true, -- non-recursive
@@ -8,10 +9,10 @@ local opts = {
 -- normal mode --
 
 -- switching buffers with F keys
-vim.keymap.set("n", "<F1>", "<Cmd>bn<CR>")
-vim.keymap.set("!", "<F1>", "<Cmd>bn<CR>")
-vim.keymap.set("n", "<F2>", "<Cmd>bp<CR>")
-vim.keymap.set("!", "<F2>", "<Cmd>bp<CR>")
+vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
+vim.keymap.set("!", "<F1>", "<Cmd>bp<CR>")
+vim.keymap.set("n", "<F2>", "<Cmd>bn<CR>")
+vim.keymap.set("!", "<F2>", "<Cmd>bn<CR>")
 -- toggle nvim tree with F3
 vim.keymap.set("n", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
