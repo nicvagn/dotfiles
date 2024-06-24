@@ -1,4 +1,3 @@
-require("core.lualine-config")
 require("core.colours")
 require("core.options")
 require("core.keymaps")

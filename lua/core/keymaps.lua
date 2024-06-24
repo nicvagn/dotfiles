@@ -1,6 +1,6 @@
 -- are we using an l-devorak keyboard?
--- L_DEVORAK = true
-L_DEVORAK = false
+L_DEVORAK = true
+-- L_DEVORAK = false
 
 local opts = {
 	noremap = true, -- non-recursive
@@ -41,6 +41,7 @@ if L_DEVORAK then
 	-- switch cc an dd
 	vim.keymap.set("n", "cc", "dd")
 	-- switch c and d
+	vim.keymap.set("n", "c", "d")
 
 	-- visual and select mode
 	vim.keymap.set("v", "d", "h")
@@ -48,5 +49,4 @@ if L_DEVORAK then
 	vim.keymap.set("v", "h", "k")
 	vim.keymap.set("v", "e", "l")
 
-	vim.keymap.set("n", "c", "d")
 end
