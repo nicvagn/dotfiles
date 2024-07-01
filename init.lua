@@ -1,4 +1,7 @@
-require("core.lualine-config")
+-- for keymap
+-- L_DEVORAK = true
+L_DEVORAK = false
+
 require("core.colours")
 require("core.options")
 require("core.keymaps")
