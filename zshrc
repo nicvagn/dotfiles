@@ -91,6 +91,7 @@ alias add="sudo dnf install"
 alias get="sudo dnf install"
 alias rem="sudo dnf remove"
 alias del="sudo dnf remove"
+alias up="sudo dnf update"
 
 
 NRV_PATH="$HOME/tools:$(yarn global bin):$HOME/.local/bin:$HOME/bin:$PATH" 
