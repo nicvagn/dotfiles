@@ -1,6 +1,3 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -81,6 +78,21 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 ### User configuration ###
+
+## aliases ##
+# make it easy to enter NicLink environment
+export nl_env=". ~/NicLink/activate"
+## aliases ##
+# make it easy to enter NicLink environment
+alias nl_env=". ~/NicLink/activate"
+alias lg="g lg"
+alias vim="nvim"
+alias add="sudo dnf install"
+alias get="sudo dnf install"
+alias rem="sudo dnf remove"
+alias del="sudo dnf remove"
+alias up="sudo dnf update"
+
 
 NRV_PATH="$HOME/tools:$(yarn global bin):$HOME/.local/bin:$HOME/bin:$PATH" 
 # export PATH with yarn global bin and add lua language server to the path
