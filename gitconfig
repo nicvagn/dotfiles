@@ -1,14 +1,15 @@
 [user]
 	name = Nicolas Vaagen
-	email = 37600758+nicvagn@users.noreply.github.com
+	email = nicolasvaagen@gmail.com
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [core]
-    editor = vim
+    editor = nvim
 	autocrlf = input
 	whitespace = trailing-space
+	pager = less -FX
 
 [alias]
     lg = lg1
@@ -38,7 +39,5 @@
 	process = git-lfs filter-process
 [pull]
 	rebase = false
-[merge]
-	tool = nvimdiff
 [color]
 	ui = auto
