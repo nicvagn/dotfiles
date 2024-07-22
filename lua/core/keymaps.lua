@@ -1,12 +1,10 @@
--- are we using an l-devorak keyboard?
 -- L_DEVORAK = true
--- L_DEVORAK = false
-
 local opts = {
 	noremap = true, -- non-recursive
 }
-
--- normal mode --
+---------------
+-- all modes --
+---------------
 
 -- switching buffers with F keys
 vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
@@ -16,7 +14,15 @@ vim.keymap.set("!", "<F2>", "<Cmd>bn<CR>")
 -- toggle nvim tree with F3
 vim.keymap.set("n", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
-
+-- save with F9
+vim.keymap.set("n", "<F9>", "<Cmd>w<CR>")
+vim.keymap.set("!", "<F9>", "<Cmd>w<CR>")
+-- quit with f10
+vim.keymap.set("n", "<F10>", "<Cmd>q<CR>")
+vim.keymap.set("!", "<F10>", "<Cmd>q<CR>")
+-----------------
+-- normal mode --
+-----------------
 -- Resize with arrows
 -- delta: 2 lines
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
