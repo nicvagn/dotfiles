@@ -1,5 +1,3 @@
-
-L_DEVORAK = true
 local opts = {
 	noremap = true, -- non-recursive
 }

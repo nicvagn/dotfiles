@@ -1,6 +1,6 @@
 -- for keymap
-L_DEVORAK = true
---L_DEVORAK = false
+--L_DEVORAK = true
+L_DEVORAK = false
 
 require("core.colourscheme")
 require("core.options")
