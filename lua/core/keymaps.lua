@@ -16,9 +16,9 @@ vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 -- save with F9
 vim.keymap.set("n", "<F9>", "<Cmd>w<CR>")
 vim.keymap.set("!", "<F9>", "<Cmd>w<CR>")
--- quit with f10
-vim.keymap.set("n", "<F10>", "<Cmd>q<CR>")
-vim.keymap.set("!", "<F10>", "<Cmd>q<CR>")
+-- Close Buffer with with f10
+vim.keymap.set("n", "<F10>", "<Cmd>BufferClose<CR>")
+vim.keymap.set("!", "<F10>", "<Cmd>BufferClose<CR>")
 -----------------
 -- normal mode --
 -----------------
