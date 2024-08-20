@@ -9,4 +9,4 @@ vim.cmd("command Hs split")
 vim.cmd("command Qa quitall")
 
 -- close buffer with :Bc
-vim.cmd("command Bc BufferClose")
+vim.cmd("command Bc bdelete")

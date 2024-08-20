@@ -2,7 +2,7 @@
 L_DEVORAK = true
 
 local opts = {
-	noremap = true, -- non-recursive
+  noremap = true, -- non-recursive
 }
 
 -- normal mode --
@@ -15,6 +15,9 @@ vim.keymap.set("!", "<F2>", "<Cmd>bp<CR>")
 -- toggle nvim tree with F3
 vim.keymap.set("n", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
+-- toggle nvim terminal with f4
+vim.keymap.set("n", "<F4>", "<Cmd>ToggleTerm<CR>")
+vim.keymap.set("!", "<F4>", "<Cmd>ToggleTerm<CR>")
 
 -- Resize with arrows
 -- delta: 2 lines
@@ -33,19 +36,19 @@ vim.keymap.set("v", ">", ">gv", opts)
 
 -- l-devorak area
 if L_DEVORAK then
-	vim.keymap.set("n", "d", "h")
-	vim.keymap.set("n", "t", "j")
-	vim.keymap.set("n", "h", "k")
-	vim.keymap.set("n", "e", "l")
-	-- switch cc an dd
-	vim.keymap.set("n", "cc", "dd")
-	-- switch c and d
+  vim.keymap.set("n", "d", "h")
+  vim.keymap.set("n", "t", "j")
+  vim.keymap.set("n", "h", "k")
+  vim.keymap.set("n", "e", "l")
+  -- switch cc an dd
+  vim.keymap.set("n", "cc", "dd")
+  -- switch c and d
 
-	-- visual and select mode
-	vim.keymap.set("v", "d", "h")
-	vim.keymap.set("v", "t", "j")
-	vim.keymap.set("v", "h", "k")
-	vim.keymap.set("v", "e", "l")
+  -- visual and select mode
+  vim.keymap.set("v", "d", "h")
+  vim.keymap.set("v", "t", "j")
+  vim.keymap.set("v", "h", "k")
+  vim.keymap.set("v", "e", "l")
 
-	vim.keymap.set("n", "c", "d")
+  vim.keymap.set("n", "c", "d")
 end
