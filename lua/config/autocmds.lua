@@ -5,4 +5,8 @@
 -- Hs splits window
 vim.cmd("command Hs split")
 
+-- Qa quit all
 vim.cmd("command Qa quitall")
+
+-- close buffer with :Bc
+vim.cmd("command Bc BufferClose")

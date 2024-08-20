@@ -4,7 +4,6 @@ local set = vim.opt
 set.splitbelow = true -- open new vertical split bottom
 set.splitright = true -- open new horizontal splits right
 set.scrolloff = 8 -- Keep minimum x number of screen lines above and below the cursor
-set.clipboard = "unnamedplus"
 set.swapfile = true
 set.hlsearch = true -- Highlight search results
 set.incsearch = true -- As you type, match the currently typed word w/o pressing enter
@@ -28,7 +27,7 @@ set.cursorcolumn = true
 set.termguicolors = true
 set.colorcolumn = "99" -- black default
 set.number = true -- show absolute number
--- set.relativenumber = true       -- add numbers to each line on the left side
+set.relativenumber = false -- add numbers to each line on the left side
 
 -- Searching
 set.incsearch = true -- search as characters are entered
