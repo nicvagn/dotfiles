@@ -1,0 +1,33 @@
+{
+  "lazyvim.plugins.extras.lang.cmake": "was giving me greif",
+  "extras": [
+    "lazyvim.plugins.extras.editor.fzf",
+    "lazyvim.plugins.extras.editor.outline",
+    "lazyvim.plugins.extras.formatting.black",
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.angular",
+    "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.git",
+    "lazyvim.plugins.extras.lang.go",
+    "lazyvim.plugins.extras.lang.java",
+    "lazyvim.plugins.extras.lang.json",
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.php",
+    "lazyvim.plugins.extras.lang.python",
+    "lazyvim.plugins.extras.lang.rust",
+    "lazyvim.plugins.extras.lang.scala",
+    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.lang.typescript",
+    "lazyvim.plugins.extras.lang.yaml",
+    "lazyvim.plugins.extras.linting.eslint",
+    "lazyvim.plugins.extras.ui.alpha",
+    "lazyvim.plugins.extras.ui.treesitter-context",
+    "lazyvim.plugins.extras.util.dot",
+    "lazyvim.plugins.extras.util.gitui",
+    "lazyvim.plugins.extras.vscode"
+  ],
+  "news": {
+    "NEWS.md": "6520"
+  },
+  "version": 6
+}
