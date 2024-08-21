@@ -46,12 +46,10 @@ if L_DEVORAK then
 	-- switch cc an dd
 	vim.keymap.set("n", "cc", "dd")
 	-- switch c and d
-
+	vim.keymap.set("n", "c", "d")
 	-- visual and select mode
 	vim.keymap.set("v", "d", "h")
 	vim.keymap.set("v", "t", "j")
 	vim.keymap.set("v", "h", "k")
 	vim.keymap.set("v", "e", "l")
-
-	vim.keymap.set("n", "c", "d")
 end
