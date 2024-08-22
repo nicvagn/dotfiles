@@ -133,7 +133,7 @@ if utils.executable("pylsp") then
 				plugins = {
 					-- formatter options
 					black = { enabled = true },
-					autopep8 = { enabled = false },
+					autopep8 = { enabled = true },
 					yapf = { enabled = false },
 					-- linter options
 					pylint = { enabled = true, executable = "pylint" },

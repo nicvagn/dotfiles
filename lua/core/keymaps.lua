@@ -4,7 +4,12 @@ local opts = {
 ---------------
 -- all modes --
 ---------------
-
+---- Codeium ----
+-- <TAB> - "codeium#AcceptNextWord"]()
+-- <F5>  - "codeium#Accept"]()
+-- <F6>  - "codeium#Clear"]()
+-- <F7>  - "codeium#CycleCompletions"](1)
+-- <F8>  - "codeium#CycleCompletions"](-1)
 -- switching buffers with F keys
 vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
 vim.keymap.set("!", "<F1>", "<Cmd>bp<CR>")
