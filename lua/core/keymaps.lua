@@ -5,7 +5,6 @@ local opts = {
 -- all modes --
 ---------------
 ---- Codeium ----
--- <TAB> - "codeium#AcceptNextWord"]()
 -- <F5>  - "codeium#Accept"]()
 -- <F6>  - "codeium#Clear"]()
 -- <F7>  - "codeium#CycleCompletions"](1)
@@ -58,3 +57,19 @@ if L_DEVORAK then
 	vim.keymap.set("v", "h", "k")
 	vim.keymap.set("v", "e", "l")
 end
+
+-- Codeium
+vim.g.codeium_no_map_tab = 1 -- disable tab
+
+vim.keymap.set("i", "<F5>", function()
+	return vim.fn["codeium#Accept"]()
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<F6>", function()
+	return vim.fn["codeium#Clear"]()
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<F7>", function()
+	return vim.fn["codeium#CycleCompletions"](1)
+end, { expr = true, silent = true })
+vim.keymap.set("i", "<F8>", function()
+	return vim.fn["codeium#CycleCompletions"](-1)
+end, { expr = true, silent = true })
