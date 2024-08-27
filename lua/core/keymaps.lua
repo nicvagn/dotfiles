@@ -43,6 +43,7 @@ vim.keymap.set("v", ">", ">gv", opts)
 
 -- l-devorak area
 if L_DEVORAK then
+	-- normal mode
 	vim.keymap.set("n", "d", "h")
 	vim.keymap.set("n", "t", "j")
 	vim.keymap.set("n", "h", "k")
