@@ -1,6 +1,7 @@
 -- for keymap
 L_DEVORAK = true
 
+
 require("core.colourscheme")
 require("core.options")
 require("core.keymaps")
