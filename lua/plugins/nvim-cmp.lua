@@ -8,6 +8,8 @@ local M = {
 		"hrsh7th/cmp-cmdline",
 		"saadparwaiz1/cmp_luasnip",
 		"L3MON4D3/LuaSnip",
+		"uga-rosa/cmp-dictionary",
+		"petertriho/cmp-git",
 	},
 }
 
@@ -68,6 +70,8 @@ M.config = function()
 			{ name = "path" },
 		}, {
 			{ name = "neorg" },
+		}, {
+			{ name = "dictionary", keyword_length = 2 },
 		}),
 
 		formatting = {
@@ -85,6 +89,15 @@ M.config = function()
 				return vim_item
 			end,
 		},
+	})
+
+	-- Set configuration for specific filetype.
+	cmp.setup.filetype("gitcommit", {
+		sources = cmp.config.sources({
+			{ name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
+		}, {
+			{ name = "buffer" },
+		}),
 	})
 
 	cmp.setup.cmdline(":", {
