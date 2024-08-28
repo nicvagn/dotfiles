@@ -5,6 +5,7 @@ local M = {
 M.config = function()
 	local ls = require("luasnip")
 
+	build = "make install_jsregexp"
 	-- global variable
 	LUASNIP_ENV = {
 		s = require("luasnip.nodes.snippet").S,

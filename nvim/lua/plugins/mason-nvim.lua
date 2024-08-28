@@ -1,4 +1,4 @@
-return {
+local M = {
 	"williamboman/mason.nvim",
 	config = function()
 		require("mason").setup({
@@ -12,3 +12,5 @@ return {
 		})
 	end,
 }
+
+return M

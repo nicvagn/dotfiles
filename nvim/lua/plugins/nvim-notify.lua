@@ -9,9 +9,9 @@ M.config = function()
 	vim.keymap.set("n", "<ESC>", ":lua require('notify').dismiss()<CR>", { silent = true })
 
 	notify.setup({
-		background_colour = "#ba662a",
-		timeout = 5000,
-		top_down = false,
+		background_colour = "#4a66aa",
+		timeout = 10000,
+		top_down = true,
 	})
 
 	vim.notify = notify

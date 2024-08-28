@@ -56,6 +56,7 @@ DisplayName[tr]=Doğum Günleri ve Yıl Dönümleri
 DisplayName[ug]=تۇغۇلغان كۈن ۋە خاتىرە كۈنلەر
 DisplayName[uk]=Дні народження і річниці
 DisplayName[vi]=Sinh nhật và kỉ niệm
+DisplayName[zh_CN]=生日与周年纪念日提醒
 DisplayName[zh_HK]=生日及週年紀念日
 DisplayName[zh_TW]=生日及週年紀念日
 DisplayName=Birthdays & Anniversaries
@@ -64,7 +65,7 @@ Parent=contacts-stub
 
 [Calendar]
 BackendName=contacts
-Color=#fed4d3
+Color=#ffbe6f
 Enabled=true
 Writable=false
 Selected=true

@@ -1,0 +1,29 @@
+[Data Source]
+DisplayName=nicolasvaagen@gmail.com
+Enabled=true
+Parent=9f4b76c13bcb7534783ad30adaa236cb2cb5ca47
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=059a4f7002213c2f9eeb17d51226ccd42539bbd6
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://8f0df6ab2d0bc386fff010ca71087809c39212e4/%5bGmail%5d/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+Language=
+
+[Mail Identity]
+Address=nicolasvaagen@gmail.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none

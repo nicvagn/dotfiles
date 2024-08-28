@@ -1,29 +1,5 @@
 [Default Applications]
-text/x-python=code.desktop
-text/x-c++src=code.desktop
-text/css=nvim.desktop
-application/javascript=nvim.desktop
-video/mp4=vlc.desktop
-video/x-matroska=vlc.desktop
-application/toml=code.desktop
-text/markdown=code.desktop
-audio/mpeg=vlc.desktop
-audio/x-vorbis+ogg=vlc.desktop
-video/x-msvideo=vlc.desktop
-video/mpeg=nvim.desktop
-audio/mp4=vlc.desktop
+application/pdf=org.gnome.Evince.desktop
 
 [Added Associations]
-text/x-python=code.desktop;
-text/x-c++src=code.desktop;
-text/css=nvim.desktop;
-application/javascript=nvim.desktop;
-video/mp4=vlc.desktop;
-video/x-matroska=vlc.desktop;
-application/toml=code.desktop;
-text/markdown=code.desktop;
-audio/mpeg=vlc.desktop;
-audio/x-vorbis+ogg=vlc.desktop;
-video/x-msvideo=vlc.desktop;
-video/mpeg=vlc.desktop;nvim.desktop;
-audio/mp4=vlc.desktop;
+application/pdf=org.gnome.Evince.desktop;

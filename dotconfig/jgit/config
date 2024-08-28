@@ -1,6 +1,3 @@
-[filesystem "Red Hat, Inc.|21.0.3|tmpfs"]
-	timestampResolution = 4066 nanoseconds
-	minRacyThreshold = 1413 microseconds
-[filesystem "Temurin|1.8.0_412|tmpfs"]
-	timestampResolution = 1001 microseconds
-	minRacyThreshold = 0 nanoseconds
+[filesystem "Arch Linux|22.0.2|tmpfs"]
+	timestampResolution = 5619 nanoseconds
+	minRacyThreshold = 4533 microseconds
