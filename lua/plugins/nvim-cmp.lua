@@ -55,21 +55,22 @@ M.config = function()
 		mapping = cmp.mapping.preset.insert({
 			["<C-b>"] = cmp.mapping.scroll_docs(-4),
 			["<C-f>"] = cmp.mapping.scroll_docs(4),
-			["<C-Space>"] = cmp.mapping.complete(),
-			["<C-e>"] = cmp.mapping.abort(),
-			["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+			["<f5>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. First item autoselect.
+			["<F6>"] = cmp.mapping.select_next_item(),
+			["<F7>"] = cmp.mapping.select_prev_item(),
+			["<F8>"] = cmp.mapping.abort(),
 		}),
 		sources = cmp.config.sources({
 			{ name = "nvim_lsp" },
 			{ name = "nvim_lua" },
 			{ name = "luasnip" }, -- For luasnip users.
+			{ name = "codeium" },
+			{ name = "dictionary", keyword_length = 2 },
 		}, {
 			{ name = "buffer" },
 			{ name = "path" },
 		}, {
 			{ name = "neorg" },
-		}, {
-			{ name = "dictionary", keyword_length = 2 },
 		}),
 
 		formatting = {

@@ -4,11 +4,7 @@ local opts = {
 ---------------
 -- all modes --
 ---------------
----- Codeium ----
--- <F5>  - "codeium#Accept"]()
--- <F6>  - "codeium#Clear"]()
--- <F7>  - "codeium#CycleCompletions"](1)
--- <F8>  - "codeium#CycleCompletions"](-1)
+
 -- switching buffers with F keys
 vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
 vim.keymap.set("!", "<F1>", "<Cmd>bp<CR>")
@@ -59,7 +55,7 @@ if L_DEVORAK then
 	vim.keymap.set("v", "e", "l")
 end
 
--- Codeium
+-- auto complete
 vim.g.codeium_no_map_tab = 1 -- disable tab
 
 vim.keymap.set("i", "<F5>", function()
