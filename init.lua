@@ -11,6 +11,7 @@ require("core.autocmd")
 require("core.lazy")
 require("core.lualine-config")
 require("core.normalcmds")
+require("core.cmp-src") -- dictionary
 
 -- language servers
 require("lspconfig").jedi_language_server.setup({})
