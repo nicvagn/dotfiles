@@ -1,5 +1,5 @@
 -- for keymap
-L_DEVORAK = true
+-- L_DEVORAK = true
 
 -- providers
 vim.g.python3_host_prog = "/usr/bin/python3"
@@ -12,5 +12,6 @@ require("core.lazy")
 require("core.lualine-config")
 require("core.normalcmds")
 
--- lspconfig setup
-require("lspconfig").pyright.setup({})
+-- language servers
+require("lspconfig").jedi_language_server.setup({})
+require("lspconfig").pylsp.setup({})
