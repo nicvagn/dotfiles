@@ -65,10 +65,10 @@ M.config = function()
 			{ name = "nvim_lua" },
 			{ name = "luasnip" }, -- For luasnip users.
 			{ name = "codeium" },
-			{ name = "dictionary", keyword_length = 2 },
 		}, {
 			{ name = "buffer" },
 			{ name = "path" },
+			{ name = "dictionary", keyword_length = 2 },
 		}, {
 			{ name = "neorg" },
 		}),
