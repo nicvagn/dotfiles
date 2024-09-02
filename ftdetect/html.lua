@@ -3,7 +3,7 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 	command = "setlocal syntax=html tabstop=2 shiftwidth=2 softtabstop=2",
 })
 
-vim.api.nvim_create_autocmd("BufNew", {
+vim.api.nvim_create_autocmd("BufNewFile", {
 	pattern = "*.html",
 	command = "silent! 1s:.*:<!doctype html>",
 })
