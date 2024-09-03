@@ -1,5 +1,5 @@
 -- for keymap
--- L_DEVORAK = true
+L_DEVORAK = true
 
 -- providers
 vim.g.python3_host_prog = "/usr/bin/python3"
@@ -14,5 +14,8 @@ require("core.normalcmds")
 require("core.cmp-src") -- dictionary
 
 -- language servers
-require("lspconfig").jedi_language_server.setup({})
-require("lspconfig").pylsp.setup({})
+require("lspconfig").jedi_language_server.setup({}) -- python
+
+require("lspconfig").pylsp.setup({}) -- python
+
+require("lspconfig").clangd.setup({}) -- c++
