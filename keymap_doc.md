@@ -8,3 +8,7 @@
 "<A->>", "<cmd>BufferMoveNext<CR>"
 "<A-c>", "<cmd>BufferClose<CR>"
 "<A-f>", "<cmd>BufferPick<CR>"
+
+## cspell
+
+<Leader>aw - add word to cspell config

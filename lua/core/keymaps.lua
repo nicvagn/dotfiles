@@ -22,13 +22,23 @@ vim.keymap.set("!", "<F10>", "<Cmd>x<CR>")
 -----------------
 -- normal mode --
 -----------------
+
+-- map leader to <Space>
+vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false })
+vim.g.mapleader = " "
 -- Resize with arrows
 -- delta: 2 lines
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
 vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
+-- add word to cspell dict
+vim.keymap.set(
+	"n",
+	"<leader>aw",
+	"<cmd>lua require('utils.cspell').add_word_to_c_spell_dictionary()<CR>",
+	{ noremap = true, silent = true, desc = "Add unknown word to cspell dictionary" }
+)
 -----------------
 -- Visual mode --
 -----------------
@@ -37,8 +47,8 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
--- l-devorak area
-if L_DEVORAK then
+-- l-dvorak area
+if L_DVORAK then
 	-- normal mode
 	vim.keymap.set("n", "d", "h")
 	vim.keymap.set("n", "t", "j")

@@ -65,6 +65,7 @@ M.config = function()
 			{ name = "nvim_lsp" },
 			{ name = "nvim_lua" },
 			{ name = "luasnip" }, -- For luasnip users.
+			{ name = "css" },
 		}, {
 			{ name = "buffer" },
 			{ name = "dictionary", keyword_length = 2 },
