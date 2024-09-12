@@ -7,6 +7,9 @@ vim.g.ai_auto = false
 -- providers
 vim.g.python3_host_prog = "/usr/bin/python3"
 
+-- little longer <leader> time
+vim.g.timeoutlen = 1800
+
 require("core.colourscheme")
 require("core.options")
 require("core.keymaps")

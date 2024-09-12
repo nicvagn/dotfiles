@@ -2,13 +2,16 @@
 
 ## barbar - buffer manager
 
-"<A-,>", "<cmd>BufferPrevious<CR>"
-"<A-.>", "<cmd>BufferNext<CR>"
-"<A-<>", "<cmd>BufferMovePrevious<CR>"
-"<A->>", "<cmd>BufferMoveNext<CR>"
-"<A-c>", "<cmd>BufferClose<CR>"
-"<A-f>", "<cmd>BufferPick<CR>"
+"<A-,>", "<Cmd>BufferPrevious<CR>"
+"<A-.>", "<Cmd>BufferNext<CR>"
+"<A-<>", "<Cmd>BufferMovePrevious<CR>"
+"<A->>", "<Cmd>BufferMoveNext<CR>"
+"<A-c>", "<Cmd>BufferClose<CR>"
+"<A-f>", "<Cmd>BufferPick<CR>"
+"<leader>bc", "<Cmd>BufferClose<CR>"
 
 ## cspell
 
 <Leader>aw - add word to cspell config
+
+<leader>x, "<Cmd>x<CR>"
