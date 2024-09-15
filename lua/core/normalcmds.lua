@@ -9,3 +9,6 @@ vim.cmd("command Qa quitall")
 
 -- ConformInfo with Ci
 vim.cmd("command Ci ConformInfo")
+
+-- Horizontal git diff with Gd
+vim.cmd("command Gd Ghdiffsplit")
