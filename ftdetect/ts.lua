@@ -1,7 +1,4 @@
 vim.api.nvim_create_autocmd("BufReadPre", {
 	pattern = "*.ts",
-	callback = function()
-		vim.cmd([[setlocal shiftwidth=2
-        "setlocal tabstop=2")]])
-	end,
+	command = "setlocal syntax=css tabstop=2 shiftwidth=2 softtabstop=2",
 })
