@@ -1,0 +1,11 @@
+2024/08/27-19:10:08.630 810 Reusing MANIFEST /home/nrv/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/08/27-19:10:08.639 810 Recovering log #334
+2024/08/27-19:10:08.648 810 Level-0 table #338: started
+2024/08/27-19:10:08.664 810 Level-0 table #338: 805340 bytes OK
+2024/08/27-19:10:08.670 810 Delete type=0 #334
+2024/08/27-19:12:55.053 810 Level-0 table #341: started
+2024/08/27-19:12:55.071 810 Level-0 table #341: 804758 bytes OK
+2024/08/27-19:12:55.075 810 Delete type=0 #339
+2024/08/27-19:25:02.310 810 Level-0 table #343: started
+2024/08/27-19:25:02.328 810 Level-0 table #343: 2411085 bytes OK
+2024/08/27-19:25:02.332 810 Delete type=0 #340
