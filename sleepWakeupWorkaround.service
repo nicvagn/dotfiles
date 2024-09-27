@@ -1,0 +1,9 @@
+[Unit]
+Description=Workaround for Gigabyte B550 sleep bug where it wakes instanty
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "echo GPP0 > /proc/acpi/wakeup"
+
+[Install]
+WantedBy = multi-user.target
