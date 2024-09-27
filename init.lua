@@ -42,4 +42,4 @@ lsp_conf.cmake.setup({}) -- cmake
 
 lsp_conf.html.setup({}) -- html
 
-lsp_conf.ts_ls.setup({}) -- type script
+lsp_conf.tsserver.setup({}) -- type script
