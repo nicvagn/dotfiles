@@ -1,7 +1,16 @@
 local M = {
-	"Exafunction/codeium.vim",
-	event = "BufEnter",
-	config = function() end,
+	"Exafunction/codeium.nvim",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"hrsh7th/nvim-cmp",
+	},
+	config = function()
+		require("codeium").setup({})
+	end,
 }
-
-return M
+-- check if ai_auto is true, set in init.lua
+if vim.g.ai_auto then
+	return M
+else
+	return {}
+end

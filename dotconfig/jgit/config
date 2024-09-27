@@ -1,3 +1,0 @@
-[filesystem "Arch Linux|22.0.2|tmpfs"]
-	timestampResolution = 5619 nanoseconds
-	minRacyThreshold = 4533 microseconds
