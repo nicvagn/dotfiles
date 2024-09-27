@@ -8,8 +8,6 @@ local M = {
 		"hrsh7th/cmp-cmdline",
 		"saadparwaiz1/cmp_luasnip",
 		"L3MON4D3/LuaSnip",
-		"uga-rosa/cmp-dictionary",
-		"petertriho/cmp-git",
 	},
 }
 
@@ -55,21 +53,21 @@ M.config = function()
 		mapping = cmp.mapping.preset.insert({
 			["<C-b>"] = cmp.mapping.scroll_docs(-4),
 			["<C-f>"] = cmp.mapping.scroll_docs(4),
-			["<f5>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. First item autoselect.
-			["<F6>"] = cmp.mapping.select_next_item(),
-			["<F7>"] = cmp.mapping.select_prev_item(),
-			["<F8>"] = cmp.mapping.abort(),
+			["<C-Space>"] = cmp.mapping.complete(),
+			["<C-e>"] = cmp.mapping.abort(),
+			["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 		}),
 		sources = cmp.config.sources({
-			{ name = "codeium" },
 			{ name = "nvim_lsp" },
 			{ name = "nvim_lua" },
 			{ name = "luasnip" }, -- For luasnip users.
-			{ name = "css" },
+		}, {
+			{ name = "codeium" },
 		}, {
 			{ name = "buffer" },
-			{ name = "dictionary", keyword_length = 2 },
 			{ name = "path" },
+		}, {
+			{ name = "neorg" },
 		}),
 
 		formatting = {
@@ -87,15 +85,6 @@ M.config = function()
 				return vim_item
 			end,
 		},
-	})
-
-	-- Set configuration for specific filetype.
-	cmp.setup.filetype("gitcommit", {
-		sources = cmp.config.sources({
-			{ name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
-		}, {
-			{ name = "buffer" },
-		}),
 	})
 
 	cmp.setup.cmdline(":", {
