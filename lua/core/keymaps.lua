@@ -1,27 +1,36 @@
 local opts = {
 	noremap = true, -- non-recursive
 }
----------------
--- all modes --
----------------
+-- map leader to <Space>
+vim.keymap.set("n", " ", "<Nop>", { silent = true, remap = false })
+vim.g.mapleader = " "
+-------------------------
+-- all modes != normal --
+-------------------------
 
 -- switching buffers with F keys
-vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
 vim.keymap.set("!", "<F1>", "<Cmd>bp<CR>")
-vim.keymap.set("n", "<F2>", "<Cmd>bn<CR>")
 vim.keymap.set("!", "<F2>", "<Cmd>bn<CR>")
 -- toggle nvim tree with F3
-vim.keymap.set("n", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 -- save with F9
-vim.keymap.set("n", "<F9>", "<Cmd>w<CR>")
 vim.keymap.set("!", "<F9>", "<Cmd>w<CR>")
 -- Close Buffer with with f10
-vim.keymap.set("n", "<F10>", "<Cmd>x<CR>")
 vim.keymap.set("!", "<F10>", "<Cmd>x<CR>")
+
 -----------------
 -- normal mode --
 -----------------
+-- switching buffers with F keys
+vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
+vim.keymap.set("n", "<F2>", "<Cmd>bn<CR>")
+-- toggle nvim tree with F3
+vim.keymap.set("n", "<F3>", "<Cmd>NvimTreeToggle<CR>")
+-- save with F9
+vim.keymap.set("n", "<F9>", "<Cmd>w<CR>")
+-- Close Buffer with with f10
+vim.keymap.set("n", "<F10>", "<Cmd>x<CR>")
+
 -- Resize with arrows
 -- delta: 2 lines
 vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -29,6 +38,19 @@ vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
 vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
+-- <leader> stuff --
+-- add word to cspell dict
+vim.keymap.set(
+	"n",
+	"<leader>aw",
+	"<cmd>lua require('utils.cspell').add_word_to_c_spell_dictionary()<CR>",
+	{ noremap = true, silent = true, desc = "Add unknown word to cspell dictionary" }
+)
+
+vim.keymap.set("n", "<leader>bc", "<Cmd>BufferClose<CR>")
+vim.keymap.set("n", "<leader>q", "<Cmd>q<CR>")
+vim.keymap.set("n", "<leader>x", "<Cmd>x<CR>")
+vim.keymap.set("n", "<leader>w", "<Cmd>w<CR>")
 -----------------
 -- Visual mode --
 -----------------
@@ -37,8 +59,8 @@ vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
--- l-devorak area
-if L_DEVORAK then
+-- l-dvorak area
+if L_DVORAK then
 	-- normal mode
 	vim.keymap.set("n", "d", "h")
 	vim.keymap.set("n", "t", "j")

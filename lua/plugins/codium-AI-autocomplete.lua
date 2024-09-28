@@ -8,5 +8,9 @@ local M = {
 		require("codeium").setup({})
 	end,
 }
-
-return M
+-- check if ai_auto is true, set in init.lua
+if vim.g.ai_auto then
+	return M
+else
+	return {}
+end

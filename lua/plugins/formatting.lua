@@ -18,14 +18,8 @@ return {
 				markdown = { "prettier" },
 				graphql = { "prettier" },
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "isort", "yapf" },
 			},
-			formatters = {
-				black = {
-					prepend_args = { "--line-length", "79" },
-				},
-			},
-
 			format_on_save = {
 				lsp_fallback = true,
 				async = false,
