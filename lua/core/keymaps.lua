@@ -51,6 +51,7 @@ vim.keymap.set("n", "<leader>bc", "<Cmd>BufferClose<CR>")
 vim.keymap.set("n", "<leader>q", "<Cmd>q<CR>")
 vim.keymap.set("n", "<leader>x", "<Cmd>x<CR>")
 vim.keymap.set("n", "<leader>w", "<Cmd>w<CR>")
+vim.keymap.set("n", "<leader>n", "<Cmd>@:<CR>")
 -----------------
 -- Visual mode --
 -----------------
