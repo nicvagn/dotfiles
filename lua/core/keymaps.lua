@@ -13,10 +13,6 @@ vim.keymap.set("!", "<F1>", "<Cmd>bp<CR>")
 vim.keymap.set("!", "<F2>", "<Cmd>bn<CR>")
 -- toggle nvim tree with F3
 vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
--- save with F9
-vim.keymap.set("!", "<F9>", "<Cmd>w<CR>")
--- Close Buffer with with f10
-vim.keymap.set("!", "<F10>", "<Cmd>x<CR>")
 
 -----------------
 -- normal mode --
@@ -31,13 +27,6 @@ vim.keymap.set("n", "<F9>", "<Cmd>w<CR>")
 -- Close Buffer with with f10
 vim.keymap.set("n", "<F10>", "<Cmd>x<CR>")
 
--- Resize with arrows
--- delta: 2 lines
-vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
-vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
-vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
 -- <leader> stuff --
 -- add word to cspell dict
 vim.keymap.set(
@@ -48,10 +37,13 @@ vim.keymap.set(
 )
 
 vim.keymap.set("n", "<leader>bc", "<Cmd>BufferClose<CR>")
-vim.keymap.set("n", "<leader>q", "<Cmd>q<CR>")
-vim.keymap.set("n", "<leader>x", "<Cmd>x<CR>")
+-- splits (s for horizontal, v for vertical)
+vim.keymap.set("n", "<leader>s", "<Cmd>split<CR>")
+vim.keymap.set("n", "<leader>v", "<Cmd>vs<CR>")
+vim.keymap.set("n", "<leader>q", "<Cmd>q<CR>") -- quit
+vim.keymap.set("n", "<leader>x", "<Cmd>x<CR>") -- write quit
 vim.keymap.set("n", "<leader>w", "<Cmd>w<CR>")
-vim.keymap.set("n", "<leader>n", "<Cmd>@:<CR>")
+vim.keymap.set("n", "<leader>n", "<Cmd>@:<CR>") -- repeat last normal command
 -----------------
 -- Visual mode --
 -----------------
