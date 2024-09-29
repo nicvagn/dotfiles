@@ -1,0 +1,70 @@
+{
+    "workbench.colorTheme": "Monokai Dimmed",
+    "git.autofetch": true,
+    "editor.tabSize": 2,
+    "git.suggestSmartCommit": false,
+    "cSpell.userWords": [
+        "autochap",
+        "btn",
+        "Chessground",
+        "chessops",
+        "colour",
+        "Crazyhouse",
+        "Datas",
+        "Dests",
+        "favicons",
+        "iframe",
+        "importmap",
+        "Lichess",
+        "licon",
+        "livechess",
+        "logback",
+        "maxlength",
+        "Nic's",
+        "PGN",
+        "queenside",
+        "SASKHORIZONCHESSCLUB",
+        "SHCC",
+        "sidenav",
+        "skhorizonchess",
+        "snabbdom",
+        "Thibault",
+        "uvicorn",
+        "Vaagen",
+        "vnode",
+        "yourmovenumber"
+    ],
+    "git.confirmSync": false,
+    "redhat.telemetry.enabled": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "githubPullRequests.pushBranch": "always",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.fontSize": 16,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.semicolons": "insert",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.semicolons": "insert",
+    "editor.fontWeight": "normal",
+    "editor.renderWhitespace": "trailing",
+    "editor.cursorStyle": "block",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.iconTheme": "material-icon-theme",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.host": "localhost",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.linkedEditing": true
+}

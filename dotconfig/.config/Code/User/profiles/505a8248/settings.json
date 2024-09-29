@@ -1,0 +1,12 @@
+{
+    "cmake.options.statusBarVisibility": "compact",
+    "git.enableSmartCommit": true,
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.minimap.autohide": true,
+    "git.autofetch": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}

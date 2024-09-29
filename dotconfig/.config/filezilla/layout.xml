@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<FileZilla3 version="3.67.1" platform="*nix">
+	<Layout Builddate="2024-07-10" Buildtime="00:00:00">
+		<Resources>
+			<xrc file="dialogs.xrc" date="1663299003" />
+			<xrc file="netconfwizard.xrc" date="1665059711" />
+		</Resources>
+		<Language id="en_CA" date="1720569600">
+			<Font font="Noto Sans CJK SC 12" width="1171" height="30" />
+			<Dialog name="Settings" width="787" />
+		</Language>
+	</Layout>
+</FileZilla3>
