@@ -95,7 +95,7 @@ set ignorecase
 set hlsearch
 " exept with only capitals
 set smartcase
-" show matchew when searching
+"show matchew when searching
 set showmatch
 " show what mode we are in
 set showmode

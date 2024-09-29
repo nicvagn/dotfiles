@@ -77,7 +77,6 @@ DisplayName[ug]=شەخسىي
 DisplayName[uk]=Особисте
 DisplayName[vi]=Cá nhân
 DisplayName[xh]=Ezakho Buqu
-DisplayName[zh_CN]=个人
 DisplayName[zh_HK]=個人
 DisplayName[zh_TW]=個人
 DisplayName=Personal
@@ -86,7 +85,7 @@ Parent=local-stub
 
 [Calendar]
 BackendName=local
-Color=#62a0ea
+Color=#becedd
 Selected=true
 Order=0
 
