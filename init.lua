@@ -1,5 +1,5 @@
 -- for keymap
-L_DVORAK = false
+L_DVORAK = true
 
 -- AI auto complete
 vim.g.ai_auto = false
