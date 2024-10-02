@@ -6,9 +6,6 @@ vim.g.ai_auto = true
 -- providers
 vim.g.python3_host_prog = "/usr/bin/python3"
 
--- little longer <leader> time
-vim.g.timeoutlen = 1800
-
 -- utils
 require("utils.cspell") -- spelling
 require("utils.path") -- path utils like getting rot dir of a git repo
