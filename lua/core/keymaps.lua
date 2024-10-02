@@ -40,10 +40,18 @@ vim.keymap.set("n", "<leader>bc", "<Cmd>BufferClose<CR>")
 -- splits (s for horizontal, v for vertical)
 vim.keymap.set("n", "<leader>s", "<Cmd>split<CR>")
 vim.keymap.set("n", "<leader>v", "<Cmd>vs<CR>")
+-- quit/save/x
 vim.keymap.set("n", "<leader>q", "<Cmd>q<CR>") -- quit
 vim.keymap.set("n", "<leader>x", "<Cmd>x<CR>") -- write quit
 vim.keymap.set("n", "<leader>w", "<Cmd>w<CR>")
+-- etc.
 vim.keymap.set("n", "<leader>n", "<Cmd>@:<CR>") -- repeat last normal command
+
+vim.keymap.set("n", "<leader>d", "<C-w>H") -- move to left window
+vim.keymap.set("n", "<leader>t", "<C-w>J") -- move to bottom window
+vim.keymap.set("n", "<leader>h", "<C-w>K")
+vim.keymap.set("n", "<leader>e", "<C-w>L")
+
 -----------------
 -- Visual mode --
 -----------------

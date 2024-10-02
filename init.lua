@@ -2,8 +2,7 @@
 L_DVORAK = true
 
 -- AI auto complete
-vim.g.ai_auto = false
-
+vim.g.ai_auto = true
 -- providers
 vim.g.python3_host_prog = "/usr/bin/python3"
 
