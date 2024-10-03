@@ -47,10 +47,10 @@ vim.keymap.set("n", "<leader>w", "<Cmd>w<CR>")
 -- etc.
 vim.keymap.set("n", "<leader>n", "<Cmd>@:<CR>") -- repeat last normal command
 
-vim.keymap.set("n", "<leader>d", "<C-w>H") -- move to left window
-vim.keymap.set("n", "<leader>t", "<C-w>J") -- move to bottom window
-vim.keymap.set("n", "<leader>h", "<C-w>K")
-vim.keymap.set("n", "<leader>e", "<C-w>L")
+vim.keymap.set("n", "<leader>d", "<C-w><left>") -- move to left window
+vim.keymap.set("n", "<leader>t", "<C-w><down>") -- move to bottom window
+vim.keymap.set("n", "<leader>h", "<C-w><up>")
+vim.keymap.set("n", "<leader>e", "<C-w><right>")
 
 -----------------
 -- Visual mode --
