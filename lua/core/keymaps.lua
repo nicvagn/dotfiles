@@ -12,22 +12,21 @@ if not vim.g.vscode then
 	-------------------------
 
 	-- switching buffers with F keys
-	vim.keymap.set("!", "<F1>", "<Cmd>bp<CR>")
-	vim.keymap.set("!", "<F2>", "<Cmd>bn<CR>")
+	vim.keymap.set("!", "<F1>", "<Cmd>BufferPrevious<CR>")
+	vim.keymap.set("!", "<F2>", "<Cmd>BufferNext<CR>")
 	-- toggle nvim tree with F3
 	vim.keymap.set("!", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 
 	-----------------
 	-- normal mode --
 	-----------------
-	-- switching buffers with F keys
-	vim.keymap.set("n", "<F1>", "<Cmd>bp<CR>")
-	vim.keymap.set("n", "<F2>", "<Cmd>bn<CR>")
 	-- toggle nvim tree with F3
+	vim.keymap.set("n", "<F1>", "<Cmd>BufferPrevious<CR>")
+	vim.keymap.set("n", "<F2>", "<Cmd>BufferNext<CR>")
 	vim.keymap.set("n", "<F3>", "<Cmd>NvimTreeToggle<CR>")
 	-- save with F9
 	vim.keymap.set("n", "<F9>", "<Cmd>w<CR>")
-	-- Close Buffer with with f10
+	-- x with with f10
 	vim.keymap.set("n", "<F10>", "<Cmd>x<CR>")
 
 	-- <leader> stuff --
@@ -49,10 +48,13 @@ if not vim.g.vscode then
 	vim.keymap.set("n", "<leader>w", "<Cmd>w<CR>")
 	-- etc.
 	vim.keymap.set("n", "<leader>n", "<Cmd>@:<CR>") -- repeat last normal command
+	-- pane navigation
 	vim.keymap.set("n", "<leader>d", "<C-w><left>") -- move to left window
 	vim.keymap.set("n", "<leader>t", "<C-w><down>") -- move to bottom window
 	vim.keymap.set("n", "<leader>h", "<C-w><up>")
 	vim.keymap.set("n", "<leader>e", "<C-w><right>")
+	-- buffer level operations
+	vim.keymap.set("n", "<leader>c", "<Cmd>BufferClose<CR>") -- leader c closes buffer
 	vim.keymap.set("n", "<leader><leader>", "<C-w>w") -- <leader><leader> switch window
 
 	-----------------
