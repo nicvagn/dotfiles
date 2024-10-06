@@ -12,7 +12,7 @@ return {
 				typescriptreact = { "prettier" },
 				svelte = { "prettier" },
 				css = { "prettier" },
-				html = { "prettier" },
+				-- not working with Django well html = { "prettier" },
 				json = { "prettier" },
 				yaml = { "prettier" },
 				markdown = { "prettier" },
@@ -27,7 +27,7 @@ return {
 			},
 		})
 
-		vim.keymap.set({ "n", "v" }, "<leader>fm", function()
+		vim.keymap.set({ "n", "v" }, "<leader>f", function()
 			conform.format({
 				lsp_fallback = true,
 				async = false,

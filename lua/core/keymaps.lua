@@ -54,8 +54,10 @@ if not vim.g.vscode then
 	vim.keymap.set("n", "<leader>h", "<C-w><up>")
 	vim.keymap.set("n", "<leader>e", "<C-w><right>")
 	-- buffer level operations
-	vim.keymap.set("n", "<leader>c", "<Cmd>BufferClose<CR>") -- leader c closes buffer
-	vim.keymap.set("n", "<leader><leader>", "<C-w>w") -- <leader><leader> switch window
+
+	vim.keymap.set("n", "<leader>k", "<Cmd>BufferClose<CR>") -- leader k - closes buffer
+	vim.keymap.set("n", "<leader><leader>", "<C-w>w") -- <leader><leader> - switch window
+	vim.keymap.set("n", "<leader>f", "<Cmd>Format<CR>") -- <leader> f - Format
 
 	-----------------
 	-- Visual mode --
