@@ -61,11 +61,11 @@ M.config = function()
 			["<F8>"] = cmp.mapping.abort(),
 		}),
 		sources = cmp.config.sources({
-			{ name = "codeium" },
 			{ name = "nvim_lsp" },
 			{ name = "nvim_lua" },
 			{ name = "luasnip" }, -- For luasnip users.
 			{ name = "css" },
+			{ name = "codeium" },
 		}, {
 			{ name = "buffer" },
 			{ name = "dictionary", keyword_length = 2 },
