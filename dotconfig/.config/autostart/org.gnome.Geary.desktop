@@ -135,6 +135,7 @@ Comment[uk]=Надіслати та одержати пошту
 Comment[zh_CN]=发送并接收电子邮件
 Comment[zh_TW]=寄送與收受郵件
 Comment=Send and receive email
+# Translators: These are desktop search terms. Do not translate semicolons, end line with a semicolon.
 Keywords[cs]=pošta;mail;e-mail;elektronická pošta;imap;gmail;yahoo;hotmail;outlook;
 Keywords[da]=Mail;E-mail;Email;Post;E-post;Brev;E-brev;IMAP;GMail;Yahoo;Hotmail;Outlook;
 Keywords[de]=Mail;E-Mail;IMAP;GMail;Yahoo;Hotmail;Outlook;Post;Email;
@@ -162,8 +163,10 @@ Keywords[uk]=Mail;E-mail;email;IMAP;GMail;Yahoo;Hotmail;Outlook;пошта;ел�
 Keywords[zh_CN]=Mail;E-mail;email;IMAP;GMail;Yahoo;Hotmail;Outlook;电子邮件;电子邮箱;电子信箱;邮件;邮箱;信箱;谷歌邮箱;雅虎邮箱;微软邮箱;
 Keywords[zh_TW]=Mail;E-mail;email;IMAP;GMail;Yahoo;Hotmail;Outlook;電子郵件;電郵;郵件;信件;
 Keywords=Mail;E-mail;email;IMAP;GMail;Yahoo;Hotmail;Outlook;
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=org.gnome.Geary
-Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=geary --file-forwarding org.gnome.Geary @@u %U @@
+TryExec=geary
+Exec=geary %U
 Type=Application
 Terminal=false
 Categories=GNOME;GTK;Network;Email;
@@ -172,8 +175,8 @@ StartupNotify=true
 DBusActivatable=true
 Actions=compose;new-window
 X-GNOME-UsesNotifications=true
+# Translators: Do NOT translate or transliterate this text (these are enum types)!
 X-Purism-FormFactor=Workstation;Mobile;
-X-Flatpak=org.gnome.Geary
 
 [Desktop Action compose]
 Name[ar]=اكتب رسالة جديدة
@@ -227,7 +230,7 @@ Name[vi]=Soạn tin nhắn
 Name[zh_CN]=编写消息
 Name[zh_TW]=編撰訊息
 Name=Compose Message
-Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=geary org.gnome.Geary mailto:
+Exec=geary mailto:
 
 [Desktop Action new-window]
 Name[be]=Новае акно
@@ -269,4 +272,4 @@ Name[uk]=Нове вікно
 Name[zh_CN]=新建窗口
 Name[zh_TW]=新視窗
 Name=New Window
-Exec=/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=geary org.gnome.Geary --new-window
+Exec=geary --new-window

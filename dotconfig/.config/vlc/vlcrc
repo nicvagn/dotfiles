@@ -711,6 +711,29 @@
 # Text direction (integer)
 #freetype-text-direction=0
 
+[stream_out_chromecast] # Chromecast stream output
+
+# ? (string)
+#sout-chromecast-ip=
+
+# ? (integer)
+#sout-chromecast-port=8009
+
+# ? (boolean)
+#sout-chromecast-video=1
+
+# HTTP port (integer)
+#sout-chromecast-http-port=8010
+
+# Performance warning (integer)
+#sout-chromecast-show-perf-warning=1
+
+# Enable Audio passthrough (boolean)
+#sout-chromecast-audio-passthrough=0
+
+# Conversion quality (integer)
+#sout-chromecast-conversion-quality=1
+
 [stream_out_chromaprint] # Chromaprint stream output
 
 # Duration of the fingerprinting (integer)
@@ -1004,29 +1027,6 @@
 
 # Delay of the ES (ms) (integer)
 #sout-delay-delay=0
-
-[stream_out_chromecast] # Chromecast stream output
-
-# ? (string)
-#sout-chromecast-ip=
-
-# ? (integer)
-#sout-chromecast-port=8009
-
-# ? (boolean)
-#sout-chromecast-video=1
-
-# HTTP port (integer)
-#sout-chromecast-http-port=8010
-
-# Performance warning (integer)
-#sout-chromecast-show-perf-warning=1
-
-# Enable Audio passthrough (boolean)
-#sout-chromecast-audio-passthrough=0
-
-# Conversion quality (integer)
-#sout-chromecast-conversion-quality=1
 
 [bridge] # Bridge stream output
 
@@ -1641,28 +1641,6 @@ qt-privacy-ask=0
 # When to raise the interface (integer)
 #qt-auto-raise=1
 
-[avformat] # Avformat demuxer
-
-# Format name (string)
-#avformat-format=
-
-# Advanced options (string)
-#avformat-options=
-
-# Avformat mux (string)
-#sout-avformat-mux=
-
-# Advanced options (string)
-#sout-avformat-options=
-
-# Reset timestamps (boolean)
-#sout-avformat-reset-ts=1
-
-[vc1] # VC1 video demuxer
-
-# Frames per Second (float)
-#vc1-fps=25.000000
-
 [ts] # MPEG Transport Stream demuxer
 
 # Digital TV Standard (string)
@@ -1703,6 +1681,80 @@ qt-privacy-ask=0
 
 # Try to fix too early PCR (or late DTS) (boolean)
 #ts-pcr-offsetfix=1
+
+[mod] # MOD demuxer (libmodplug)
+
+# Noise reduction (boolean)
+#mod-noisereduction=1
+
+# Reverb (boolean)
+#mod-reverb=0
+
+# Reverberation level (integer)
+#mod-reverb-level=0
+
+# Reverberation delay (integer)
+#mod-reverb-delay=40
+
+# Mega bass (boolean)
+#mod-megabass=0
+
+# Mega bass level (integer)
+#mod-megabass-level=0
+
+# Mega bass cutoff (integer)
+#mod-megabass-range=10
+
+# Surround (boolean)
+#mod-surround=0
+
+# Surround level (integer)
+#mod-surround-level=0
+
+# Surround delay (ms) (integer)
+#mod-surround-delay=5
+
+[mkv] # Matroska stream demuxer
+
+# Respect ordered chapters (boolean)
+#mkv-use-ordered-chapters=1
+
+# Chapter codecs (boolean)
+#mkv-use-chapter-codec=1
+
+# Preload MKV files in the same directory (boolean)
+#mkv-preload-local-dir=1
+
+# Seek based on percent not time (boolean)
+#mkv-seek-percent=0
+
+# Dummy Elements (boolean)
+#mkv-use-dummy=0
+
+# Preload clusters (boolean)
+#mkv-preload-clusters=0
+
+[avformat] # Avformat demuxer
+
+# Format name (string)
+#avformat-format=
+
+# Advanced options (string)
+#avformat-options=
+
+# Avformat mux (string)
+#sout-avformat-mux=
+
+# Advanced options (string)
+#sout-avformat-options=
+
+# Reset timestamps (boolean)
+#sout-avformat-reset-ts=1
+
+[vc1] # VC1 video demuxer
+
+# Frames per Second (float)
+#vc1-fps=25.000000
 
 [subtitle] # Text subtitle parser
 
@@ -1771,58 +1823,6 @@ qt-privacy-ask=0
 
 # M4A audio only (boolean)
 #mp4-m4a-audioonly=0
-
-[mod] # MOD demuxer (libmodplug)
-
-# Noise reduction (boolean)
-#mod-noisereduction=1
-
-# Reverb (boolean)
-#mod-reverb=0
-
-# Reverberation level (integer)
-#mod-reverb-level=0
-
-# Reverberation delay (integer)
-#mod-reverb-delay=40
-
-# Mega bass (boolean)
-#mod-megabass=0
-
-# Mega bass level (integer)
-#mod-megabass-level=0
-
-# Mega bass cutoff (integer)
-#mod-megabass-range=10
-
-# Surround (boolean)
-#mod-surround=0
-
-# Surround level (integer)
-#mod-surround-level=0
-
-# Surround delay (ms) (integer)
-#mod-surround-delay=5
-
-[mkv] # Matroska stream demuxer
-
-# Respect ordered chapters (boolean)
-#mkv-use-ordered-chapters=1
-
-# Chapter codecs (boolean)
-#mkv-use-chapter-codec=1
-
-# Preload MKV files in the same directory (boolean)
-#mkv-preload-local-dir=1
-
-# Seek based on percent not time (boolean)
-#mkv-seek-percent=0
-
-# Dummy Elements (boolean)
-#mkv-use-dummy=0
-
-# Preload clusters (boolean)
-#mkv-preload-clusters=0
 
 [mjpeg] # M-JPEG camera demuxer
 
@@ -1915,6 +1915,11 @@ qt-privacy-ask=0
 # Low latency (integer)
 #adaptive-lowlatency=-1
 
+[lirc] # Infrared remote control interface
+
+# Change the lirc configuration file (string)
+#lirc-file=
+
 [oldrc] # Remote control interface
 
 # Show stream position (boolean)
@@ -1942,11 +1947,6 @@ qt-privacy-ask=0
 
 [motion] # motion control interface
 
-[lirc] # Infrared remote control interface
-
-# Change the lirc configuration file (string)
-#lirc-file=
-
 [gestures] # Mouse gestures control interface
 
 # Motion threshold (10-100) (integer)
@@ -1954,1218 +1954,6 @@ qt-privacy-ask=0
 
 # Trigger button (string)
 #gestures-button=left
-
-[amem] # Audio memory output
-
-# Sample format (string)
-#amem-format=S16N
-
-# Sample rate (integer)
-#amem-rate=44100
-
-# Channels count (integer)
-#amem-channels=2
-
-[alsa] # ALSA audio output
-
-# Audio output device (string)
-#alsa-audio-device=default
-
-# Audio output channels (integer)
-#alsa-audio-channels=6
-
-# Software gain (float)
-#alsa-gain=1.000000
-
-[afile] # File audio output
-
-# Output file (string)
-#audiofile-file=audiofile.wav
-
-# Output format (string)
-#audiofile-format=s16
-
-# Number of output channels (integer)
-#audiofile-channels=0
-
-# Add WAVE header (boolean)
-#audiofile-wav=1
-
-[stereo_widen] # Simple stereo widening effect
-
-# Delay time (float)
-#stereowiden-delay=20.000000
-
-# Feedback gain (float)
-#stereowiden-feedback=0.300000
-
-# Crossfeed (float)
-#stereowiden-crossfeed=0.300000
-
-# Dry mix (float)
-#stereowiden-dry-mix=0.800000
-
-[speex_resampler] # Speex resampler
-
-# Resampling quality (integer)
-#speex-resampler-quality=4
-
-[spatializer] # Audio Spatializer
-
-# Room size (float)
-#spatializer-roomsize=0.850000
-
-# Room width (float)
-#spatializer-width=1.000000
-
-# Wet (float)
-#spatializer-wet=0.400000
-
-# Dry (float)
-#spatializer-dry=0.500000
-
-# Damp (float)
-#spatializer-damp=0.500000
-
-[spatialaudio] # Ambisonics renderer and binauralizer
-
-# Headphones mode (binaural) (boolean)
-#spatialaudio-headphones=0
-
-# HRTF file for the binauralization (string)
-#hrtf-file=
-
-[soxr] # soxr
-
-# Resampling quality (integer)
-#soxr-resampler-quality=2
-
-[scaletempo] # Audio tempo scaler synched with rate
-
-# Stride Length (integer)
-#scaletempo-stride=30
-
-# Overlap Length (float)
-#scaletempo-overlap=0.200000
-
-# Search Length (integer)
-#scaletempo-search=14
-
-[scaletempo_pitch] # Pitch Shifter
-
-# Stride Length (integer)
-#scaletempo-stride=30
-
-# Overlap Length (float)
-#scaletempo-overlap=0.200000
-
-# Search Length (integer)
-#scaletempo-search=14
-
-# Pitch Shift (float)
-#pitch-shift=0.000000
-
-[samplerate] # Secret Rabbit Code (libsamplerate) resampler
-
-# Sample rate converter type (integer)
-#src-converter-type=2
-
-[remap] # Audio channel remapper
-
-# Left (integer)
-#aout-remap-channel-left=0
-
-# Center (integer)
-#aout-remap-channel-center=1
-
-# Right (integer)
-#aout-remap-channel-right=2
-
-# Rear left (integer)
-#aout-remap-channel-rearleft=3
-
-# Rear center (integer)
-#aout-remap-channel-rearcenter=4
-
-# Rear right (integer)
-#aout-remap-channel-rearright=5
-
-# Side left (integer)
-#aout-remap-channel-middleleft=6
-
-# Side right (integer)
-#aout-remap-channel-middleright=7
-
-# Low-frequency effects (integer)
-#aout-remap-channel-lfe=8
-
-# Normalize channels (boolean)
-#aout-remap-normalize=1
-
-[param_eq] # Parametric Equalizer
-
-# Low freq (Hz) (float)
-#param-eq-lowf=100.000000
-
-# Low freq gain (dB) (float)
-#param-eq-lowgain=0.000000
-
-# High freq (Hz) (float)
-#param-eq-highf=10000.000000
-
-# High freq gain (dB) (float)
-#param-eq-highgain=0.000000
-
-# Freq 1 (Hz) (float)
-#param-eq-f1=300.000000
-
-# Freq 1 gain (dB) (float)
-#param-eq-gain1=0.000000
-
-# Freq 1 Q (float)
-#param-eq-q1=3.000000
-
-# Freq 2 (Hz) (float)
-#param-eq-f2=1000.000000
-
-# Freq 2 gain (dB) (float)
-#param-eq-gain2=0.000000
-
-# Freq 2 Q (float)
-#param-eq-q2=3.000000
-
-# Freq 3 (Hz) (float)
-#param-eq-f3=3000.000000
-
-# Freq 3 gain (dB) (float)
-#param-eq-gain3=0.000000
-
-# Freq 3 Q (float)
-#param-eq-q3=3.000000
-
-[normvol] # Volume normalizer
-
-# Number of audio buffers (integer)
-#norm-buff-size=20
-
-# Maximal volume level (float)
-#norm-max-level=2.000000
-
-[mono] # Stereo to mono downmixer
-
-# Use downmix algorithm (boolean)
-#sout-mono-downmix=1
-
-# Select channel to keep (integer)
-#sout-mono-channel=-1
-
-[headphone] # Headphone virtual spatialization effect
-
-# Characteristic dimension (integer)
-#headphone-dim=10
-
-# Compensate delay (boolean)
-#headphone-compensate=0
-
-# No decoding of Dolby Surround (boolean)
-#headphone-dolby=0
-
-[gain] # Gain control filter
-
-# Gain multiplier (float)
-#gain-value=1.000000
-
-[equalizer] # Equalizer with 10 bands
-
-# Equalizer preset (string)
-#equalizer-preset=flat
-
-# Bands gain (string)
-#equalizer-bands=
-
-# Two pass (boolean)
-#equalizer-2pass=0
-
-# Use VLC frequency bands (boolean)
-#equalizer-vlcfreqs=1
-
-# Global gain (float)
-#equalizer-preamp=12.000000
-
-[compressor] # Dynamic range compressor
-
-# RMS/peak (float)
-#compressor-rms-peak=0.200000
-
-# Attack time (float)
-#compressor-attack=25.000000
-
-# Release time (float)
-#compressor-release=100.000000
-
-# Threshold level (float)
-#compressor-threshold=-11.000000
-
-# Ratio (float)
-#compressor-ratio=4.000000
-
-# Knee radius (float)
-#compressor-knee=5.000000
-
-# Makeup gain (float)
-#compressor-makeup-gain=7.000000
-
-[chorus_flanger] # Sound Delay
-
-# Delay time (float)
-#delay-time=20.000000
-
-# Sweep Depth (float)
-#sweep-depth=6.000000
-
-# Sweep Rate (float)
-#sweep-rate=6.000000
-
-# Feedback gain (float)
-#feedback-gain=0.500000
-
-# Wet mix (float)
-#wet-mix=0.400000
-
-# Dry Mix (float)
-#dry-mix=0.400000
-
-[audiobargraph_a] # Audio part of the BarGraph function
-
-# Defines if BarGraph information should be sent (integer)
-#audiobargraph_a-bargraph=1
-
-# Sends the barGraph information every n audio packets (integer)
-#audiobargraph_a-bargraph_repetition=4
-
-# Defines if silence alarm information should be sent (integer)
-#audiobargraph_a-silence=1
-
-# Time window to use in ms (integer)
-#audiobargraph_a-time_window=5000
-
-# Minimum Audio level to raise the alarm (float)
-#audiobargraph_a-alarm_threshold=0.020000
-
-# Time between two alarm messages in ms (integer)
-#audiobargraph_a-repetition_time=2000
-
-[udp] # UDP stream output
-
-# Caching value (ms) (integer)
-#sout-udp-caching=300
-
-# Group packets (integer)
-#sout-udp-group=1
-
-[access_output_srt] # SRT stream output
-
-# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
-#poll-timeout=-1
-
-# SRT latency (ms) (integer)
-#latency=120
-
-# Password for stream encryption (string)
-#passphrase=
-
-# SRT maximum payload size (bytes) (integer)
-#payload-size=1316
-
-# SRT maximum bandwidth ceiling (bytes) (integer)
-#bandwidth-overhead-limit=25
-
-# Crypto key length in bytes (integer)
-#key-length=16
-
-#  SRT Stream ID (string)
-#streamid=
-
-[access_output_shout] # IceCAST output
-
-# Stream name (string)
-#sout-shout-name=VLC media player - Live stream
-
-# Stream description (string)
-#sout-shout-description=Live stream from VLC media player
-
-# Stream MP3 (boolean)
-#sout-shout-mp3=0
-
-# Genre description (string)
-#sout-shout-genre=Alternative
-
-# URL description (string)
-#sout-shout-url=http://www.videolan.org/vlc
-
-# Bitrate (string)
-#sout-shout-bitrate=
-
-# Samplerate (string)
-#sout-shout-samplerate=
-
-# Number of channels (string)
-#sout-shout-channels=
-
-# Ogg Vorbis Quality (string)
-#sout-shout-quality=
-
-# Stream public (boolean)
-#sout-shout-public=0
-
-[access_output_rist] # RIST stream output
-
-# RIST target packet size (bytes) (integer)
-#sout-rist-packet-size=1328
-
-# RIST data output caching size (ms) (integer)
-#sout-rist-caching=50
-
-# RIST retry-buffer queue size (ms) (integer)
-#sout-rist-buffer-size=0
-
-# SSRC used in RTP output (default is random, i.e. 0) (integer)
-#sout-rist-ssrc=0
-
-# Stream name (string)
-#sout-rist-stream-name=
-
-[access_output_livehttp] # HTTP Live streaming output
-
-# Segment length (integer)
-#sout-livehttp-seglen=10
-
-# Number of segments (integer)
-#sout-livehttp-numsegs=0
-
-# Number of first segment (integer)
-#sout-livehttp-initial-segment-number=1
-
-# Split segments anywhere (boolean)
-#sout-livehttp-splitanywhere=0
-
-# Delete segments (boolean)
-#sout-livehttp-delsegs=1
-
-# Use muxers rate control mechanism (boolean)
-#sout-livehttp-ratecontrol=0
-
-# Allow cache (boolean)
-#sout-livehttp-caching=0
-
-# Use randomized IV for encryption (boolean)
-#sout-livehttp-generate-iv=0
-
-# Index file (string)
-#sout-livehttp-index=
-
-# Full URL to put in index file (string)
-#sout-livehttp-index-url=
-
-# AES key URI to place in playlist (string)
-#sout-livehttp-key-uri=
-
-# AES key file (string)
-#sout-livehttp-key-file=
-
-# File where vlc reads key-uri and keyfile-location (string)
-#sout-livehttp-key-loadfile=
-
-[http] # HTTP stream output
-
-# Username (string)
-#sout-http-user=
-
-# Password (string)
-#sout-http-pwd=
-
-# Mime (string)
-#sout-http-mime=
-
-# Metacube (boolean)
-#sout-http-metacube=0
-
-[file] # File stream output
-
-# Overwrite existing file (boolean)
-#sout-file-overwrite=1
-
-# Append to file (boolean)
-#sout-file-append=0
-
-# Format time and date (boolean)
-#sout-file-format=0
-
-# Synchronous writing (boolean)
-#sout-file-sync=0
-
-[avio] # libavformat AVIO access
-
-# Advanced options (string)
-#avio-options=
-
-# Advanced options (string)
-#sout-avio-options=
-
-[xcb_screen] # Screen capture (with X11/XCB)
-
-# Frame rate (float)
-#screen-fps=2.000000
-
-# Region left column (integer)
-#screen-left=0
-
-# Region top row (integer)
-#screen-top=0
-
-# Capture region width (integer)
-#screen-width=0
-
-# Capture region height (integer)
-#screen-height=0
-
-# Follow the mouse (boolean)
-#screen-follow-mouse=0
-
-[vdr] # VDR recordings
-
-# Chapter offset in ms (integer)
-#vdr-chapter-offset=0
-
-# Frame rate (float)
-#vdr-fps=25.000000
-
-[v4l2] # Video4Linux input
-
-# Video capture device (string)
-#v4l2-dev=/dev/video0
-
-# VBI capture device (string)
-#v4l2-vbidev=
-
-# Standard (string)
-#v4l2-standard=
-
-# Video input chroma format (string)
-#v4l2-chroma=
-
-# Input (integer)
-#v4l2-input=0
-
-# Audio input (integer)
-#v4l2-audio-input=-1
-
-# Width (integer)
-#v4l2-width=0
-
-# Height (integer)
-#v4l2-height=0
-
-# Picture aspect-ratio n:m (string)
-#v4l2-aspect-ratio=4:3
-
-# Frame rate (string)
-#v4l2-fps=60
-
-# Radio device (string)
-#v4l2-radio-dev=/dev/radio0
-
-# Frequency (integer)
-#v4l2-tuner-frequency=-1
-
-# Audio mode (integer)
-#v4l2-tuner-audio-mode=3
-
-# Reset controls (boolean)
-#v4l2-controls-reset=0
-
-# Brightness (integer)
-#v4l2-brightness=-1
-
-# Automatic brightness (integer)
-#v4l2-brightness-auto=-1
-
-# Contrast (integer)
-#v4l2-contrast=-1
-
-# Saturation (integer)
-#v4l2-saturation=-1
-
-# Hue (integer)
-#v4l2-hue=-1
-
-# Automatic hue (integer)
-#v4l2-hue-auto=-1
-
-# White balance temperature (K) (integer)
-#v4l2-white-balance-temperature=-1
-
-# Automatic white balance (integer)
-#v4l2-auto-white-balance=-1
-
-# Red balance (integer)
-#v4l2-red-balance=-1
-
-# Blue balance (integer)
-#v4l2-blue-balance=-1
-
-# Gamma (integer)
-#v4l2-gamma=-1
-
-# Automatic gain (integer)
-#v4l2-autogain=-1
-
-# Gain (integer)
-#v4l2-gain=-1
-
-# Sharpness (integer)
-#v4l2-sharpness=-1
-
-# Chroma gain (integer)
-#v4l2-chroma-gain=-1
-
-# Automatic chroma gain (integer)
-#v4l2-chroma-gain-auto=-1
-
-# Power line frequency (integer)
-#v4l2-power-line-frequency=-1
-
-# Backlight compensation (integer)
-#v4l2-backlight-compensation=-1
-
-# Band-stop filter (integer)
-#v4l2-band-stop-filter=-1
-
-# Horizontal flip (boolean)
-#v4l2-hflip=0
-
-# Vertical flip (boolean)
-#v4l2-vflip=0
-
-# Rotate (degrees) (integer)
-#v4l2-rotate=-1
-
-# Color killer (integer)
-#v4l2-color-killer=-1
-
-# Color effect (integer)
-#v4l2-color-effect=-1
-
-# Audio volume (integer)
-#v4l2-audio-volume=-1
-
-# Audio balance (integer)
-#v4l2-audio-balance=-1
-
-# Mute (boolean)
-#v4l2-audio-mute=0
-
-# Bass level (integer)
-#v4l2-audio-bass=-1
-
-# Treble level (integer)
-#v4l2-audio-treble=-1
-
-# Loudness mode (boolean)
-#v4l2-audio-loudness=0
-
-# v4l2 driver controls (string)
-#v4l2-set-ctrls=
-
-[udp] # UDP input
-
-# UDP Source timeout (sec) (integer)
-#udp-timeout=-1
-
-[timecode] # Time code subpicture elementary stream generator
-
-# Frame rate (string)
-#timecode-fps=25/1
-
-[shm] # Shared memory framebuffer
-
-# Frame rate (float)
-#shm-fps=10.000000
-
-# Frame buffer depth (integer)
-#shm-depth=0
-
-# Frame buffer width (integer)
-#shm-width=800
-
-# Frame buffer height (integer)
-#shm-height=480
-
-[sftp] # SFTP input
-
-# SFTP port (integer)
-#sftp-port=22
-
-# Username (string)
-#sftp-user=
-
-# Password (string)
-#sftp-pwd=
-
-[satip] # SAT>IP Receiver Plugin
-
-# Receive buffer (integer)
-#satip-buffer=4194304
-
-# Request multicast stream (boolean)
-#satip-multicast=0
-
-# Host (string)
-#satip-host=
-
-[rtp] # Real-Time Protocol (RTP) input
-
-# RTCP (local) port (integer)
-#rtcp-port=0
-
-# SRTP key (hexadecimal) (string)
-#srtp-key=
-
-# SRTP salt (hexadecimal) (string)
-#srtp-salt=
-
-# Maximum RTP sources (integer)
-#rtp-max-src=1
-
-# RTP source timeout (sec) (integer)
-#rtp-timeout=5
-
-# Maximum RTP sequence number dropout (integer)
-#rtp-max-dropout=3000
-
-# Maximum RTP sequence number misordering (integer)
-#rtp-max-misorder=100
-
-# RTP payload format assumed for dynamic payloads (string)
-#rtp-dynamic-pt=
-
-[rist] # RIST input
-
-# RIST maximum packet size (bytes) (integer)
-#packet-size=1472
-
-# RIST demux/decode maximum jitter (default is 5ms) (integer)
-#maximum-jitter=5
-
-# RIST latency (ms) (integer)
-#latency=1000
-
-# RIST nack retry interval (ms) (integer)
-#retry-interval=132
-
-# RIST reorder buffer (ms) (integer)
-#reorder-buffer=70
-
-# RIST maximum retry count (integer)
-#max-retries=10
-
-# RIST nack type, 0 = range, 1 = bitmask. Default is range (integer)
-#nack-type=0
-
-# Disable NACK output packets (boolean)
-#disable-nacks=0
-
-# Do not check for a valid rtcp message from the encoder (boolean)
-#mcast-blind-nacks=0
-
-[rdp] # RDP Remote Desktop
-
-# Username (string)
-#rdp-user=
-
-# Password (string)
-#rdp-password=
-
-# Frame rate (float)
-#rdp-fps=5.000000
-
-# Encrypted connexion (boolean)
-#rdp-encrypt=0
-
-[nfs] # NFS input
-
-# Set NFS uid/guid automatically (boolean)
-#nfs-auto-guid=1
-
-[live555] # RTP/RTSP/SDP demuxer (using Live555)
-
-# Use RTP over RTSP (TCP) (boolean)
-#rtsp-tcp=0
-
-# Client port (integer)
-#rtp-client-port=-1
-
-# Force multicast RTP via RTSP (boolean)
-#rtsp-mcast=0
-
-# Tunnel RTSP and RTP over HTTP (boolean)
-#rtsp-http=0
-
-# HTTP tunnel port (integer)
-#rtsp-http-port=80
-
-# Kasenna RTSP dialect (boolean)
-#rtsp-kasenna=0
-
-# WMServer RTSP dialect (boolean)
-#rtsp-wmserver=0
-
-# Username (string)
-#rtsp-user=
-
-# Password (string)
-#rtsp-pwd=
-
-# RTSP frame buffer size (integer)
-#rtsp-frame-buffer-size=250000
-
-[linsys_sdi] # SDI Input
-
-# Link # (integer)
-#linsys-sdi-link=0
-
-# Video ID (integer)
-#linsys-sdi-id-video=0
-
-# Aspect ratio (string)
-#linsys-sdi-aspect-ratio=
-
-# Audio configuration (string)
-#linsys-sdi-audio=0=1,1
-
-# Teletext configuration (string)
-#linsys-sdi-telx=
-
-# Teletext language (string)
-#linsys-sdi-telx-lang=
-
-[linsys_hdsdi] # HD-SDI Input
-
-# Link # (integer)
-#linsys-hdsdi-link=0
-
-# Video ID (integer)
-#linsys-hdsdi-id-video=0
-
-# Aspect ratio (string)
-#linsys-hdsdi-aspect-ratio=
-
-# Audio configuration (string)
-#linsys-hdsdi-audio=0=1,1
-
-[libbluray] # Blu-ray Disc support (libbluray)
-
-# Blu-ray menus (boolean)
-#bluray-menu=1
-
-# Region code (string)
-#bluray-region=B
-
-[access] # HTTPS input
-
-# Cookies forwarding (boolean)
-#http-forward-cookies=1
-
-# User agent (string)
-#http-user-agent=
-
-[http] # HTTP input
-
-# Auto re-connect (boolean)
-#http-reconnect=0
-
-[ftp] # FTP input
-
-# Username (string)
-#ftp-user=
-
-# Password (string)
-#ftp-pwd=
-
-# FTP account (string)
-#ftp-account=anonymous
-
-[filesystem] # File input
-
-# List special files (boolean)
-#list-special-files=0
-
-[dvdread] # DVDRead Input (no menu support)
-
-# DVD angle (integer)
-#dvdread-angle=1
-
-[dvdnav] # DVDnav Input
-
-# DVD angle (integer)
-#dvdnav-angle=1
-
-# Start directly in menu (boolean)
-#dvdnav-menu=1
-
-[dvb] # DVB input with v4l2 support
-
-# Probe DVB card for capabilities (boolean)
-#dvb-probe=1
-
-# Satellite scanning config (string)
-#dvb-satellite=
-
-# Scan tuning list (string)
-#dvb-scanlist=
-
-# Use NIT for scanning services (boolean)
-#dvb-scan-nit=1
-
-[dtv] # Digital Television and Radio
-
-# DVB adapter (integer)
-#dvb-adapter=0
-
-# DVB device (integer)
-#dvb-device=0
-
-# Do not demultiplex (boolean)
-#dvb-budget-mode=0
-
-# Frequency (Hz) (integer)
-#dvb-frequency=0
-
-# Spectrum inversion (integer)
-#dvb-inversion=-1
-
-# Bandwidth (MHz) (integer)
-#dvb-bandwidth=0
-
-# Transmission mode (integer)
-#dvb-transmission=0
-
-# Guard interval (string)
-#dvb-guard=
-
-# High-priority code rate (string)
-#dvb-code-rate-hp=
-
-# Low-priority code rate (string)
-#dvb-code-rate-lp=
-
-# Hierarchy mode (integer)
-#dvb-hierarchy=-1
-
-# DVB-T2 Physical Layer Pipe (integer)
-#dvb-plp-id=0
-
-# Layer A modulation (string)
-#dvb-a-modulation=
-
-# Layer A code rate (string)
-#dvb-a-fec=
-
-# Layer A segments count (integer)
-#dvb-a-count=0
-
-# Layer A time interleaving (integer)
-#dvb-a-interleaving=0
-
-# Layer B modulation (string)
-#dvb-b-modulation=
-
-# Layer B code rate (string)
-#dvb-b-fec=
-
-# Layer B segments count (integer)
-#dvb-b-count=0
-
-# Layer B time interleaving (integer)
-#dvb-b-interleaving=0
-
-# Layer C modulation (string)
-#dvb-c-modulation=
-
-# Layer C code rate (string)
-#dvb-c-fec=
-
-# Layer C segments count (integer)
-#dvb-c-count=0
-
-# Layer C time interleaving (integer)
-#dvb-c-interleaving=0
-
-# Modulation / Constellation (string)
-#dvb-modulation=
-
-# Symbol rate (bauds) (integer)
-#dvb-srate=0
-
-# FEC code rate (string)
-#dvb-fec=
-
-# Stream identifier (integer)
-#dvb-stream=0
-
-# Pilot (integer)
-#dvb-pilot=-1
-
-# Roll-off factor (integer)
-#dvb-rolloff=-1
-
-# Transport stream ID (integer)
-#dvb-ts-id=0
-
-# Polarization (Voltage) (string)
-#dvb-polarization=
-
-#  (integer)
-#dvb-voltage=13
-
-# High LNB voltage (boolean)
-#dvb-high-voltage=0
-
-# Local oscillator low frequency (kHz) (integer)
-#dvb-lnb-low=0
-
-# Local oscillator high frequency (kHz) (integer)
-#dvb-lnb-high=0
-
-# Universal LNB switch frequency (kHz) (integer)
-#dvb-lnb-switch=11700000
-
-# DiSEqC LNB number (integer)
-#dvb-satno=0
-
-# Uncommitted DiSEqC LNB number (integer)
-#dvb-uncommitted=0
-
-# Continuous 22kHz tone (integer)
-#dvb-tone=-1
-
-[cdda] # Audio CD input
-
-# Audio CD device (string)
-#cd-audio=/dev/sr0
-
-# Musicbrainz Server (string)
-#musicbrainz-server=musicbrainz.org
-
-# CDDB Server (string)
-#cddb-server=freedb.videolan.org
-
-# CDDB port (integer)
-#cddb-port=80
-
-[access_srt] # SRT input
-
-# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
-#poll-timeout=-1
-
-# SRT latency (ms) (integer)
-#latency=120
-
-# Password for stream encryption (string)
-#passphrase=
-
-# Crypto key length in bytes (integer)
-#key-length=16
-
-#  SRT Stream ID (string)
-#streamid=
-
-[access_mms] # Microsoft Media Server (MMS) input
-
-# TCP/UDP timeout (ms) (integer)
-#mms-timeout=5000
-
-# Force selection of all streams (boolean)
-#mms-all=0
-
-# Maximum bitrate (integer)
-#mms-maxbitrate=0
-
-[imem] # Memory input
-
-# ID (integer)
-#imem-id=-1
-
-# Group (integer)
-#imem-group=0
-
-# Category (integer)
-#imem-cat=0
-
-# Codec (string)
-#imem-codec=
-
-# Language (string)
-#imem-language=
-
-# Sample rate (integer)
-#imem-samplerate=0
-
-# Channels count (integer)
-#imem-channels=0
-
-# Width (integer)
-#imem-width=0
-
-# Height (integer)
-#imem-height=0
-
-# Display aspect ratio (string)
-#imem-dar=
-
-# Frame rate (string)
-#imem-fps=
-
-# Size (integer)
-#imem-size=0
-
-[concat] # Concatenated inputs
-
-# Inputs list (string)
-#concat-list=
-
-[access_alsa] # ALSA audio capture
-
-# Stereo (boolean)
-#alsa-stereo=1
-
-# Sample rate (integer)
-#alsa-samplerate=48000
-
-[avcodec] # FFmpeg audio/video decoder
-
-# Direct rendering (boolean)
-#avcodec-dr=1
-
-# Show corrupted frames (boolean)
-#avcodec-corrupted=1
-
-# Error resilience (integer)
-#avcodec-error-resilience=1
-
-# Workaround bugs (integer)
-#avcodec-workaround-bugs=1
-
-# Hurry up (boolean)
-#avcodec-hurry-up=1
-
-# Skip frame (default=0) (integer)
-#avcodec-skip-frame=0
-
-# Skip idct (default=0) (integer)
-#avcodec-skip-idct=0
-
-# Allow speed tricks (boolean)
-#avcodec-fast=0
-
-# Skip the loop filter for H.264 decoding (integer)
-#avcodec-skiploopfilter=0
-
-# Debug mask (integer)
-#avcodec-debug=0
-
-# Codec name (string)
-#avcodec-codec=
-
-# Hardware decoding (string)
-#avcodec-hw=any
-
-# Threads (integer)
-#avcodec-threads=0
-
-# Advanced options (string)
-#avcodec-options=
-
-# Codec name (string)
-#sout-avcodec-codec=
-
-# Quality level (string)
-#sout-avcodec-hq=rd
-
-# Ratio of key frames (integer)
-#sout-avcodec-keyint=0
-
-# Ratio of B frames (integer)
-#sout-avcodec-bframes=0
-
-# Hurry up (boolean)
-#sout-avcodec-hurry-up=0
-
-# Interlaced encoding (boolean)
-#sout-avcodec-interlace=0
-
-# Interlaced motion estimation (boolean)
-#sout-avcodec-interlace-me=1
-
-# Video bitrate tolerance (integer)
-#sout-avcodec-vt=0
-
-# Pre-motion estimation (boolean)
-#sout-avcodec-pre-me=0
-
-# Rate control buffer size (integer)
-#sout-avcodec-rc-buffer-size=0
-
-# Rate control buffer aggressiveness (float)
-#sout-avcodec-rc-buffer-aggressivity=1.000000
-
-# I quantization factor (float)
-#sout-avcodec-i-quant-factor=0.000000
-
-# Noise reduction (integer)
-#sout-avcodec-noise-reduction=0
-
-# MPEG4 quantization matrix (boolean)
-#sout-avcodec-mpeg4-matrix=0
-
-# Minimum video quantizer scale (integer)
-#sout-avcodec-qmin=0
-
-# Maximum video quantizer scale (integer)
-#sout-avcodec-qmax=0
-
-# Trellis quantization (boolean)
-#sout-avcodec-trellis=0
-
-# Fixed quantizer scale (float)
-#sout-avcodec-qscale=3.000000
-
-# Strict standard compliance (integer)
-#sout-avcodec-strict=0
-
-# Luminance masking (float)
-#sout-avcodec-lumi-masking=0.000000
-
-# Darkness masking (float)
-#sout-avcodec-dark-masking=0.000000
-
-# Motion masking (float)
-#sout-avcodec-p-masking=0.000000
-
-# Border masking (float)
-#sout-avcodec-border-masking=0.000000
-
-# Luminance elimination (integer)
-#sout-avcodec-luma-elim-threshold=0
-
-# Chrominance elimination (integer)
-#sout-avcodec-chroma-elim-threshold=0
-
-# Specify AAC audio profile to use (string)
-#sout-avcodec-aac-profile=low
-
-# Advanced options (string)
-#sout-avcodec-options=
 
 [zvbi] # VBI and Teletext decoder
 
@@ -3183,98 +1971,6 @@ qt-privacy-ask=0
 
 # Presentation Level (integer)
 #vbi-level=3
-
-[vpx] # WebM video decoder
-
-# Quality mode (integer)
-#sout-vpx-quality-mode=1000000
-
-[vorbis] # Vorbis audio decoder
-
-# Encoding quality (integer)
-#sout-vorbis-quality=0
-
-# Maximum encoding bitrate (integer)
-#sout-vorbis-max-bitrate=0
-
-# Minimum encoding bitrate (integer)
-#sout-vorbis-min-bitrate=0
-
-# CBR encoding (boolean)
-#sout-vorbis-cbr=0
-
-[twolame] # Libtwolame audio encoder
-
-# Encoding quality (float)
-#sout-twolame-quality=0.000000
-
-# Stereo mode (integer)
-#sout-twolame-mode=0
-
-# VBR mode (boolean)
-#sout-twolame-vbr=0
-
-# Psycho-acoustic model (integer)
-#sout-twolame-psy=3
-
-[ttml] # TTML subtitles decoder
-
-# Subtitle justification (integer)
-#ttml-align=0
-
-[theora] # Theora video decoder
-
-# Post processing quality (integer)
-#theora-postproc=-1
-
-# Encoding quality (integer)
-#sout-theora-quality=2
-
-[svcdsub] # Philips OGT (SVCD subtitle) decoder
-
-[subsusf] # USF subtitles decoder
-
-# Formatted Subtitles (boolean)
-#subsdec-formatted=1
-
-[subsdec] # Text subtitle decoder
-
-# Subtitle justification (integer)
-#subsdec-align=-1
-
-# Subtitle text encoding (string)
-#subsdec-encoding=
-
-# UTF-8 subtitle autodetection (boolean)
-#subsdec-autodetect-utf8=1
-
-[spudec] # DVD subtitles decoder
-
-# Disable DVD subtitle transparency (boolean)
-#dvdsub-transparency=0
-
-[speex] # Speex audio decoder
-
-# Mode (integer)
-#sout-speex-mode=0
-
-# Encoding complexity (integer)
-#sout-speex-complexity=3
-
-# CBR encoding (boolean)
-#sout-speex-cbr=0
-
-# Encoding quality (float)
-#sout-speex-quality=8.000000
-
-# Maximal bitrate (integer)
-#sout-speex-max-bitrate=0
-
-# Voice activity detection (boolean)
-#sout-speex-vad=1
-
-# Discontinuous Transmission (boolean)
-#sout-speex-dtx=0
 
 [schroedinger] # Dirac video decoder using libschroedinger
 
@@ -3473,6 +2169,247 @@ qt-privacy-ask=0
 # Default background alpha (integer)
 #kate-tiger-default-background-alpha=0
 
+[dca] # DTS Coherent Acoustics audio decoder
+
+# DTS dynamic range compression (boolean)
+#dts-dynrng=1
+
+[daala] # Daala video decoder
+
+# Encoding quality (integer)
+#sout-daala-quality=10
+
+# Keyframe interval (integer)
+#sout-daala-keyint=256
+
+# Chroma format (string)
+#sout-daala-chroma-fmt=420
+
+[aribsub] # ARIB subtitles decoder
+
+# Ignore ruby (furigana) (boolean)
+#aribsub-ignore-ruby=0
+
+# Use Core Text renderer (boolean)
+#aribsub-use-coretext=0
+
+[avcodec] # FFmpeg audio/video decoder
+
+# Direct rendering (boolean)
+#avcodec-dr=1
+
+# Show corrupted frames (boolean)
+#avcodec-corrupted=1
+
+# Error resilience (integer)
+#avcodec-error-resilience=1
+
+# Workaround bugs (integer)
+#avcodec-workaround-bugs=1
+
+# Hurry up (boolean)
+#avcodec-hurry-up=1
+
+# Skip frame (default=0) (integer)
+#avcodec-skip-frame=0
+
+# Skip idct (default=0) (integer)
+#avcodec-skip-idct=0
+
+# Allow speed tricks (boolean)
+#avcodec-fast=0
+
+# Skip the loop filter for H.264 decoding (integer)
+#avcodec-skiploopfilter=0
+
+# Debug mask (integer)
+#avcodec-debug=0
+
+# Codec name (string)
+#avcodec-codec=
+
+# Hardware decoding (string)
+#avcodec-hw=any
+
+# Threads (integer)
+#avcodec-threads=0
+
+# Advanced options (string)
+#avcodec-options=
+
+# Codec name (string)
+#sout-avcodec-codec=
+
+# Quality level (string)
+#sout-avcodec-hq=rd
+
+# Ratio of key frames (integer)
+#sout-avcodec-keyint=0
+
+# Ratio of B frames (integer)
+#sout-avcodec-bframes=0
+
+# Hurry up (boolean)
+#sout-avcodec-hurry-up=0
+
+# Interlaced encoding (boolean)
+#sout-avcodec-interlace=0
+
+# Interlaced motion estimation (boolean)
+#sout-avcodec-interlace-me=1
+
+# Video bitrate tolerance (integer)
+#sout-avcodec-vt=0
+
+# Pre-motion estimation (boolean)
+#sout-avcodec-pre-me=0
+
+# Rate control buffer size (integer)
+#sout-avcodec-rc-buffer-size=0
+
+# Rate control buffer aggressiveness (float)
+#sout-avcodec-rc-buffer-aggressivity=1.000000
+
+# I quantization factor (float)
+#sout-avcodec-i-quant-factor=0.000000
+
+# Noise reduction (integer)
+#sout-avcodec-noise-reduction=0
+
+# MPEG4 quantization matrix (boolean)
+#sout-avcodec-mpeg4-matrix=0
+
+# Minimum video quantizer scale (integer)
+#sout-avcodec-qmin=0
+
+# Maximum video quantizer scale (integer)
+#sout-avcodec-qmax=0
+
+# Trellis quantization (boolean)
+#sout-avcodec-trellis=0
+
+# Fixed quantizer scale (float)
+#sout-avcodec-qscale=3.000000
+
+# Strict standard compliance (integer)
+#sout-avcodec-strict=0
+
+# Luminance masking (float)
+#sout-avcodec-lumi-masking=0.000000
+
+# Darkness masking (float)
+#sout-avcodec-dark-masking=0.000000
+
+# Motion masking (float)
+#sout-avcodec-p-masking=0.000000
+
+# Border masking (float)
+#sout-avcodec-border-masking=0.000000
+
+# Luminance elimination (integer)
+#sout-avcodec-luma-elim-threshold=0
+
+# Chrominance elimination (integer)
+#sout-avcodec-chroma-elim-threshold=0
+
+# Specify AAC audio profile to use (string)
+#sout-avcodec-aac-profile=low
+
+# Advanced options (string)
+#sout-avcodec-options=
+
+[vpx] # WebM video decoder
+
+# Quality mode (integer)
+#sout-vpx-quality-mode=1000000
+
+[vorbis] # Vorbis audio decoder
+
+# Encoding quality (integer)
+#sout-vorbis-quality=0
+
+# Maximum encoding bitrate (integer)
+#sout-vorbis-max-bitrate=0
+
+# Minimum encoding bitrate (integer)
+#sout-vorbis-min-bitrate=0
+
+# CBR encoding (boolean)
+#sout-vorbis-cbr=0
+
+[twolame] # Libtwolame audio encoder
+
+# Encoding quality (float)
+#sout-twolame-quality=0.000000
+
+# Stereo mode (integer)
+#sout-twolame-mode=0
+
+# VBR mode (boolean)
+#sout-twolame-vbr=0
+
+# Psycho-acoustic model (integer)
+#sout-twolame-psy=3
+
+[ttml] # TTML subtitles decoder
+
+# Subtitle justification (integer)
+#ttml-align=0
+
+[theora] # Theora video decoder
+
+# Post processing quality (integer)
+#theora-postproc=-1
+
+# Encoding quality (integer)
+#sout-theora-quality=2
+
+[svcdsub] # Philips OGT (SVCD subtitle) decoder
+
+[subsusf] # USF subtitles decoder
+
+# Formatted Subtitles (boolean)
+#subsdec-formatted=1
+
+[subsdec] # Text subtitle decoder
+
+# Subtitle justification (integer)
+#subsdec-align=-1
+
+# Subtitle text encoding (string)
+#subsdec-encoding=
+
+# UTF-8 subtitle autodetection (boolean)
+#subsdec-autodetect-utf8=1
+
+[spudec] # DVD subtitles decoder
+
+# Disable DVD subtitle transparency (boolean)
+#dvdsub-transparency=0
+
+[speex] # Speex audio decoder
+
+# Mode (integer)
+#sout-speex-mode=0
+
+# Encoding complexity (integer)
+#sout-speex-complexity=3
+
+# CBR encoding (boolean)
+#sout-speex-cbr=0
+
+# Encoding quality (float)
+#sout-speex-quality=8.000000
+
+# Maximal bitrate (integer)
+#sout-speex-max-bitrate=0
+
+# Voice activity detection (boolean)
+#sout-speex-vad=1
+
+# Discontinuous Transmission (boolean)
+#sout-speex-dtx=0
+
 [jpeg] # JPEG image decoder
 
 # Quality level (integer)
@@ -3517,26 +2454,10 @@ qt-privacy-ask=0
 # Save raw codec data (boolean)
 #dummy-save-es=0
 
-[dca] # DTS Coherent Acoustics audio decoder
-
-# DTS dynamic range compression (boolean)
-#dts-dynrng=1
-
 [dav1d] # Dav1d video decoder
 
 # Frames Threads (integer)
 #dav1d-thread-frames=0
-
-[daala] # Daala video decoder
-
-# Encoding quality (integer)
-#sout-daala-quality=10
-
-# Keyframe interval (integer)
-#sout-daala-keyint=256
-
-# Chroma format (string)
-#sout-daala-chroma-fmt=420
 
 [cc] # Closed Captions decoder
 
@@ -3548,465 +2469,1078 @@ qt-privacy-ask=0
 # A/52 dynamic range compression (boolean)
 #a52-dynrng=1
 
-[x264] # H.264/MPEG-4 Part 10/AVC encoder (x264)
+[amem] # Audio memory output
 
-# Maximum GOP size (integer)
-#sout-x264-keyint=250
+# Sample format (string)
+#amem-format=S16N
 
-# Minimum GOP size (integer)
-#sout-x264-min-keyint=25
+# Sample rate (integer)
+#amem-rate=44100
 
-# Use recovery points to close GOPs (boolean)
-#sout-x264-opengop=0
+# Channels count (integer)
+#amem-channels=2
 
-# Enable compatibility hacks for Blu-ray support (boolean)
-#sout-x264-bluray-compat=0
+[alsa] # ALSA audio output
 
-# Extra I-frames aggressivity (integer)
-#sout-x264-scenecut=40
+# Audio output device (string)
+#alsa-audio-device=default
 
-# B-frames between I and P (integer)
-#sout-x264-bframes=3
+# Audio output channels (integer)
+#alsa-audio-channels=6
 
-# Adaptive B-frame decision (integer)
-#sout-x264-b-adapt=1
+# Software gain (float)
+#alsa-gain=1.000000
 
-# Influence (bias) B-frames usage (integer)
-#sout-x264-b-bias=0
+[afile] # File audio output
 
-# Keep some B-frames as references (string)
-#sout-x264-bpyramid=normal
+# Output file (string)
+#audiofile-file=audiofile.wav
 
-# CABAC (boolean)
-#sout-x264-cabac=1
+# Output format (string)
+#audiofile-format=s16
 
-# Use fullrange instead of TV colorrange (boolean)
-#sout-x264-fullrange=0
+# Number of output channels (integer)
+#audiofile-channels=0
 
-# Number of reference frames (integer)
-#sout-x264-ref=3
+# Add WAVE header (boolean)
+#audiofile-wav=1
 
-# Skip loop filter (boolean)
-#sout-x264-nf=0
+[speex_resampler] # Speex resampler
 
-# Loop filter AlphaC0 and Beta parameters alpha:beta (string)
-#sout-x264-deblock=0:0
+# Resampling quality (integer)
+#speex-resampler-quality=4
 
-# Strength of psychovisual optimization, default is "1.0:0.0" (string)
-#sout-x264-psy-rd=1.0:0.0
+[spatialaudio] # Ambisonics renderer and binauralizer
 
-# Use Psy-optimizations (boolean)
-#sout-x264-psy=1
+# Headphones mode (binaural) (boolean)
+#spatialaudio-headphones=0
 
-# H.264 level (string)
-#sout-x264-level=0
+# HRTF file for the binauralization (string)
+#hrtf-file=
 
-# H.264 profile (string)
-#sout-x264-profile=high
+[soxr] # soxr
 
-# Interlaced mode (boolean)
-#sout-x264-interlaced=0
+# Resampling quality (integer)
+#soxr-resampler-quality=2
 
-# Frame packing (integer)
-#sout-x264-frame-packing=-1
+[samplerate] # Secret Rabbit Code (libsamplerate) resampler
 
-# Force number of slices per frame (integer)
-#sout-x264-slices=0
+# Sample rate converter type (integer)
+#src-converter-type=2
 
-# Limit the size of each slice in bytes (integer)
-#sout-x264-slice-max-size=0
+[stereo_widen] # Simple stereo widening effect
 
-# Limit the size of each slice in macroblocks (integer)
-#sout-x264-slice-max-mbs=0
+# Delay time (float)
+#stereowiden-delay=20.000000
 
-# HRD-timing information (string)
-#sout-x264-hrd=none
+# Feedback gain (float)
+#stereowiden-feedback=0.300000
 
-# Set QP (integer)
-#sout-x264-qp=-1
+# Crossfeed (float)
+#stereowiden-crossfeed=0.300000
 
-# Quality-based VBR (integer)
-#sout-x264-crf=23
+# Dry mix (float)
+#stereowiden-dry-mix=0.800000
 
-# Min QP (integer)
-#sout-x264-qpmin=10
+[spatializer] # Audio Spatializer
 
-# Max QP (integer)
-#sout-x264-qpmax=51
+# Room size (float)
+#spatializer-roomsize=0.850000
 
-# Max QP step (integer)
-#sout-x264-qpstep=4
+# Room width (float)
+#spatializer-width=1.000000
 
-# Average bitrate tolerance (float)
-#sout-x264-ratetol=1.000000
+# Wet (float)
+#spatializer-wet=0.400000
 
-# Max local bitrate (integer)
-#sout-x264-vbv-maxrate=0
+# Dry (float)
+#spatializer-dry=0.500000
 
-# VBV buffer (integer)
-#sout-x264-vbv-bufsize=0
+# Damp (float)
+#spatializer-damp=0.500000
 
-# Initial VBV buffer occupancy (float)
-#sout-x264-vbv-init=0.900000
+[scaletempo] # Audio tempo scaler synched with rate
 
-# QP factor between I and P (float)
-#sout-x264-ipratio=1.400000
+# Stride Length (integer)
+#scaletempo-stride=30
 
-# QP factor between P and B (float)
-#sout-x264-pbratio=1.300000
+# Overlap Length (float)
+#scaletempo-overlap=0.200000
 
-# QP difference between chroma and luma (integer)
-#sout-x264-chroma-qp-offset=0
+# Search Length (integer)
+#scaletempo-search=14
 
-# Multipass ratecontrol (integer)
-#sout-x264-pass=0
+[scaletempo_pitch] # Pitch Shifter
 
-# QP curve compression (float)
-#sout-x264-qcomp=0.600000
+# Stride Length (integer)
+#scaletempo-stride=30
 
-# Reduce fluctuations in QP (float)
-#sout-x264-cplxblur=20.000000
+# Overlap Length (float)
+#scaletempo-overlap=0.200000
 
-# Reduce fluctuations in QP (float)
-#sout-x264-qblur=0.500000
+# Search Length (integer)
+#scaletempo-search=14
 
-# How AQ distributes bits (integer)
-#sout-x264-aq-mode=1
+# Pitch Shift (float)
+#pitch-shift=0.000000
 
-# Strength of AQ (float)
-#sout-x264-aq-strength=1.000000
+[remap] # Audio channel remapper
 
-# Partitions to consider (string)
-#sout-x264-partitions=normal
+# Left (integer)
+#aout-remap-channel-left=0
 
-# Direct MV prediction mode (string)
-#sout-x264-direct=spatial
+# Center (integer)
+#aout-remap-channel-center=1
 
-# Direct prediction size (integer)
-#sout-x264-direct-8x8=1
+# Right (integer)
+#aout-remap-channel-right=2
 
-# Weighted prediction for B-frames (boolean)
-#sout-x264-weightb=1
+# Rear left (integer)
+#aout-remap-channel-rearleft=3
 
-# Weighted prediction for P-frames (integer)
-#sout-x264-weightp=2
+# Rear center (integer)
+#aout-remap-channel-rearcenter=4
 
-# Integer pixel motion estimation method (string)
-#sout-x264-me=hex
+# Rear right (integer)
+#aout-remap-channel-rearright=5
 
-# Maximum motion vector search range (integer)
-#sout-x264-merange=16
+# Side left (integer)
+#aout-remap-channel-middleleft=6
 
-# Maximum motion vector length (integer)
-#sout-x264-mvrange=-1
+# Side right (integer)
+#aout-remap-channel-middleright=7
 
-# Minimum buffer space between threads (integer)
-#sout-x264-mvrange-thread=-1
+# Low-frequency effects (integer)
+#aout-remap-channel-lfe=8
 
-# Subpixel motion estimation and partition decision quality (integer)
-#sout-x264-subme=7
+# Normalize channels (boolean)
+#aout-remap-normalize=1
 
-# Decide references on a per partition basis (boolean)
-#sout-x264-mixed-refs=1
+[param_eq] # Parametric Equalizer
 
-# Chroma in motion estimation (boolean)
-#sout-x264-chroma-me=1
+# Low freq (Hz) (float)
+#param-eq-lowf=100.000000
 
-# Adaptive spatial transform size (boolean)
-#sout-x264-8x8dct=1
+# Low freq gain (dB) (float)
+#param-eq-lowgain=0.000000
 
-# Trellis RD quantization (integer)
-#sout-x264-trellis=1
+# High freq (Hz) (float)
+#param-eq-highf=10000.000000
 
-# Framecount to use on frametype lookahead (integer)
-#sout-x264-lookahead=40
+# High freq gain (dB) (float)
+#param-eq-highgain=0.000000
 
-# Use Periodic Intra Refresh (boolean)
-#sout-x264-intra-refresh=0
+# Freq 1 (Hz) (float)
+#param-eq-f1=300.000000
 
-# Use mb-tree ratecontrol (boolean)
-#sout-x264-mbtree=1
+# Freq 1 gain (dB) (float)
+#param-eq-gain1=0.000000
 
-# Early SKIP detection on P-frames (boolean)
-#sout-x264-fast-pskip=1
+# Freq 1 Q (float)
+#param-eq-q1=3.000000
 
-# Coefficient thresholding on P-frames (boolean)
-#sout-x264-dct-decimate=1
+# Freq 2 (Hz) (float)
+#param-eq-f2=1000.000000
 
-# Noise reduction (integer)
-#sout-x264-nr=0
+# Freq 2 gain (dB) (float)
+#param-eq-gain2=0.000000
 
-# Inter luma quantization deadzone (integer)
-#sout-x264-deadzone-inter=21
+# Freq 2 Q (float)
+#param-eq-q2=3.000000
 
-# Intra luma quantization deadzone (integer)
-#sout-x264-deadzone-intra=11
+# Freq 3 (Hz) (float)
+#param-eq-f3=3000.000000
 
-# Non-deterministic optimizations when threaded (boolean)
-#sout-x264-non-deterministic=0
+# Freq 3 gain (dB) (float)
+#param-eq-gain3=0.000000
 
-# CPU optimizations (boolean)
-#sout-x264-asm=1
+# Freq 3 Q (float)
+#param-eq-q3=3.000000
 
-# PSNR computation (boolean)
-#sout-x264-psnr=0
+[normvol] # Volume normalizer
 
-# SSIM computation (boolean)
-#sout-x264-ssim=0
+# Number of audio buffers (integer)
+#norm-buff-size=20
 
-# Quiet mode (boolean)
-#sout-x264-quiet=0
+# Maximal volume level (float)
+#norm-max-level=2.000000
 
-# SPS and PPS id numbers (integer)
-#sout-x264-sps-id=0
+[mono] # Stereo to mono downmixer
 
-# Access unit delimiters (boolean)
-#sout-x264-aud=0
+# Use downmix algorithm (boolean)
+#sout-mono-downmix=1
 
-# Statistics (boolean)
-#sout-x264-verbose=0
+# Select channel to keep (integer)
+#sout-mono-channel=-1
 
-# Filename for 2 pass stats file (string)
-#sout-x264-stats=x264_2pass.log
+[headphone] # Headphone virtual spatialization effect
 
-# Default preset setting used (string)
-#sout-x264-preset=
+# Characteristic dimension (integer)
+#headphone-dim=10
 
-# Default tune setting used (string)
-#sout-x264-tune=
+# Compensate delay (boolean)
+#headphone-compensate=0
 
-# x264 advanced options (string)
-#sout-x264-options=
+# No decoding of Dolby Surround (boolean)
+#headphone-dolby=0
 
-[x26410b] # H.264/MPEG-4 Part 10/AVC encoder (x264 10-bit)
+[gain] # Gain control filter
 
-# Maximum GOP size (integer)
-#sout-x26410b-keyint=250
+# Gain multiplier (float)
+#gain-value=1.000000
 
-# Minimum GOP size (integer)
-#sout-x26410b-min-keyint=25
+[equalizer] # Equalizer with 10 bands
 
-# Use recovery points to close GOPs (boolean)
-#sout-x26410b-opengop=0
+# Equalizer preset (string)
+#equalizer-preset=flat
 
-# Enable compatibility hacks for Blu-ray support (boolean)
-#sout-x26410b-bluray-compat=0
+# Bands gain (string)
+#equalizer-bands=
 
-# Extra I-frames aggressivity (integer)
-#sout-x26410b-scenecut=40
+# Two pass (boolean)
+#equalizer-2pass=0
 
-# B-frames between I and P (integer)
-#sout-x26410b-bframes=3
+# Use VLC frequency bands (boolean)
+#equalizer-vlcfreqs=1
 
-# Adaptive B-frame decision (integer)
-#sout-x26410b-b-adapt=1
+# Global gain (float)
+#equalizer-preamp=12.000000
 
-# Influence (bias) B-frames usage (integer)
-#sout-x26410b-b-bias=0
+[compressor] # Dynamic range compressor
 
-# Keep some B-frames as references (string)
-#sout-x26410b-bpyramid=normal
+# RMS/peak (float)
+#compressor-rms-peak=0.200000
 
-# CABAC (boolean)
-#sout-x26410b-cabac=1
+# Attack time (float)
+#compressor-attack=25.000000
 
-# Use fullrange instead of TV colorrange (boolean)
-#sout-x26410b-fullrange=0
+# Release time (float)
+#compressor-release=100.000000
 
-# Number of reference frames (integer)
-#sout-x26410b-ref=3
+# Threshold level (float)
+#compressor-threshold=-11.000000
 
-# Skip loop filter (boolean)
-#sout-x26410b-nf=0
+# Ratio (float)
+#compressor-ratio=4.000000
 
-# Loop filter AlphaC0 and Beta parameters alpha:beta (string)
-#sout-x26410b-deblock=0:0
+# Knee radius (float)
+#compressor-knee=5.000000
 
-# Strength of psychovisual optimization, default is "1.0:0.0" (string)
-#sout-x26410b-psy-rd=1.0:0.0
+# Makeup gain (float)
+#compressor-makeup-gain=7.000000
 
-# Use Psy-optimizations (boolean)
-#sout-x26410b-psy=1
+[chorus_flanger] # Sound Delay
 
-# H.264 level (string)
-#sout-x26410b-level=0
+# Delay time (float)
+#delay-time=20.000000
 
-# H.264 profile (string)
-#sout-x26410b-profile=high
+# Sweep Depth (float)
+#sweep-depth=6.000000
 
-# Interlaced mode (boolean)
-#sout-x26410b-interlaced=0
+# Sweep Rate (float)
+#sweep-rate=6.000000
 
-# Frame packing (integer)
-#sout-x26410b-frame-packing=-1
+# Feedback gain (float)
+#feedback-gain=0.500000
 
-# Force number of slices per frame (integer)
-#sout-x26410b-slices=0
+# Wet mix (float)
+#wet-mix=0.400000
 
-# Limit the size of each slice in bytes (integer)
-#sout-x26410b-slice-max-size=0
+# Dry Mix (float)
+#dry-mix=0.400000
 
-# Limit the size of each slice in macroblocks (integer)
-#sout-x26410b-slice-max-mbs=0
+[audiobargraph_a] # Audio part of the BarGraph function
 
-# HRD-timing information (string)
-#sout-x26410b-hrd=none
+# Defines if BarGraph information should be sent (integer)
+#audiobargraph_a-bargraph=1
 
-# Set QP (integer)
-#sout-x26410b-qp=-1
+# Sends the barGraph information every n audio packets (integer)
+#audiobargraph_a-bargraph_repetition=4
 
-# Quality-based VBR (integer)
-#sout-x26410b-crf=23
+# Defines if silence alarm information should be sent (integer)
+#audiobargraph_a-silence=1
 
-# Min QP (integer)
-#sout-x26410b-qpmin=10
+# Time window to use in ms (integer)
+#audiobargraph_a-time_window=5000
 
-# Max QP (integer)
-#sout-x26410b-qpmax=51
+# Minimum Audio level to raise the alarm (float)
+#audiobargraph_a-alarm_threshold=0.020000
 
-# Max QP step (integer)
-#sout-x26410b-qpstep=4
+# Time between two alarm messages in ms (integer)
+#audiobargraph_a-repetition_time=2000
 
-# Average bitrate tolerance (float)
-#sout-x26410b-ratetol=1.000000
+[access_output_srt] # SRT stream output
 
-# Max local bitrate (integer)
-#sout-x26410b-vbv-maxrate=0
+# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
+#poll-timeout=-1
 
-# VBV buffer (integer)
-#sout-x26410b-vbv-bufsize=0
+# SRT latency (ms) (integer)
+#latency=120
 
-# Initial VBV buffer occupancy (float)
-#sout-x26410b-vbv-init=0.900000
+# Password for stream encryption (string)
+#passphrase=
 
-# QP factor between I and P (float)
-#sout-x26410b-ipratio=1.400000
+# SRT maximum payload size (bytes) (integer)
+#payload-size=1316
 
-# QP factor between P and B (float)
-#sout-x26410b-pbratio=1.300000
+# SRT maximum bandwidth ceiling (bytes) (integer)
+#bandwidth-overhead-limit=25
 
-# QP difference between chroma and luma (integer)
-#sout-x26410b-chroma-qp-offset=0
+# Crypto key length in bytes (integer)
+#key-length=16
 
-# Multipass ratecontrol (integer)
-#sout-x26410b-pass=0
+#  SRT Stream ID (string)
+#streamid=
 
-# QP curve compression (float)
-#sout-x26410b-qcomp=0.600000
+[udp] # UDP stream output
 
-# Reduce fluctuations in QP (float)
-#sout-x26410b-cplxblur=20.000000
+# Caching value (ms) (integer)
+#sout-udp-caching=300
 
-# Reduce fluctuations in QP (float)
-#sout-x26410b-qblur=0.500000
+# Group packets (integer)
+#sout-udp-group=1
 
-# How AQ distributes bits (integer)
-#sout-x26410b-aq-mode=1
+[access_output_shout] # IceCAST output
 
-# Strength of AQ (float)
-#sout-x26410b-aq-strength=1.000000
+# Stream name (string)
+#sout-shout-name=VLC media player - Live stream
 
-# Partitions to consider (string)
-#sout-x26410b-partitions=normal
+# Stream description (string)
+#sout-shout-description=Live stream from VLC media player
 
-# Direct MV prediction mode (string)
-#sout-x26410b-direct=spatial
+# Stream MP3 (boolean)
+#sout-shout-mp3=0
 
-# Direct prediction size (integer)
-#sout-x26410b-direct-8x8=1
+# Genre description (string)
+#sout-shout-genre=Alternative
 
-# Weighted prediction for B-frames (boolean)
-#sout-x26410b-weightb=1
+# URL description (string)
+#sout-shout-url=http://www.videolan.org/vlc
 
-# Weighted prediction for P-frames (integer)
-#sout-x26410b-weightp=2
+# Bitrate (string)
+#sout-shout-bitrate=
 
-# Integer pixel motion estimation method (string)
-#sout-x26410b-me=hex
+# Samplerate (string)
+#sout-shout-samplerate=
 
-# Maximum motion vector search range (integer)
-#sout-x26410b-merange=16
+# Number of channels (string)
+#sout-shout-channels=
 
-# Maximum motion vector length (integer)
-#sout-x26410b-mvrange=-1
+# Ogg Vorbis Quality (string)
+#sout-shout-quality=
 
-# Minimum buffer space between threads (integer)
-#sout-x26410b-mvrange-thread=-1
+# Stream public (boolean)
+#sout-shout-public=0
 
-# Subpixel motion estimation and partition decision quality (integer)
-#sout-x26410b-subme=7
+[access_output_rist] # RIST stream output
 
-# Decide references on a per partition basis (boolean)
-#sout-x26410b-mixed-refs=1
+# RIST target packet size (bytes) (integer)
+#sout-rist-packet-size=1328
 
-# Chroma in motion estimation (boolean)
-#sout-x26410b-chroma-me=1
+# RIST data output caching size (ms) (integer)
+#sout-rist-caching=50
 
-# Adaptive spatial transform size (boolean)
-#sout-x26410b-8x8dct=1
+# RIST retry-buffer queue size (ms) (integer)
+#sout-rist-buffer-size=0
 
-# Trellis RD quantization (integer)
-#sout-x26410b-trellis=1
+# SSRC used in RTP output (default is random, i.e. 0) (integer)
+#sout-rist-ssrc=0
 
-# Framecount to use on frametype lookahead (integer)
-#sout-x26410b-lookahead=40
+# Stream name (string)
+#sout-rist-stream-name=
 
-# Use Periodic Intra Refresh (boolean)
-#sout-x26410b-intra-refresh=0
+[access_output_livehttp] # HTTP Live streaming output
 
-# Use mb-tree ratecontrol (boolean)
-#sout-x26410b-mbtree=1
+# Segment length (integer)
+#sout-livehttp-seglen=10
 
-# Early SKIP detection on P-frames (boolean)
-#sout-x26410b-fast-pskip=1
+# Number of segments (integer)
+#sout-livehttp-numsegs=0
 
-# Coefficient thresholding on P-frames (boolean)
-#sout-x26410b-dct-decimate=1
+# Number of first segment (integer)
+#sout-livehttp-initial-segment-number=1
 
-# Noise reduction (integer)
-#sout-x26410b-nr=0
+# Split segments anywhere (boolean)
+#sout-livehttp-splitanywhere=0
 
-# Inter luma quantization deadzone (integer)
-#sout-x26410b-deadzone-inter=21
+# Delete segments (boolean)
+#sout-livehttp-delsegs=1
 
-# Intra luma quantization deadzone (integer)
-#sout-x26410b-deadzone-intra=11
+# Use muxers rate control mechanism (boolean)
+#sout-livehttp-ratecontrol=0
 
-# Non-deterministic optimizations when threaded (boolean)
-#sout-x26410b-non-deterministic=0
+# Allow cache (boolean)
+#sout-livehttp-caching=0
 
-# CPU optimizations (boolean)
-#sout-x26410b-asm=1
+# Use randomized IV for encryption (boolean)
+#sout-livehttp-generate-iv=0
 
-# PSNR computation (boolean)
-#sout-x26410b-psnr=0
+# Index file (string)
+#sout-livehttp-index=
 
-# SSIM computation (boolean)
-#sout-x26410b-ssim=0
+# Full URL to put in index file (string)
+#sout-livehttp-index-url=
 
-# Quiet mode (boolean)
-#sout-x26410b-quiet=0
+# AES key URI to place in playlist (string)
+#sout-livehttp-key-uri=
 
-# SPS and PPS id numbers (integer)
-#sout-x26410b-sps-id=0
+# AES key file (string)
+#sout-livehttp-key-file=
 
-# Access unit delimiters (boolean)
-#sout-x26410b-aud=0
+# File where vlc reads key-uri and keyfile-location (string)
+#sout-livehttp-key-loadfile=
 
-# Statistics (boolean)
-#sout-x26410b-verbose=0
+[http] # HTTP stream output
 
-# Filename for 2 pass stats file (string)
-#sout-x26410b-stats=x264_2pass.log
+# Username (string)
+#sout-http-user=
 
-# Default preset setting used (string)
-#sout-x26410b-preset=
+# Password (string)
+#sout-http-pwd=
 
-# Default tune setting used (string)
-#sout-x26410b-tune=
+# Mime (string)
+#sout-http-mime=
 
-# x264 advanced options (string)
-#sout-x26410b-options=
+# Metacube (boolean)
+#sout-http-metacube=0
+
+[file] # File stream output
+
+# Overwrite existing file (boolean)
+#sout-file-overwrite=1
+
+# Append to file (boolean)
+#sout-file-append=0
+
+# Format time and date (boolean)
+#sout-file-format=0
+
+# Synchronous writing (boolean)
+#sout-file-sync=0
+
+[xcb_screen] # Screen capture (with X11/XCB)
+
+# Frame rate (float)
+#screen-fps=2.000000
+
+# Region left column (integer)
+#screen-left=0
+
+# Region top row (integer)
+#screen-top=0
+
+# Capture region width (integer)
+#screen-width=0
+
+# Capture region height (integer)
+#screen-height=0
+
+# Follow the mouse (boolean)
+#screen-follow-mouse=0
+
+[v4l2] # Video4Linux input
+
+# Video capture device (string)
+#v4l2-dev=/dev/video0
+
+# VBI capture device (string)
+#v4l2-vbidev=
+
+# Standard (string)
+#v4l2-standard=
+
+# Video input chroma format (string)
+#v4l2-chroma=
+
+# Input (integer)
+#v4l2-input=0
+
+# Audio input (integer)
+#v4l2-audio-input=-1
+
+# Width (integer)
+#v4l2-width=0
+
+# Height (integer)
+#v4l2-height=0
+
+# Picture aspect-ratio n:m (string)
+#v4l2-aspect-ratio=4:3
+
+# Frame rate (string)
+#v4l2-fps=60
+
+# Radio device (string)
+#v4l2-radio-dev=/dev/radio0
+
+# Frequency (integer)
+#v4l2-tuner-frequency=-1
+
+# Audio mode (integer)
+#v4l2-tuner-audio-mode=3
+
+# Reset controls (boolean)
+#v4l2-controls-reset=0
+
+# Brightness (integer)
+#v4l2-brightness=-1
+
+# Automatic brightness (integer)
+#v4l2-brightness-auto=-1
+
+# Contrast (integer)
+#v4l2-contrast=-1
+
+# Saturation (integer)
+#v4l2-saturation=-1
+
+# Hue (integer)
+#v4l2-hue=-1
+
+# Automatic hue (integer)
+#v4l2-hue-auto=-1
+
+# White balance temperature (K) (integer)
+#v4l2-white-balance-temperature=-1
+
+# Automatic white balance (integer)
+#v4l2-auto-white-balance=-1
+
+# Red balance (integer)
+#v4l2-red-balance=-1
+
+# Blue balance (integer)
+#v4l2-blue-balance=-1
+
+# Gamma (integer)
+#v4l2-gamma=-1
+
+# Automatic gain (integer)
+#v4l2-autogain=-1
+
+# Gain (integer)
+#v4l2-gain=-1
+
+# Sharpness (integer)
+#v4l2-sharpness=-1
+
+# Chroma gain (integer)
+#v4l2-chroma-gain=-1
+
+# Automatic chroma gain (integer)
+#v4l2-chroma-gain-auto=-1
+
+# Power line frequency (integer)
+#v4l2-power-line-frequency=-1
+
+# Backlight compensation (integer)
+#v4l2-backlight-compensation=-1
+
+# Band-stop filter (integer)
+#v4l2-band-stop-filter=-1
+
+# Horizontal flip (boolean)
+#v4l2-hflip=0
+
+# Vertical flip (boolean)
+#v4l2-vflip=0
+
+# Rotate (degrees) (integer)
+#v4l2-rotate=-1
+
+# Color killer (integer)
+#v4l2-color-killer=-1
+
+# Color effect (integer)
+#v4l2-color-effect=-1
+
+# Audio volume (integer)
+#v4l2-audio-volume=-1
+
+# Audio balance (integer)
+#v4l2-audio-balance=-1
+
+# Mute (boolean)
+#v4l2-audio-mute=0
+
+# Bass level (integer)
+#v4l2-audio-bass=-1
+
+# Treble level (integer)
+#v4l2-audio-treble=-1
+
+# Loudness mode (boolean)
+#v4l2-audio-loudness=0
+
+# v4l2 driver controls (string)
+#v4l2-set-ctrls=
+
+[sftp] # SFTP input
+
+# SFTP port (integer)
+#sftp-port=22
+
+# Username (string)
+#sftp-user=
+
+# Password (string)
+#sftp-pwd=
+
+[nfs] # NFS input
+
+# Set NFS uid/guid automatically (boolean)
+#nfs-auto-guid=1
+
+[live555] # RTP/RTSP/SDP demuxer (using Live555)
+
+# Use RTP over RTSP (TCP) (boolean)
+#rtsp-tcp=0
+
+# Client port (integer)
+#rtp-client-port=-1
+
+# Force multicast RTP via RTSP (boolean)
+#rtsp-mcast=0
+
+# Tunnel RTSP and RTP over HTTP (boolean)
+#rtsp-http=0
+
+# HTTP tunnel port (integer)
+#rtsp-http-port=80
+
+# Kasenna RTSP dialect (boolean)
+#rtsp-kasenna=0
+
+# WMServer RTSP dialect (boolean)
+#rtsp-wmserver=0
+
+# Username (string)
+#rtsp-user=
+
+# Password (string)
+#rtsp-pwd=
+
+# RTSP frame buffer size (integer)
+#rtsp-frame-buffer-size=250000
+
+[linsys_sdi] # SDI Input
+
+# Link # (integer)
+#linsys-sdi-link=0
+
+# Video ID (integer)
+#linsys-sdi-id-video=0
+
+# Aspect ratio (string)
+#linsys-sdi-aspect-ratio=
+
+# Audio configuration (string)
+#linsys-sdi-audio=0=1,1
+
+# Teletext configuration (string)
+#linsys-sdi-telx=
+
+# Teletext language (string)
+#linsys-sdi-telx-lang=
+
+[linsys_hdsdi] # HD-SDI Input
+
+# Link # (integer)
+#linsys-hdsdi-link=0
+
+# Video ID (integer)
+#linsys-hdsdi-id-video=0
+
+# Aspect ratio (string)
+#linsys-hdsdi-aspect-ratio=
+
+# Audio configuration (string)
+#linsys-hdsdi-audio=0=1,1
+
+[libbluray] # Blu-ray Disc support (libbluray)
+
+# Blu-ray menus (boolean)
+#bluray-menu=1
+
+# Region code (string)
+#bluray-region=B
+
+[dvdread] # DVDRead Input (no menu support)
+
+# DVD angle (integer)
+#dvdread-angle=1
+
+[dvdnav] # DVDnav Input
+
+# DVD angle (integer)
+#dvdnav-angle=1
+
+# Start directly in menu (boolean)
+#dvdnav-menu=1
+
+[dvb] # DVB input with v4l2 support
+
+# Probe DVB card for capabilities (boolean)
+#dvb-probe=1
+
+# Satellite scanning config (string)
+#dvb-satellite=
+
+# Scan tuning list (string)
+#dvb-scanlist=
+
+# Use NIT for scanning services (boolean)
+#dvb-scan-nit=1
+
+[cdda] # Audio CD input
+
+# Audio CD device (string)
+#cd-audio=/dev/sr0
+
+# Musicbrainz Server (string)
+#musicbrainz-server=musicbrainz.org
+
+# CDDB Server (string)
+#cddb-server=freedb.videolan.org
+
+# CDDB port (integer)
+#cddb-port=80
+
+[access_srt] # SRT input
+
+# Return poll wait after timeout milliseconds (-1 = infinite) (integer)
+#poll-timeout=-1
+
+# SRT latency (ms) (integer)
+#latency=120
+
+# Password for stream encryption (string)
+#passphrase=
+
+# Crypto key length in bytes (integer)
+#key-length=16
+
+#  SRT Stream ID (string)
+#streamid=
+
+[avio] # libavformat AVIO access
+
+# Advanced options (string)
+#avio-options=
+
+# Advanced options (string)
+#sout-avio-options=
+
+[vdr] # VDR recordings
+
+# Chapter offset in ms (integer)
+#vdr-chapter-offset=0
+
+# Frame rate (float)
+#vdr-fps=25.000000
+
+[udp] # UDP input
+
+# UDP Source timeout (sec) (integer)
+#udp-timeout=-1
+
+[timecode] # Time code subpicture elementary stream generator
+
+# Frame rate (string)
+#timecode-fps=25/1
+
+[shm] # Shared memory framebuffer
+
+# Frame rate (float)
+#shm-fps=10.000000
+
+# Frame buffer depth (integer)
+#shm-depth=0
+
+# Frame buffer width (integer)
+#shm-width=800
+
+# Frame buffer height (integer)
+#shm-height=480
+
+[satip] # SAT>IP Receiver Plugin
+
+# Receive buffer (integer)
+#satip-buffer=4194304
+
+# Request multicast stream (boolean)
+#satip-multicast=0
+
+# Host (string)
+#satip-host=
+
+[rtp] # Real-Time Protocol (RTP) input
+
+# RTCP (local) port (integer)
+#rtcp-port=0
+
+# SRTP key (hexadecimal) (string)
+#srtp-key=
+
+# SRTP salt (hexadecimal) (string)
+#srtp-salt=
+
+# Maximum RTP sources (integer)
+#rtp-max-src=1
+
+# RTP source timeout (sec) (integer)
+#rtp-timeout=5
+
+# Maximum RTP sequence number dropout (integer)
+#rtp-max-dropout=3000
+
+# Maximum RTP sequence number misordering (integer)
+#rtp-max-misorder=100
+
+# RTP payload format assumed for dynamic payloads (string)
+#rtp-dynamic-pt=
+
+[rist] # RIST input
+
+# RIST maximum packet size (bytes) (integer)
+#packet-size=1472
+
+# RIST demux/decode maximum jitter (default is 5ms) (integer)
+#maximum-jitter=5
+
+# RIST latency (ms) (integer)
+#latency=1000
+
+# RIST nack retry interval (ms) (integer)
+#retry-interval=132
+
+# RIST reorder buffer (ms) (integer)
+#reorder-buffer=70
+
+# RIST maximum retry count (integer)
+#max-retries=10
+
+# RIST nack type, 0 = range, 1 = bitmask. Default is range (integer)
+#nack-type=0
+
+# Disable NACK output packets (boolean)
+#disable-nacks=0
+
+# Do not check for a valid rtcp message from the encoder (boolean)
+#mcast-blind-nacks=0
+
+[access] # HTTPS input
+
+# Cookies forwarding (boolean)
+#http-forward-cookies=1
+
+# User agent (string)
+#http-user-agent=
+
+[http] # HTTP input
+
+# Auto re-connect (boolean)
+#http-reconnect=0
+
+[ftp] # FTP input
+
+# Username (string)
+#ftp-user=
+
+# Password (string)
+#ftp-pwd=
+
+# FTP account (string)
+#ftp-account=anonymous
+
+[filesystem] # File input
+
+# List special files (boolean)
+#list-special-files=0
+
+[dtv] # Digital Television and Radio
+
+# DVB adapter (integer)
+#dvb-adapter=0
+
+# DVB device (integer)
+#dvb-device=0
+
+# Do not demultiplex (boolean)
+#dvb-budget-mode=0
+
+# Frequency (Hz) (integer)
+#dvb-frequency=0
+
+# Spectrum inversion (integer)
+#dvb-inversion=-1
+
+# Bandwidth (MHz) (integer)
+#dvb-bandwidth=0
+
+# Transmission mode (integer)
+#dvb-transmission=0
+
+# Guard interval (string)
+#dvb-guard=
+
+# High-priority code rate (string)
+#dvb-code-rate-hp=
+
+# Low-priority code rate (string)
+#dvb-code-rate-lp=
+
+# Hierarchy mode (integer)
+#dvb-hierarchy=-1
+
+# DVB-T2 Physical Layer Pipe (integer)
+#dvb-plp-id=0
+
+# Layer A modulation (string)
+#dvb-a-modulation=
+
+# Layer A code rate (string)
+#dvb-a-fec=
+
+# Layer A segments count (integer)
+#dvb-a-count=0
+
+# Layer A time interleaving (integer)
+#dvb-a-interleaving=0
+
+# Layer B modulation (string)
+#dvb-b-modulation=
+
+# Layer B code rate (string)
+#dvb-b-fec=
+
+# Layer B segments count (integer)
+#dvb-b-count=0
+
+# Layer B time interleaving (integer)
+#dvb-b-interleaving=0
+
+# Layer C modulation (string)
+#dvb-c-modulation=
+
+# Layer C code rate (string)
+#dvb-c-fec=
+
+# Layer C segments count (integer)
+#dvb-c-count=0
+
+# Layer C time interleaving (integer)
+#dvb-c-interleaving=0
+
+# Modulation / Constellation (string)
+#dvb-modulation=
+
+# Symbol rate (bauds) (integer)
+#dvb-srate=0
+
+# FEC code rate (string)
+#dvb-fec=
+
+# Stream identifier (integer)
+#dvb-stream=0
+
+# Pilot (integer)
+#dvb-pilot=-1
+
+# Roll-off factor (integer)
+#dvb-rolloff=-1
+
+# Transport stream ID (integer)
+#dvb-ts-id=0
+
+# Polarization (Voltage) (string)
+#dvb-polarization=
+
+#  (integer)
+#dvb-voltage=13
+
+# High LNB voltage (boolean)
+#dvb-high-voltage=0
+
+# Local oscillator low frequency (kHz) (integer)
+#dvb-lnb-low=0
+
+# Local oscillator high frequency (kHz) (integer)
+#dvb-lnb-high=0
+
+# Universal LNB switch frequency (kHz) (integer)
+#dvb-lnb-switch=11700000
+
+# DiSEqC LNB number (integer)
+#dvb-satno=0
+
+# Uncommitted DiSEqC LNB number (integer)
+#dvb-uncommitted=0
+
+# Continuous 22kHz tone (integer)
+#dvb-tone=-1
+
+[access_mms] # Microsoft Media Server (MMS) input
+
+# TCP/UDP timeout (ms) (integer)
+#mms-timeout=5000
+
+# Force selection of all streams (boolean)
+#mms-all=0
+
+# Maximum bitrate (integer)
+#mms-maxbitrate=0
+
+[imem] # Memory input
+
+# ID (integer)
+#imem-id=-1
+
+# Group (integer)
+#imem-group=0
+
+# Category (integer)
+#imem-cat=0
+
+# Codec (string)
+#imem-codec=
+
+# Language (string)
+#imem-language=
+
+# Sample rate (integer)
+#imem-samplerate=0
+
+# Channels count (integer)
+#imem-channels=0
+
+# Width (integer)
+#imem-width=0
+
+# Height (integer)
+#imem-height=0
+
+# Display aspect ratio (string)
+#imem-dar=
+
+# Frame rate (string)
+#imem-fps=
+
+# Size (integer)
+#imem-size=0
+
+[concat] # Concatenated inputs
+
+# Inputs list (string)
+#concat-list=
+
+[access_alsa] # ALSA audio capture
+
+# Stereo (boolean)
+#alsa-stereo=1
+
+# Sample rate (integer)
+#alsa-samplerate=48000
 
 [core] # core program
 
@@ -4479,7 +4013,7 @@ qt-privacy-ask=0
 #rt-offset=0
 
 # Play files randomly forever (boolean)
-random=1
+#random=0
 
 # Repeat all (boolean)
 #loop=0
@@ -5256,13 +4790,13 @@ metadata-network-access=1
 #key-subtitle-text-scale-down=Ctrl+Mouse Wheel Down
 
 # Playlist bookmark 1 (string)
-bookmark1=file:///home/nrv/media/King%20of%20the%20Hill%20Season%2003/KOTH-%203x20%20-%20Dog%20Dale%20Afternoon.avi
+#bookmark1=
 
 # Playlist bookmark 2 (string)
-bookmark2=file:///home/nrv/media/King%20of%20the%20Hill%20Season%2003/KOTH-%203x20%20-%20Dog%20Dale%20Afternoon.avi
+#bookmark2=
 
 # Playlist bookmark 3 (string)
-bookmark3=file:///home/nrv/chess/english-couse/carls-bremin/Chapter%201%20Carls-Bremen%20System%201.mp4
+#bookmark3=
 
 # Playlist bookmark 4 (string)
 #bookmark4=

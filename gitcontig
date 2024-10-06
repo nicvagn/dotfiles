@@ -1,15 +1,16 @@
 [user]
 	name = Nicolas Vaagen
-	email = 37600758+nicvagn@users.noreply.github.com
+	email = nicolasvaagen@gmail.com
+	signingkey = C322A644D5998CD1
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [core]
-    editor = vim
+    editor = nvim
 	autocrlf = input
 	whitespace = trailing-space
-	pager = less --LONG-PROMPT --tabs=4 --quit-if-one-screen --tilde --jump-target=3 --ignore-case --status-column
+	pager = less -FX
 
 [alias]
     lg = lg1
@@ -26,12 +27,12 @@
 	autoSetupRemote = true
 [commit]
 	verbose = true
+	gpgsign = true
 [status]
 	submoduleSummary = true
 [init]
 	defaultBranch = master
 [gui]
-	recentrepo = /home/nrv/dev/NicLink
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -39,7 +40,7 @@
 	process = git-lfs filter-process
 [pull]
 	rebase = false
-[merge]
-	tool = nvimdiff
 [color]
 	ui = auto
+[tag]
+	gpgsign = true

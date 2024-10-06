@@ -2,52 +2,29 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/nrv/dev/boardChessnut": "499077a0",
-            "file:///home/nrv/dev/NicLink/pytonInterface": "499077a0",
-            "file:///home/nrv/dev/NicLink/certabo-lichess": "499077a0",
-            "file:///home/nrv/dev/NicLink/src": "505a8248",
-            "file:///home/nrv/dev/cli-chess/src/cli_chess/core/game": "505a8248",
-            "file:///home/nrv/dev/cli-chess": "499077a0",
-            "file:///home/nrv/dev/cli-chess/src/cli_chess/modules": "499077a0",
-            "file:///home/nrv/dev/cli-chess/src/cli_chess": "499077a0",
-            "file:///home/nrv/dev/cli-chess/src/cli_chess/core": "499077a0",
-            "file:///home/nrv/dev/cli-chess/src": "499077a0",
-            "file:///home/nrv/dev/chess-website/website": "7015a63f",
-            "file:///home/nrv/dev/NicLink/etc/certabo-lichess": "__default__profile__",
-            "file:///home/nrv/dev/boardChessnut/EasyLinkSDK/sdk": "499077a0",
-            "file:///home/nrv/dev/boardChessnut/EasyLinkSDK": "499077a0",
-            "file:///home/nrv/dev/websites/chess-website": "499077a0",
-            "file:///home/nrv/dev/websites/bridgecity-website": "7015a63f",
-            "file:///home/nrv/dev/NicLink": "499077a0",
-            "file:///home/nrv/dev/lichess/lila/modules/study/src/main": "__default__profile__",
-            "file:///home/nrv/dev/lichess/lila/modules": "__default__profile__",
-            "file:///home/nrv/dev/NicLink/nic_soft/niclink_lichess": "__default__profile__",
-            "file:///home/nrv/dev/LiseChessEngine": "57a53808",
-            "file:///home/nrv/dev/NicLink/nic_soft": "499077a0",
-            "file:///home/nrv/school/MULT_124/MULT124-A4-NicolasVaagen": "7015a63f",
-            "file:///home/nrv/school/MULT_124": "7015a63f",
-            "file:///home/nrv/school/MULT_124/MULT124-A5-NicolasVaagen": "7015a63f",
-            "file:///home/nrv/school": "7015a63f",
-            "vscode-remote://ssh-remote%2B7b22686f73744e616d65223a226c6963686573736f72672d6c696c61646f636b65722d753572326b3768767977332e7673732e676974706f642e696f222c2275736572223a226c6963686573736f72672d6c696c61646f636b65722d753572326b376876797733227d/workspace/lila-docker": "__default__profile__",
-            "file:///home/nrv/dev/websites/horizon_store": "7015a63f",
-            "file:///home/nrv/dev/websites/chess-website/website": "7015a63f"
+            "file:///home/nrv/nvim.config": "__default__profile__",
+            "file:///home/nrv/git/horizon_report": "__default__profile__",
+            "file:///home/nrv/nvim.config/lua": "__default__profile__",
+            "file:///git/horizon_report": "__default__profile__",
+            "file:///home/nrv/devel/monthly_challenges": "__default__profile__"
         },
-        "emptyWindows": {
-            "1725200906076": "__default__profile__",
-            "1725233652773": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
-    "telemetry.machineId": "4bb8db65a056a5646e9cb7f5af8c374a02ec30f2f646ee4dcb4377f51d47a6de",
+    "telemetry.machineId": "40ba75f6afa408ff4ee0543c3b5b4c410b326e1688fc7a05a849a28d2005caaf",
+    "telemetry.devDeviceId": "d8e588c5-ae3e-46f5-aa7b-37d738a81ac1",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1725233652773"
+                "folderUri": "file:///home/nrv/devel/monthly_challenges"
+            },
+            {
+                "folderUri": "file:///home/nrv/git/horizon_report"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -64,6 +41,18 @@
                     {
                         "id": "workbench.action.newWindow",
                         "label": "New &&Window"
+                    },
+                    {
+                        "id": "submenuitem.OpenProfile",
+                        "label": "New Window with Profile",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.profiles.actions.createProfile",
+                                    "label": "New Profile..."
+                                }
+                            ]
+                        }
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -87,8 +76,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -97,226 +85,56 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nrv/dev/websites/chess-website/website",
-                                        "path": "/home/nrv/dev/websites/chess-website/website",
+                                        "external": "file:///home/nrv/git/horizon_report",
+                                        "path": "/home/nrv/git/horizon_report",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dev/websites/chess-website/website"
+                                    "label": "~/git/horizon_report"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nrv/dev/websites/horizon_store",
-                                        "path": "/home/nrv/dev/websites/horizon_store",
+                                        "external": "file:///home/nrv/devel/monthly_challenges",
+                                        "path": "/home/nrv/devel/monthly_challenges",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/dev/websites/horizon_store"
+                                    "label": "~/devel/monthly_challenges"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "vscode-remote://ssh-remote%2B7b22686f73744e616d65223a226c6963686573736f72672d6c696c61646f636b65722d753572326b3768767977332e7673732e676974706f642e696f222c2275736572223a226c6963686573736f72672d6c696c61646f636b65722d753572326b376876797733227d/workspace/lila-docker",
-                                        "path": "/workspace/lila-docker",
-                                        "scheme": "vscode-remote",
-                                        "authority": "ssh-remote+7b22686f73744e616d65223a226c6963686573736f72672d6c696c61646f636b65722d753572326b3768767977332e7673732e676974706f642e696f222c2275736572223a226c6963686573736f72672d6c696c61646f636b65722d753572326b376876797733227d"
+                                        "external": "file:///git/horizon_report",
+                                        "path": "/git/horizon_report",
+                                        "scheme": "file"
                                     },
-                                    "remoteAuthority": "ssh-remote+7b22686f73744e616d65223a226c6963686573736f72672d6c696c61646f636b65722d753572326b3768767977332e7673732e676974706f642e696f222c2275736572223a226c6963686573736f72672d6c696c61646f636b65722d753572326b376876797733227d",
                                     "enabled": true,
-                                    "label": "/workspace/lila-docker [SSH: lichessorg-liladocker-u5r2k7hvyw3.vss.gitpod.io]"
+                                    "label": "/git/horizon_report"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nrv/school",
-                                        "path": "/home/nrv/school",
+                                        "external": "file:///home/nrv/nvim.config/lua",
+                                        "path": "/home/nrv/nvim.config/lua",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/school"
+                                    "label": "~/nvim.config/lua"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/nrv/school/MULT_124/MULT124-A5-NicolasVaagen",
-                                        "path": "/home/nrv/school/MULT_124/MULT124-A5-NicolasVaagen",
+                                        "external": "file:///home/nrv/nvim.config",
+                                        "path": "/home/nrv/nvim.config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/school/MULT_124/MULT124-A5-NicolasVaagen"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/school/MULT_124",
-                                        "path": "/home/nrv/school/MULT_124",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/school/MULT_124"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/school/MULT_124/MULT124-A4-NicolasVaagen",
-                                        "path": "/home/nrv/school/MULT_124/MULT124-A4-NicolasVaagen",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/school/MULT_124/MULT124-A4-NicolasVaagen"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/nic_soft",
-                                        "path": "/home/nrv/dev/NicLink/nic_soft",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/nic_soft"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/LiseChessEngine",
-                                        "path": "/home/nrv/dev/LiseChessEngine",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/LiseChessEngine"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/nic_soft/niclink_lichess",
-                                        "path": "/home/nrv/dev/NicLink/nic_soft/niclink_lichess",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/nic_soft/niclink_lichess"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/HorionPairPy/horizonpair/tournament/round.py",
-                                        "path": "/home/nrv/dev/HorionPairPy/horizonpair/tournament/round.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/HorionPairPy/horizonpair/tournament/round.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/display.py",
-                                        "path": "/home/nrv/display.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/display.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/chess/chess_arbiter_course.md",
-                                        "path": "/home/nrv/chess/chess_arbiter_course.md",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/chess/chess_arbiter_course.md"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/external_clock/chess_clock.py",
-                                        "path": "/home/nrv/dev/NicLink/external_clock/chess_clock.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/external_clock/chess_clock.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/external_clock/sending_messages.py",
-                                        "path": "/home/nrv/dev/NicLink/external_clock/sending_messages.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/external_clock/sending_messages.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/external_clock/old/chess_clock.py",
-                                        "path": "/home/nrv/dev/NicLink/external_clock/old/chess_clock.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/external_clock/old/chess_clock.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/nicsoft/lichess/chess_clock.py",
-                                        "path": "/home/nrv/dev/NicLink/nicsoft/lichess/chess_clock.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/nicsoft/lichess/chess_clock.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/nicsoft/lichess/game_state.py",
-                                        "path": "/home/nrv/dev/NicLink/nicsoft/lichess/game_state.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/nicsoft/lichess/game_state.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/NicLink/nicsoft/lichess/external_timer/lcd_display.py",
-                                        "path": "/home/nrv/dev/NicLink/nicsoft/lichess/external_timer/lcd_display.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/NicLink/nicsoft/lichess/external_timer/lcd_display.py"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/nrv/dev/.Trash-1000/files/game_state_dispatcher.py",
-                                        "path": "/home/nrv/dev/.Trash-1000/files/game_state_dispatcher.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/.Trash-1000/files/game_state_dispatcher.py"
+                                    "label": "~/nvim.config"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -377,10 +195,6 @@
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
-                                },
-                                {
-                                    "id": "workbench.profiles.actions.importProfile",
-                                    "label": "Import Profile..."
                                 }
                             ]
                         }
@@ -390,7 +204,8 @@
                     },
                     {
                         "id": "workbench.action.toggleAutoSave",
-                        "label": "A&&uto Save"
+                        "label": "A&&uto Save",
+                        "checked": true
                     },
                     {
                         "id": "submenuitem.MenubarPreferencesMenu",
@@ -398,66 +213,8 @@
                         "submenu": {
                             "items": [
                                 {
-                                    "id": "submenuitem.Profiles",
-                                    "label": "Profiles (Default)",
-                                    "submenu": {
-                                        "items": [
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.505a8248",
-                                                "label": "Cpp"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.__default__profile__",
-                                                "label": "Default",
-                                                "checked": true
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.57a53808",
-                                                "label": "java"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.-10613e24",
-                                                "label": "lichess-dev"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.499077a0",
-                                                "label": "python"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.profileEntry.7015a63f",
-                                                "label": "web_dev"
-                                            },
-                                            {
-                                                "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.showProfileContents",
-                                                "label": "Show Profile Contents"
-                                            },
-                                            {
-                                                "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.createProfile",
-                                                "label": "Create Profile..."
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.deleteProfile",
-                                                "label": "Delete Profile..."
-                                            },
-                                            {
-                                                "id": "vscode.menubar.separator"
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.exportProfile",
-                                                "label": "Export Profile..."
-                                            },
-                                            {
-                                                "id": "workbench.profiles.actions.importProfile",
-                                                "label": "Import Profile..."
-                                            }
-                                        ]
-                                    }
+                                    "id": "workbench.profiles.actions.manageProfiles",
+                                    "label": "&&Profiles"
                                 },
                                 {
                                     "id": "workbench.action.openSettings",
@@ -473,11 +230,11 @@
                                 },
                                 {
                                     "id": "workbench.action.openSnippets",
-                                    "label": "Configure User Snippets"
+                                    "label": "Configure Snippets"
                                 },
                                 {
                                     "id": "workbench.action.tasks.openUserTasks",
-                                    "label": "User Tasks"
+                                    "label": "Tasks"
                                 },
                                 {
                                     "id": "submenuitem.ThemesSubMenu",
@@ -503,6 +260,13 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "workbench.userDataSync.actions.turnOn",
+                                    "label": "Backup and Sync Settings..."
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "settings.filterByOnline",
                                     "label": "&&Online Services Settings"
                                 }
@@ -519,6 +283,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -714,7 +482,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -730,6 +499,10 @@
                                     "label": "&&Panel"
                                 },
                                 {
+                                    "id": "toggle.toggleCustomTitleBar",
+                                    "label": "Custom Title Bar"
+                                },
+                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -742,9 +515,17 @@
                                     "submenu": {
                                         "items": [
                                             {
-                                                "id": "workbench.action.activityBarLocation.side",
-                                                "label": "&&Side",
+                                                "id": "workbench.action.activityBarLocation.default",
+                                                "label": "&&Default",
                                                 "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.activityBarLocation.top",
+                                                "label": "&&Top"
+                                            },
+                                            {
+                                                "id": "workbench.action.activityBarLocation.bottom",
+                                                "label": "&&Bottom"
                                             },
                                             {
                                                 "id": "workbench.action.activityBarLocation.hide",
@@ -759,9 +540,8 @@
                                     "submenu": {
                                         "items": [
                                             {
-                                                "id": "workbench.action.positionPanelBottom",
-                                                "label": "Bottom",
-                                                "checked": true
+                                                "id": "workbench.action.positionPanelTop",
+                                                "label": "Top"
                                             },
                                             {
                                                 "id": "workbench.action.positionPanelLeft",
@@ -770,6 +550,11 @@
                                             {
                                                 "id": "workbench.action.positionPanelRight",
                                                 "label": "Right"
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelBottom",
+                                                "label": "Bottom",
+                                                "checked": true
                                             }
                                         ]
                                     }
@@ -831,6 +616,10 @@
                                                 "checked": true
                                             },
                                             {
+                                                "id": "workbench.action.editorActionsTitleBar",
+                                                "label": "Title Bar"
+                                            },
+                                            {
                                                 "id": "workbench.action.hideEditorActions",
                                                 "label": "Hidden"
                                             }
@@ -847,12 +636,13 @@
                                 },
                                 {
                                     "id": "breadcrumbs.toggle",
-                                    "label": "&&Breadcrumbs",
+                                    "label": "Toggle &&Breadcrumbs",
                                     "checked": true
                                 },
                                 {
                                     "id": "editor.action.toggleStickyScroll",
-                                    "label": "&&Sticky Scroll"
+                                    "label": "&&Sticky Scroll",
+                                    "checked": true
                                 },
                                 {
                                     "id": "editor.action.toggleRenderWhitespace",
@@ -1025,8 +815,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1035,8 +824,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1105,54 +893,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1316,6 +1095,10 @@
                                 {
                                     "id": "editor.debug.action.addLogPoint",
                                     "label": "&&Logpoint..."
+                                },
+                                {
+                                    "id": "editor.debug.action.triggerByBreakpoint",
+                                    "label": "&&Triggered Breakpoint..."
                                 }
                             ]
                         }
@@ -1352,8 +1135,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1426,6 +1208,10 @@
                     {
                         "id": "update.showCurrentReleaseNotes",
                         "label": "Show &&Release Notes"
+                    },
+                    {
+                        "id": "workbench.action.getStartedWithAccessibilityFeatures",
+                        "label": "Get Started with Accessibility Features"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1550,6 +1336,11 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+w q"
             },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
+            },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
                 "userSettingsLabel": "alt+f4"
@@ -1603,8 +1394,8 @@
                 "userSettingsLabel": "ctrl+shift+a"
             },
             "editor.emmet.action.expandAbbreviation": {
-                "label": "Tab",
-                "userSettingsLabel": "tab"
+                "label": "F5",
+                "userSettingsLabel": "f5"
             },
             "editor.action.selectAll": {
                 "label": "Ctrl+A",
@@ -1684,13 +1475,13 @@
                 "userSettingsLabel": "ctrl+="
             },
             "workbench.action.zoomOut": {
-                "label": "Ctrl+NumPad_Subtract",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+numpad_subtract"
+                "label": "Ctrl+-",
+                "userSettingsLabel": "ctrl+-"
             },
             "workbench.action.zoomReset": {
-                "label": "Shift+Alt+R",
-                "userSettingsLabel": "shift+alt+r"
+                "label": "Ctrl+NumPad0",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+numpad0"
             },
             "workbench.action.splitEditorUp": {
                 "label": "Ctrl+K Ctrl+\\",
@@ -1711,6 +1502,11 @@
                 "label": "Ctrl+K Ctrl+Shift+\\",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+shift+\\"
+            },
+            "workbench.action.copyEditorToNewWindow": {
+                "label": "Ctrl+K O",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k o"
             },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
@@ -1901,6 +1697,10 @@
                 "label": "Shift+F11",
                 "userSettingsLabel": "shift+f11"
             },
+            "workbench.action.debug.continue": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
             "editor.debug.action.toggleBreakpoint": {
                 "label": "F9",
                 "userSettingsLabel": "f9"
@@ -1928,67 +1728,46 @@
             }
         }
     },
-    "theme": "vs-dark",
-    "themeBackground": "#212121",
+    "theme": "hc-black",
+    "themeBackground": "#000000",
     "windowSplash": {
         "zoomLevel": 0,
-        "baseTheme": "vs-dark",
+        "baseTheme": "hc-black",
         "colorInfo": {
-            "foreground": "#cccccc",
-            "background": "#212121",
-            "editorBackground": "#212121",
-            "titleBarBackground": "#1a1a1a",
-            "activityBarBackground": "#1a1a1a",
-            "sideBarBackground": "#1a1a1a",
-            "statusBarBackground": "#1a1a1a",
-            "statusBarNoFolderBackground": "#212121"
+            "foreground": "#ffffff",
+            "background": "#000000",
+            "editorBackground": "#000000",
+            "titleBarBackground": "#000000",
+            "titleBarBorder": "#6fc3df",
+            "activityBarBackground": "#000000",
+            "activityBarBorder": "#6fc3df",
+            "sideBarBackground": "#000000",
+            "sideBarBorder": "#6fc3df",
+            "statusBarBorder": "#6fc3df",
+            "windowBorder": "#6fc3df"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 256,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/nrv/.config/Code/Backups/1725233652773",
+            "folder": "file:///home/nrv/git/horizon_report",
+            "backupPath": "/home/nrv/.config/Code/Backups/12579e15fb1f40e496dd20e68395f0d5",
             "uiState": {
-                "mode": 1,
-                "x": 724,
-                "y": 156,
-                "width": 812,
-                "height": 604
+                "mode": 0,
+                "x": 1561,
+                "y": 61,
+                "width": 1037,
+                "height": 796
             }
         },
         "openedWindows": []
-    },
-    "userDataProfiles": [
-        {
-            "location": "505a8248",
-            "name": "Cpp",
-            "icon": "mortar-board"
-        },
-        {
-            "location": "57a53808",
-            "name": "java"
-        },
-        {
-            "location": "-10613e24",
-            "name": "lichess-dev"
-        },
-        {
-            "location": "499077a0",
-            "name": "python",
-            "icon": "smiley"
-        },
-        {
-            "location": "7015a63f",
-            "name": "web_dev",
-            "icon": "vm"
-        }
-    ]
+    }
 }

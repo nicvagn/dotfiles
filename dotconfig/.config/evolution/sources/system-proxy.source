@@ -35,6 +35,7 @@ DisplayName[sr]=Подразумевана подешавања посредни
 DisplayName[sv]=Standardproxyinställningar
 DisplayName[tr]=Öntanımlı Vekil Ayarları
 DisplayName[uk]=Типові параметри проксі-сервера
+DisplayName[zh_CN]=默认代理设置
 DisplayName[zh_TW]=預設 Proxy 設定
 DisplayName=Default Proxy Settings
 Enabled=true
