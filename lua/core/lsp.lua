@@ -30,7 +30,7 @@ lsp_conf.pylsp.setup({
 				-- auto-completion options
 				jedi_completion = { fuzzy = true },
 				-- import sorting
-				pyls_isort = { enabled = true },
+				pyls_isort = { enabled = false },
 			},
 		},
 	},
