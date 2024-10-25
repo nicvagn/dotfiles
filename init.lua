@@ -13,7 +13,7 @@ else
 	-- ordinary Neovim
 	-- utils
 	require("utils.cspell") -- spelling
-	require("utils.path") -- path utils like getting rot dir of a git repo
+	require("utils.path") -- path utils like getting root dir of a git repo
 
 	-- core
 	require("core.colourscheme")
