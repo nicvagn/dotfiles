@@ -19,8 +19,8 @@ lsp_conf.pylsp.setup({
 			plugins = {
 				-- formatter options
 				black = { enabled = false },
-				autopep8 = { enabled = false },
-				yapf = { enabled = true },
+				autopep8 = { enabled = true },
+				yapf = { enabled = false },
 				-- linter options
 				pylint = { enabled = true, executable = "pylint" },
 				pyflakes = { enabled = false },
@@ -30,7 +30,7 @@ lsp_conf.pylsp.setup({
 				-- auto-completion options
 				jedi_completion = { fuzzy = true },
 				-- import sorting
-				pyls_isort = { enabled = true },
+				pyls_isort = { enabled = false },
 			},
 		},
 	},
