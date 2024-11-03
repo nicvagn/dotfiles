@@ -1,4 +1,3 @@
-
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
@@ -33,21 +32,22 @@ source $ZSH/oh-my-zsh.sh
 # pnpm
 alias pm="pnpm"  
 # python venv shortcuts
-alias nl_env=". ~/NicLink/activate"
+alias activate=". .env/venv/bin/activate"  # easily enter venv with activate
 # power
-alias up="sudo dnf upgrade"
 alias down="shutdown -h now"
+alias restart="shutdown -r now"
 # dnf
+alias up="sudo dnf upgrade"
 alias get="sudo dnf install"
 alias rem="sudo dnf remove"
 # ff
 alias ff="firefox"
 # git
-alias gs=gsw # I have no idea what ghost script is
+alias gs="gsw" # I have no idea what ghost script is
 alias lg="g lg"
+alias gpa="git push --all"
 # random
 alias svim="sudo vim"
-alias restart="shutdown -r now"
 alias top="htop"
 alias .="source" # IDK, was not?
 # nrv conf fin

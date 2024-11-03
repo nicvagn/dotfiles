@@ -6,5 +6,6 @@
     "telemetry.telemetryLevel": "off",
     "editor.accessibilitySupport": "off",
     "git.openRepositoryInParentFolders": "always",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "workbench.editor.closeOnFileDelete": true
 }
