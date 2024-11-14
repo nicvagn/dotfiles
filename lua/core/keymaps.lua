@@ -56,6 +56,7 @@ if not vim.g.vscode then
 	-- buffer level operations
 
 	vim.keymap.set("n", "<leader>k", "<Cmd>BufferClose<CR>") -- leader k - closes buffer
+	vim.keymap.set("n", "<leader>1", "<C-w>T") -- leader 1 - set current tab to be only tab
 	vim.keymap.set("n", "<leader><leader>", "<C-w>w") -- <leader><leader> - switch window
 	vim.keymap.set("n", "<leader>f", "<Cmd>Format<CR>") -- <leader> f - Format
 
