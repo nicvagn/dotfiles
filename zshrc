@@ -1,6 +1,6 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+
 # more zsh-completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # why we use OMZ
@@ -8,9 +8,10 @@ ZSH_THEME="crcandy"
 
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
+ENABLE_CORRECTION="false"
 
 zstyle ':omz:update' frequency 13
-ENABLE_CORRECTION="false"
+
 
 # OMZ plugins
 plugins=(
@@ -20,7 +21,6 @@ plugins=(
     zsh-autosuggestions
     alias-finder
     docker
-    pnpm-shell-completion
     zsh-syntax-highlighting
 )
 
@@ -72,4 +72,3 @@ compinit
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
-
