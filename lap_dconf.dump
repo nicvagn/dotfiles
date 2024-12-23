@@ -1,5 +1,7 @@
 [com/gexperts/Tilix]
+control-scroll-zoom=true
 new-instance-mode='new-session'
+terminal-title-show-when-single=false
 terminal-title-style='small'
 theme-variant='dark'
 use-tabs=true
@@ -10,6 +12,8 @@ app-new-session='<Alt>grave'
 session-add-auto='<Alt>apostrophe'
 session-add-down='<Alt>minus'
 session-add-right='<Alt>k'
+session-switch-to-next-terminal='<Primary>space'
+session-switch-to-previous-terminal='<Primary><Shift>space'
 win-switch-to-next-session='<Alt>bracketright'
 win-switch-to-previous-session='<Alt>bracketleft'
 
@@ -19,12 +23,25 @@ badge-color-set=false
 bold-color-set=false
 cursor-colors-set=false
 dim-transparency-percent=10
+font='Source Code Pro Bold 12'
 foreground-color='#FFFFFF'
 highlight-colors-set=false
 palette=['#2E3436', '#CC0000', '#35FF20', '#C4A000', '#01B0E2', '#E3A5F0', '#06989A', '#D3D7CF', '#555753', '#EF2929', '#34FF5A', '#FCE94F', '#0087FD', '#EFB7FF', '#34E2E2', '#EEEEEC']
 terminal-bell='sound'
+use-system-font=false
 use-theme-colors=false
 visible-name='nrv'
+
+[org/gnome/Geary]
+compose-as-html=true
+formatting-toolbar-visible=false
+migrated-config=true
+window-maximize=true
+
+[org/gnome/Ptyxis]
+default-profile-uuid='ec6b0d34dd5563d4b855dc4a674b1eb0'
+profile-uuids=['ec6b0d34dd5563d4b855dc4a674b1eb0']
+window-size=(uint32 80, uint32 22)
 
 [org/gnome/Totem]
 active-plugins=['vimeo', 'variable-rate', 'skipto', 'screenshot', 'screensaver', 'save-file', 'rotation', 'recent', 'movie-properties', 'open-directory', 'mpris', 'autoload-subtitles', 'apple-trailers']
@@ -36,8 +53,16 @@ window-maximized=false
 window-width=1137
 
 [org/gnome/baobab/ui]
-is-maximized=false
+is-maximized=true
 window-size=(960, 600)
+
+[org/gnome/boxes]
+first-run=false
+shared-folders='@av []'
+view='icon-view'
+window-maximized=true
+window-position=[26, 23]
+window-size=[768, 600]
 
 [org/gnome/calendar]
 active-view='month'
@@ -46,17 +71,20 @@ window-size=(768, 600)
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(980, 640, false)
+window-state=(1717, 927, false)
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=false
 
 [org/gnome/desktop/a11y/interface]
 high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus', '10eee280-1e97-49a6-a1e3-fc960fce0b05', '33508a76-335b-4267-930b-b332b98cb01c', '9a12cd73-2e32-4bd2-b8fd-694ff0cafc0f', 'd1debfc1-820e-44b6-8ed8-61d700732c1e']
+folder-children=['Utilities', 'YaST', 'Pardus', '10eee280-1e97-49a6-a1e3-fc960fce0b05', '33508a76-335b-4267-930b-b332b98cb01c', '9a12cd73-2e32-4bd2-b8fd-694ff0cafc0f', 'd1debfc1-820e-44b6-8ed8-61d700732c1e', '52f361bb-d04d-4cf2-8a3c-500a962b8f73', 'ccfea6ea-008c-4e74-959d-f81712e933b6', '81a6166c-6c67-4cd2-8484-29950b1b0d80', 'a1cd4d57-f370-46b2-8464-1dad5373abe8']
 
 [org/gnome/desktop/app-folders/folders/10eee280-1e97-49a6-a1e3-fc960fce0b05]
-apps=['org.gnome.Contacts.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Calculator.desktop', 'simple-scan.desktop', 'org.gnome.TextEditor.desktop', 'yelp.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Totem.desktop', 'org.gnome.Rhythmbox3.desktop']
+apps=['org.gnome.Contacts.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Snapshot.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'simple-scan.desktop', 'org.gnome.TextEditor.desktop', 'yelp.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.font-viewer.desktop']
 name='widgets'
 translate=false
 
@@ -64,8 +92,17 @@ translate=false
 apps=['libreoffice-calc.desktop', 'libreoffice-writer.desktop', 'libreoffice-impress.desktop']
 name='Office'
 
+[org/gnome/desktop/app-folders/folders/52f361bb-d04d-4cf2-8a3c-500a962b8f73]
+apps=['org.videolan.VLC.desktop', 'org.gnome.Totem.desktop', 'org.gnome.Rhythmbox3.desktop', 'com.spotify.Client.desktop']
+name='Sound & Video'
+
+[org/gnome/desktop/app-folders/folders/81a6166c-6c67-4cd2-8484-29950b1b0d80]
+apps=['emacs.desktop', 'nvim.desktop']
+name='fight'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/9a12cd73-2e32-4bd2-b8fd-694ff0cafc0f]
-apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Ptyxis.desktop']
+apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.tweaks.desktop', 'ca.desrt.dconf-editor.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.Extensions.desktop']
 name='sys'
 translate=false
 
@@ -75,60 +112,117 @@ name='X-Pardus-Apps.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'ca.desrt.dconf-editor.desktop']
+apps=['org.gnome.Ptyxis.desktop']
 categories=['X-GNOME-Utilities']
-excluded-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop']
-name='X-GNOME-Utilities.directory'
-translate=true
+excluded-apps=['org.gnome.DiskUtility.desktop', 'org.gnome.tweaks.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.font-viewer.desktop', 'nvim.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Connections.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Logs.desktop', 'com.gexperts.Tilix.desktop', 'org.freedesktop.GnomeAbrt.desktop', 'org.gnome.Characters.desktop', 'htop.desktop']
+name='Utilities'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/YaST]
 categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
+[org/gnome/desktop/app-folders/folders/a1cd4d57-f370-46b2-8464-1dad5373abe8]
+apps=['org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'htop.desktop', 'com.gexperts.Tilix.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.gnome.Logs.desktop', 'org.freedesktop.GnomeAbrt.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Connections.desktop']
+name='Utilities'
+
+[org/gnome/desktop/app-folders/folders/ccfea6ea-008c-4e74-959d-f81712e933b6]
+apps=['org.gnome.Boxes.desktop', 'com.jetpackduba.Gitnuro.desktop']
+name='dev ops'
+translate=false
+
 [org/gnome/desktop/app-folders/folders/d1debfc1-820e-44b6-8ed8-61d700732c1e]
-apps=['org.gnome.Boxes.desktop', 'nvim.desktop', 'org.gnome.Settings.desktop']
+apps=['org.gnome.Settings.desktop']
 name='dev ops'
 translate=false
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/pills-l.jxl'
-picture-uri-dark='file:///usr/share/backgrounds/gnome/pills-d.jxl'
-primary-color='#d3a778'
-secondary-color='#000000'
+picture-uri='file:///home/nrv/.local/share/backgrounds/2024-12-10-14-04-53-shuttle-background.jpg'
+picture-uri-dark='file:///home/nrv/.local/share/backgrounds/2024-12-10-14-04-53-shuttle-background.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/datetime]
+automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
-sources=[('xkb', 'us+dvorak-l')]
+mru-sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us')]
+sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us')]
 xkb-options=['caps:escape_shifted_capslock']
 
 [org/gnome/desktop/interface]
 accent-color='purple'
+clock-format='12h'
+clock-show-weekday=true
 color-scheme='prefer-dark'
-font-name='Noto Sans CJK SC Medium 11 @wght=500'
+cursor-size=32
+document-font-name='Montserrat Semi-Bold 11'
+font-name='Noto Sans CJK JP Bold 12 @wght=700'
 monospace-font-name='Source Code Pro Semi-Bold 10'
 show-battery-percentage=true
-text-scaling-factor=1.25
+text-scaling-factor=1.22
 toolkit-accessibility=false
 
+[org/gnome/desktop/lockdown]
+disable-lock-screen=true
+
 [org/gnome/desktop/notifications]
-application-children=['org-freedesktop-problems-applet', 'org-gnome-software', 'gnome-power-panel']
+application-children=['org-freedesktop-problems-applet', 'org-gnome-software', 'gnome-power-panel', 'com-gexperts-tilix', 'org-gnome-evolution-alarm-notify', 'org-mozilla-firefox', 'org-fedoraproject-mediawriter', 'org-gnome-nautilus', 'discord', 'org-gnome-geary', 'org-gnome-extensions', 'org-gnome-evolution', 'com-spotify-client', 'org-gnome-boxes']
+
+[org/gnome/desktop/notifications/application/com-gexperts-tilix]
+application-id='com.gexperts.Tilix.desktop'
+
+[org/gnome/desktop/notifications/application/com-spotify-client]
+application-id='com.spotify.Client.desktop'
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[org/gnome/desktop/notifications/application/org-fedoraproject-mediawriter]
+application-id='org.fedoraproject.MediaWriter.desktop'
+
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-boxes]
+application-id='org.gnome.Boxes.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution]
+application-id='org.gnome.Evolution.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-geary]
+application-id='org.gnome.Geary.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
+[org/gnome/desktop/notifications/application/org-mozilla-firefox]
+application-id='org.mozilla.firefox.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
 [org/gnome/desktop/peripherals/mouse]
 left-handed=true
-speed=-0.19000000000000009
+speed=0.082508250825082508
 
 [org/gnome/desktop/peripherals/touchpad]
+send-events='disabled'
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
@@ -136,28 +230,35 @@ report-technical-problems=true
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
+idle-activation-enabled=false
 lock-delay=uint32 1800
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/gnome/pills-l.jxl'
-primary-color='#d3a778'
-secondary-color='#000000'
+picture-uri='file:///home/nrv/.local/share/backgrounds/2024-12-10-14-04-53-shuttle-background.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 480
+idle-delay=uint32 900
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
 activate-window-menu=@as []
 close=['<Control><Alt>x']
 maximize=['<Control>Up']
-move-to-workspace-left=['<Alt>Left']
-move-to-workspace-right=['<Alt>Right']
+move-to-monitor-left=['<Alt>Left']
+move-to-monitor-right=['<Alt>Right']
+move-to-workspace-left=['<Shift><Control><Alt>Left']
+move-to-workspace-right=['<Shift><Control><Alt>Right']
 switch-applications=['<Alt>space']
 switch-applications-backward=['<Shift><Alt>space']
-switch-group=['<Control>space']
-switch-group-backward=['<Shift><Control>space']
+switch-group=@as []
+switch-group-backward=@as []
 unmaximize=['<Control>Down']
 
 [org/gnome/desktop/wm/preferences]
@@ -167,6 +268,24 @@ focus-mode='sloppy'
 
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/evolution-data-server/calendar]
+notify-window-height=320
+notify-window-paned-position=48
+notify-window-width=214
+notify-window-x=26
+notify-window-y=23
+reminders-past=['6b0a5f00f48f38d591102a5325d04c0705919d72\n5bb4555a3433e4b6751b3889115b69ef0055a9b1\t20241219T160000Z\n1734622200\n1734624000\n1734625200\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Regina:20241219T100000\r\nDTEND;TZID=America/Regina:20241219T102000\r\nRRULE:FREQ=WEEKLY;UNTIL=20250101T060000Z;BYDAY=TU,WE,TH\r\nDTSTAMP:20241001T211911Z\r\nUID:6187521@google.com\r\nCREATED:20241001T211911Z\r\nDESCRIPTION:Python Django - The Practical Guide\\nhttps:\r\n //www.udemy.com/course/python-django-the-practical-guide/\r\nLAST-MODIFIED:20241001T211911Z\r\nLOCATION:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Learning reminder\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63863500751\r\nRECURRENCE-ID:20241219T160000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:5bb4555a3433e4b6751b3889115b69ef0055a9b1\r\nEND:VALARM\r\nEND:VEVENT\r\n', '6b0a5f00f48f38d591102a5325d04c0705919d72\n5bb4555a3433e4b6751b3889115b69ef0055a9b1\t20241218T160000Z\n1734535800\n1734537600\n1734538800\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Regina:20241218T100000\r\nDTEND;TZID=America/Regina:20241218T102000\r\nRRULE:FREQ=WEEKLY;UNTIL=20250101T060000Z;BYDAY=TU,WE,TH\r\nDTSTAMP:20241001T211911Z\r\nUID:6187521@google.com\r\nCREATED:20241001T211911Z\r\nDESCRIPTION:Python Django - The Practical Guide\\nhttps:\r\n //www.udemy.com/course/python-django-the-practical-guide/\r\nLAST-MODIFIED:20241001T211911Z\r\nLOCATION:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Learning reminder\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63863500751\r\nRECURRENCE-ID:20241218T160000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:5bb4555a3433e4b6751b3889115b69ef0055a9b1\r\nEND:VALARM\r\nEND:VEVENT\r\n', '6b0a5f00f48f38d591102a5325d04c0705919d72\n5bb4555a3433e4b6751b3889115b69ef0055a9b1\t20241217T160000Z\n1734449400\n1734451200\n1734452400\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Regina:20241217T100000\r\nDTEND;TZID=America/Regina:20241217T102000\r\nRRULE:FREQ=WEEKLY;UNTIL=20250101T060000Z;BYDAY=TU,WE,TH\r\nDTSTAMP:20241001T211911Z\r\nUID:6187521@google.com\r\nCREATED:20241001T211911Z\r\nDESCRIPTION:Python Django - The Practical Guide\\nhttps:\r\n //www.udemy.com/course/python-django-the-practical-guide/\r\nLAST-MODIFIED:20241001T211911Z\r\nLOCATION:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Learning reminder\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63863500751\r\nRECURRENCE-ID:20241217T160000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:5bb4555a3433e4b6751b3889115b69ef0055a9b1\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+maximized=true
+show-dependencies=false
+show-whose-processes='user'
+
+[org/gnome/gnome-system-monitor/proctree]
+col-26-visible=false
+col-26-width=0
 
 [org/gnome/login-screen]
 enable-fingerprint-authentication=true
@@ -181,13 +300,32 @@ default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+maximized=true
+
+[org/gnome/portal/filechooser/com.jetpackduba.Gitnuro]
+last-folder-path='/home/nrv/horizon_report'
+
+[org/gnome/portal/filechooser/org.fedoraproject.MediaWriter]
+last-folder-path='/home/nrv/Downloads/distro-iso-cache/gentoo'
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/nrv/Pictures'
+
+[org/gnome/portal/filechooser/org.videolan.VLC]
+last-folder-path='/home/nrv/Videos'
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-schedule-automatic=false
+night-light-temperature=uint32 3479
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
 decrease-text-size=['<Super>x']
+home=['<Super>f']
 increase-text-size=['<Super>g']
 www=['<Super>b']
 
@@ -196,15 +334,25 @@ binding='<Control>t'
 command='tilix'
 name='tilix'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>apostrophe'
+command='emacs'
+name='emacs'
+
 [org/gnome/settings-daemon/plugins/power]
+power-saver-profile-on-low-battery=true
 sleep-inactive-ac-timeout=3600
 
 [org/gnome/shell]
-app-picker-layout=[{'10eee280-1e97-49a6-a1e3-fc960fce0b05': <{'position': <0>}>, 'd1debfc1-820e-44b6-8ed8-61d700732c1e': <{'position': <1>}>, '33508a76-335b-4267-930b-b332b98cb01c': <{'position': <2>}>, 'Utilities': <{'position': <3>}>, '9a12cd73-2e32-4bd2-b8fd-694ff0cafc0f': <{'position': <4>}>, 'pychess.desktop': <{'position': <5>}>, 'org.videolan.VLC.desktop': <{'position': <6>}>}]
-command-history=['down']
-favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Software.desktop']
-last-selected-power-profile='power-saver'
+app-picker-layout=[{'10eee280-1e97-49a6-a1e3-fc960fce0b05': <{'position': <0>}>, '33508a76-335b-4267-930b-b332b98cb01c': <{'position': <1>}>, '9a12cd73-2e32-4bd2-b8fd-694ff0cafc0f': <{'position': <2>}>, '52f361bb-d04d-4cf2-8a3c-500a962b8f73': <{'position': <3>}>, 'ccfea6ea-008c-4e74-959d-f81712e933b6': <{'position': <4>}>, 'a1cd4d57-f370-46b2-8464-1dad5373abe8': <{'position': <5>}>, '81a6166c-6c67-4cd2-8484-29950b1b0d80': <{'position': <6>}>, 'com.github.johnfactotum.Foliate.desktop': <{'position': <7>}>, 'pychess.desktop': <{'position': <8>}>, 'com.mojang.Minecraft.desktop': <{'position': <9>}>}]
+command-history=['down', 'emacos', 'emacs']
+enabled-extensions=['background-logo@fedorahosted.org', 'quick-settings-audio-panel@rayzeq.github.io', 'advanced-weather@sanjai.com']
+favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Calendar.desktop', 'com.mojang.Minecraft.desktop', 'discord.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop']
+last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.1'
+
+[org/gnome/shell/extensions/libpanel]
+layout=[['gnome@main', 'quick-settings-audio-panel@rayzeq.github.io/main']]
 
 [org/gnome/shell/weather]
 automatic-location=true
@@ -214,11 +362,15 @@ locations=@av []
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1731417797
+check-timestamp=int64 1734960370
 first-run=false
-install-timestamp=int64 1730947887
-packagekit-historical-updates-timestamp=uint64 1730947887
-update-notification-timestamp=int64 1731290614
+flatpak-purge-timestamp=int64 1734916850
+install-timestamp=int64 1734638197
+packagekit-historical-updates-timestamp=uint64 1734638197
+update-notification-timestamp=int64 1734708003
+
+[org/gnome/system/location]
+enabled=true
 
 [org/gnome/tweaks]
 show-extensions-notice=false
@@ -226,3 +378,18 @@ show-extensions-notice=false
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=false
 sort-directories-first=false
+
+[org/gtk/settings/file-chooser]
+clock-format='12h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=198
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(26, 23)
+window-size=(1920, 978)
