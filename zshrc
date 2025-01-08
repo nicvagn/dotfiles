@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 ## aliases ##
 # pnpm
-alias pm="pnpm"  
+alias pm="pnpm"
 # python venv shortcuts
 alias activate=". .env/venv/bin/activate"  # easily enter venv with activate
 # power
@@ -46,8 +46,14 @@ alias ff="firefox"
 alias gs="gsw" # I have no idea what ghost script is
 alias lg="g lg"
 alias gpa="git push --all"
-# random
+# editor
+alias emacs="emacsclient -c"
 alias svim="sudo vim"
+alias vim="nvim"
+# random
+alias serve="autoreload-server"
+alias free="free -g"
+alias lsfs="df -Th"
 alias top="htop"
 alias .="source" # IDK, was not?
 # nrv conf fin

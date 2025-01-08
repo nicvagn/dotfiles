@@ -1,16 +1,16 @@
 [user]
 	name = Nicolas Vaagen
 	email = nicolasvaagen@gmail.com
-	signingkey = C322A644D5998CD1
+	signingkey = 9FD2207382AA510685C76AF8C3DBB75B56ECFE86
+
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
 [core]
-    editor = nvim
-	autocrlf = input
-	whitespace = trailing-space
-	pager = less -FX
+    autocrlf = input
+    whitespace = trailing-space
+    pager = less -FX
 
 [alias]
     lg = lg1
@@ -25,10 +25,9 @@
 
 [push]
 	autoSetupRemote = true
-	autoSetupRemote = true
 [commit]
 	verbose = true
-	gpgsign = true
+
 [status]
 	submoduleSummary = true
 [init]
@@ -44,4 +43,3 @@
 [color]
 	ui = auto
 [tag]
-	gpgsign = true

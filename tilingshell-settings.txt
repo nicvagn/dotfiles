@@ -1,0 +1,11 @@
+[/]
+enable-autotiling=true
+inner-gaps=uint32 0
+move-window-down=['<Control>Down']
+move-window-left=['<Control>Left']
+move-window-right=['<Control>Right']
+move-window-up=['<Control>Up']
+outer-gaps=uint32 0
+selected-layouts=[['Layout 1', 'Layout 1'], ['Layout 1', 'Layout 1']]
+snap-assistant-animation-time=uint32 80
+tile-preview-animation-time=uint32 80
