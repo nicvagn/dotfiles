@@ -13,3 +13,5 @@ dotconfig/chromium
 **/IndexedDB
 **/Crashpad
 **/*.log
+**/.git
+**/gh

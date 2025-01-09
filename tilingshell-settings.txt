@@ -1,11 +1,23 @@
 [/]
 enable-autotiling=true
+focus-window-left=['']
+focus-window-next=['<Super>Right']
+focus-window-prev=['<Super>Left']
+focus-window-right=['']
 inner-gaps=uint32 0
 move-window-down=['<Control>Down']
 move-window-left=['<Control>Left']
 move-window-right=['<Control>Right']
 move-window-up=['<Control>Up']
 outer-gaps=uint32 0
-selected-layouts=[['Layout 1', 'Layout 1'], ['Layout 1', 'Layout 1']]
+quarter-tiling-threshold=uint32 15
+selected-layouts=[['424848', 'Layout 1'], ['17374295', 'Layout 1'], ['17374295', 'Layout 1'], ['17374295', '17374295']]
 snap-assistant-animation-time=uint32 80
+span-multiple-tiles-activation-key=['1']
+span-window-down=['<Shift><Control>Down']
+span-window-left=['<Shift><Control>Left']
+span-window-right=['<Shift><Control>Right']
+span-window-up=['<Shift><Control>Up']
 tile-preview-animation-time=uint32 80
+tiling-system-deactivation-key=['2']
+top-edge-maximize=true

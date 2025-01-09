@@ -4,3 +4,6 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/nicvagn/ohmyzsh.git
+[submodule "dotconfig/.config/emacs"]
+	path = dotconfig/.config/emacs
+	url = https://github.com/nicvagn/emacs
