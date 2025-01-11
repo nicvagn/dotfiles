@@ -3,7 +3,6 @@
 SCRIPT_DIR=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 cd $SCRIPT_DIR
 echo $SCRIPT_DIR
-cp -r /home/nrv/.config/ /home/nrv/git/dotfiles/dotconfig/
 cp -r /home/nrv/.oh-my-zsh/ /home/nrv/git/dotfiles/oh-my-zsh/
 
 cp -f /home/nrv/.vimrc /home/nrv/git/dotfiles/vimrc

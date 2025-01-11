@@ -15,3 +15,4 @@ dotconfig/chromium
 **/*.log
 **/.git
 **/gh
+dotconfig/.config

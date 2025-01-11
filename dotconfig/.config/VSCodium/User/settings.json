@@ -1,5 +1,0 @@
-{
-    "vim.useSystemClipboard": true,
-    "vim.vimrc.enable": true,
-    "keyboard.dispatch": "keyCode"
-}

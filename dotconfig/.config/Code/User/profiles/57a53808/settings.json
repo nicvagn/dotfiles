@@ -1,9 +1,0 @@
-{
-    "workbench.colorTheme": "Solarized Dark",
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.untrackedChanges": "separate",
-    "diffEditor.hideUnchangedRegions.enabled": true,
-    "redhat.telemetry.enabled": true
-}

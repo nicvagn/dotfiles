@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "coc-htmldjango": ">=0.14.15",
-    "coc-html": ">=1.8.0"
-  }
-}
