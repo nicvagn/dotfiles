@@ -50,6 +50,7 @@ alias gpa="git push --all"
 alias emacs="emacsclient -c"
 alias svim="sudo vim"
 alias vim="nvim"
+alias e="emacsclient -c"
 # random
 alias serve="autoreload-server"
 alias free="free -g"
