@@ -43,3 +43,5 @@
 [color]
 	ui = auto
 [tag]
+[safe]
+	directory = /var/www/html
