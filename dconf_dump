@@ -1,0 +1,145 @@
+[com/gexperts/Tilix]
+control-scroll-zoom=true
+focus-follow-mouse=true
+prompt-on-close=true
+tab-position='top'
+terminal-title-show-when-single=false
+terminal-title-style='none'
+theme-variant='dark'
+unsafe-paste-alert=false
+use-tabs=true
+window-style='disable-csd-hide-toolbar'
+
+[com/gexperts/Tilix/keybindings]
+app-new-session='<Primary>grave'
+session-add-auto='<Alt>apostrophe'
+session-add-down='<Alt>minus'
+session-add-right='<Alt>k'
+session-switch-to-next-terminal='<Primary>space'
+session-switch-to-previous-terminal='<Primary><Shift>space'
+terminal-maximize='<Alt>f'
+terminal-zoom-out='disabled'
+win-reorder-next-session='<Primary><Alt>bracketright'
+win-reorder-previous-session='<Primary><Alt>bracketleft'
+win-switch-to-next-session='<Alt>bracketright'
+win-switch-to-previous-session='<Alt>bracketleft'
+
+[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#000000000000'
+badge-color='#AC7EA8'
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+dim-transparency-percent=21
+font='Source Code Pro Bold 12'
+foreground-color='#FFFFFFFFFFFF'
+highlight-colors-set=false
+palette=['#2E3436', '#CC0000', '#3838D0D00404', '#E6E661610000', '#1313A4A4CDCD', '#75507B', '#1313A4A4CDCD', '#D3D7CF', '#555753', '#EF2929', '#7070FFFF2727', '#FFFF78780000', '#72729F9FCFCF', '#AD7FA8', '#2D2DFCFCACAC', '#EEEEEC']
+use-system-font=false
+use-theme-colors=false
+visible-name='nrv'
+
+
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
+[org/gnome/clocks]
+world-clocks=[{'location': <(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>}]
+
+[org/gnome/clocks/state/window]
+maximized=false
+panel-id='world'
+size=(1920, 540)
+
+[org/gnome/control-center]
+last-panel='background'
+window-state=(1280, 1080, false)
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=true
+
+[org/gnome/desktop/a11y/interface]
+high-contrast=true
+show-status-shapes=true
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+mru-sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us')]
+sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us')]
+xkb-options=['caps:escape_shifted_capslock']
+
+[org/gnome/desktop/wm/keybindings]
+activate-window-menu=@as []
+close=['<Control><Alt>x']
+cycle-windows=['<Alt>space']
+cycle-windows-backward=['<Shift><Alt>space']
+maximize=['<Control>Up']
+move-to-monitor-left=['<Alt>Left']
+move-to-monitor-right=['<Alt>Right']
+move-to-workspace-left=['<Shift><Control><Alt>Left']
+move-to-workspace-right=['<Shift><Control><Alt>Right']
+switch-windows=@as []
+switch-windows-backward=@as []
+unmaximize=['<Control>Down']
+
+[org/gnome/desktop/wm/preferences]
+focus-mode='sloppy'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=['<Control>Left']
+toggle-tiled-right=['<Control>Right']
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Super>f']
+volume-down=['<Super>minus']
+volume-up=['<Shift><Super>equal']
+www=['<Super>b']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control>t'
+command='tilix'
+name='tilix'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>apostrophe'
+command='emacs'
+name='emacs'
+
+[org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d]
+certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBlDCCATmgAwIBAgIBATAKBggqhkjOPQQDBDBTMS0wKwYDVQQDDCQ4NGI3YmE5\nZl85NjUyXzRkNmJfYjIwM181MTU1YjFmNWI3M2QxFDASBgNVBAsMC0tERSBDb25u\nZWN0MQwwCgYDVQQKDANLREUwHhcNMjQwMjI2MDYwMDAwWhcNMzUwMjI2MDYwMDAw\nWjBTMS0wKwYDVQQDDCQ4NGI3YmE5Zl85NjUyXzRkNmJfYjIwM181MTU1YjFmNWI3\nM2QxFDASBgNVBAsMC0tERSBDb25uZWN0MQwwCgYDVQQKDANLREUwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAATor059lLeAfuKZpz5gxdKvq1UXBBOK0q5KJU/3HtkD\nA9fy02S4ZABJjQ2Wg9hdgGBQTyzJiyZoAZgNe5wyrWFkMAoGCCqGSM49BAMEA0kA\nMEYCIQDU1JNUXrrzBLP4M2QZbMTXHcazsrnUymoOOTdO9yLpbwIhAIj3iB4Ijtif\ni/Ex6s8NZomvqYjhdfhMENFzvhwRKzJF\n-----END CERTIFICATE-----\n'
+incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
+last-connection='lan://172.16.1.162:1716'
+name='Galaxy S23'
+outgoing-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.attachment_file', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']
+paired=true
+supported-plugins=['battery', 'clipboard', 'connectivity_report', 'contacts', 'findmyphone', 'mousepad', 'mpris', 'notification', 'ping', 'presenter', 'runcommand', 'sftp', 'share', 'sms', 'systemvolume', 'telephony']
+type='phone'
+
+[org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/battery]
+custom-battery-notification-value=uint32 80
+
+[org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/notification]
+applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Evolution":{"iconName":"evolution","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Discord":{"iconName":"system-run-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true}}'
+
+[org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/share]
+receive-directory='/home/nrv/Downloads'
+
+[org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/telephony]
+ringing-pause=false
+
+[org/gnome/shell/extensions/gsconnect/messaging]
+window-maximized=false
+window-size=(640, 480)
+
+[org/gnome/shell/extensions/gsconnect/preferences]
+window-maximized=false
+window-size=(876, 446)
+
