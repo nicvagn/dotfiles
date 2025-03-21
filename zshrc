@@ -1,33 +1,27 @@
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
+### OMZ configuration ###
 # more zsh-completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # why we use OMZ
 ZSH_THEME="crcandy"
-
 CASE_SENSITIVE="true"
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="false"
-
 zstyle ':omz:update' frequency 13
-
-
 # OMZ plugins
 plugins=(
     git
     python
-    pyenv
+    pip
+    pnpm-shell-completion
+    safe-paste
+    scala
+    ssh
     zsh-autosuggestions
     alias-finder
-    docker
     zsh-syntax-highlighting
 )
-
 source $ZSH/oh-my-zsh.sh
-
 ### User configuration ###
-
 ## aliases ##
 # pnpm
 alias pm="pnpm"
@@ -57,15 +51,13 @@ alias lsfs="df -Th"
 alias top="htop"
 alias .="source" # IDK, was not?
 # nrv conf fin
-
 # The following lines were added by compinstall
-
 zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' format '|%d|'
 zstyle ':completion:*:builtins' list-colors '=*=1;38;5;142'
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
-zstyle ':completion:*' max-errors 2
+zstyle ':completion:*' max-errors 3 # changed from 2
 zstyle ':completion:*' prompt '%e X'
 zstyle ':completion:*' use-compctl true
 zstyle :compinstall filename '/home/nrv/.zshrc'
@@ -78,3 +70,11 @@ compinit
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
+# node version manager
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export WASMTIME_HOME="$HOME/.wasmtime"
+export PATH="$WASMTIME_HOME/bin:$PATH"
+
+# enable virtualenvwrapper for "workon" and python venv managment
+source ~/bin/virtualenvwrapper.sh

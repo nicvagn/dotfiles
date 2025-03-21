@@ -11,7 +11,7 @@
     autocrlf = input
     whitespace = trailing-space
     pager = less -FX
-
+    editor = vim
 [alias]
     lg = lg1
     lg1 = lg1-specific --all
@@ -24,6 +24,7 @@
 
 
 [push]
+	autoSetupRemote = true
 	autoSetupRemote = true
 [commit]
 	verbose = true
@@ -44,4 +45,4 @@
 	ui = auto
 [tag]
 [safe]
-	directory = /var/www/html
+	directory = /var/www/html/
