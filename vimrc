@@ -1,11 +1,30 @@
 " my native vimrc
 
 " ===== key mappings ====
-" nnoremap - normal mode only, nonrecursive
+" nnoremap - normal mode only, non-recursive
 " noremap - non-recursive most modes
-" navigation
+" | leader |
+let mapleader = "\<Space>"
+
+nnoremap <leader>w :w<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
+
+" | buffer |
+nnoremap <A-[> :bp<CR>
+nnoremap <A-]> :bn<CR>
+
 " delete a line w cc 
 noremap cc dd
+noremap c d 
+
+" enter in normal mode inserts a blank line on next line
+nnoremap <CR> <esc>o
+" tab shift line right in normal mode
+nnoremap <^I> :><CR>
+
+" | navigation |
 " navigation
 " normal mode
 noremap d h

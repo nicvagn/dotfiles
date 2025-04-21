@@ -22,6 +22,10 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 ### User configuration ###
+## keybindings ##
+# showkey -a to discover names
+# Cntl + backspace to delete word
+bindkey '^H' backward-delete-word
 ## aliases ##
 # pnpm
 alias pm="pnpm"
@@ -37,8 +41,8 @@ alias rem="sudo dnf remove"
 # ff
 alias ff="firefox"
 # git
-alias gs="gsw" # I have no idea what ghost script is
-alias lg="g lg"
+alias gs="git switch" # I have no idea what ghost script is
+alias lg="git log --graph --oneline --decorate --color"
 alias gpa="git push --all"
 # editor
 alias emacs="emacsclient -c"
@@ -66,6 +70,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+### System configuration ###
 # tilix vte.sh crap
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
@@ -73,6 +78,8 @@ fi
 # node version manager
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# wasm web assembly
 export WASMTIME_HOME="$HOME/.wasmtime"
 export PATH="$WASMTIME_HOME/bin:$PATH"
 

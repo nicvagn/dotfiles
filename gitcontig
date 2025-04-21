@@ -11,7 +11,7 @@
     autocrlf = input
     whitespace = trailing-space
     pager = less -FX
-    editor = vim
+    editor= emacsclient -c
 [alias]
     lg = lg1
     lg1 = lg1-specific --all

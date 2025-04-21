@@ -17,7 +17,7 @@ session-add-down='<Alt>minus'
 session-add-right='<Alt>k'
 session-switch-to-next-terminal='<Primary>space'
 session-switch-to-previous-terminal='<Primary><Shift>space'
-terminal-maximize='<Alt>f'
+terminal-maximize='<Primary>1'
 terminal-zoom-out='disabled'
 win-reorder-next-session='<Primary><Alt>bracketright'
 win-reorder-previous-session='<Primary><Alt>bracketleft'
@@ -26,7 +26,7 @@ win-switch-to-previous-session='<Alt>bracketleft'
 
 [Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 background-color='#000000000000'
-backspace-binding='ascii-backspace'
+backspace-binding='auto'
 badge-color='#AC7EA8'
 badge-color-set=false
 bold-color-set=false
