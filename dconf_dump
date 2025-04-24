@@ -41,10 +41,10 @@ cursor-colors-set=false
 delete-binding='auto'
 dim-transparency-percent=21
 draw-margin=4
-font='Source Code Pro Bold 12'
+font='Source Code Pro Bold 12.5'
 foreground-color='#FFFFFFFFFFFF'
 highlight-colors-set=false
-palette=['#2E3436', '#CC0000', '#3838D0D00404', '#E6E661610000', '#1313A4A4CDCD', '#75507B', '#1313A4A4CDCD', '#D3D7CF', '#555753', '#EF2929', '#7070FFFF2727', '#FFFF78780000', '#72729F9FCFCF', '#AD7FA8', '#2D2DFCFCACAC', '#EEEEEC']
+palette=['#2E3436', '#CC0000', '#3838D0D00404', '#E6E661610000', '#1313A4A4CDCD', '#75507B', '#2D2DFCFCACAC', '#D3D7CF', '#555753', '#EF2929', '#7070FFFF2727', '#FFFF78780000', '#5A5A7070FFFF', '#AD7FA8', '#2D2DFCFCACAC', '#EEEEEC']
 use-system-font=false
 use-theme-colors=false
 visible-name='nrv'
@@ -63,7 +63,7 @@ serif='Serif 10'
 [com/github/johnfactotum/Foliate/window]
 default-height=750
 default-width=1200
-maximized=true
+maximized=false
 
 [com/github/stunkymonkey/nautilus-open-any-terminal]
 terminal='tilix'
@@ -81,6 +81,8 @@ window-size=(960, 600)
 first-run=false
 view='icon-view'
 window-maximized=true
+window-position=[26, 23]
+window-size=[768, 600]
 
 [org/gnome/calendar]
 active-view='month'
@@ -96,7 +98,7 @@ panel-id='world'
 size=(1920, 540)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='power'
 window-state=(945, 657, false)
 
 [org/gnome/desktop/a11y]
@@ -110,7 +112,7 @@ show-status-shapes=true
 mag-factor=6.0
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus', '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1', '155cb0a3-78ee-4c79-90a3-de455b6a2d5a', 'ad976357-7a99-4967-b274-070a56cf165b', '59d0f0f1-0601-459e-99eb-2b842365e5aa', '93f1816e-e7fb-458f-9313-8e5a9cb00f6e', '11b911e9-b583-4381-add4-79c824bfea83', 'de903434-2c5a-4819-9061-5613dea60f41', '6b1139bd-6001-427f-9c99-e2279b5bb4a7', '81402d79-6776-4487-807e-dc947be0bf87', '68e264e9-59b2-4487-a1be-b86a6977605b', 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4']
+folder-children=['Utilities', 'YaST', 'Pardus', '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1', '155cb0a3-78ee-4c79-90a3-de455b6a2d5a', 'ad976357-7a99-4967-b274-070a56cf165b', '59d0f0f1-0601-459e-99eb-2b842365e5aa', '93f1816e-e7fb-458f-9313-8e5a9cb00f6e', '11b911e9-b583-4381-add4-79c824bfea83', 'de903434-2c5a-4819-9061-5613dea60f41', '6b1139bd-6001-427f-9c99-e2279b5bb4a7', '81402d79-6776-4487-807e-dc947be0bf87', '68e264e9-59b2-4487-a1be-b86a6977605b', 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4', '517b1491-a5db-4934-aeb4-f11da3e7a3d6']
 
 [org/gnome/desktop/app-folders/folders/11b911e9-b583-4381-add4-79c824bfea83]
 apps=['org.gnome.baobab.desktop', 'org.gnome.SystemMonitor.desktop', 'com.leinardi.gst.desktop', 'htop.desktop', 'org.gnome.Logs.desktop']
@@ -125,6 +127,10 @@ translate=false
 [org/gnome/desktop/app-folders/folders/4ce7f7d8-db3d-44e7-bcda-33a02129a2a1]
 apps=['libreoffice-impress.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'simple-scan.desktop']
 name='Office'
+
+[org/gnome/desktop/app-folders/folders/517b1491-a5db-4934-aeb4-f11da3e7a3d6]
+apps=['org.freeciv.gtk4.desktop', 'org.dosbox-staging.dosbox-staging.desktop', 'org.freeciv.gtk4.mp.desktop']
+name='Games'
 
 [org/gnome/desktop/app-folders/folders/59d0f0f1-0601-459e-99eb-2b842365e5aa]
 apps=['com.github.Murmele.Gittyup.desktop', 'sqlitebrowser.desktop', 'filezilla.desktop', 'it.fabiodistasio.AntaresSQL.desktop']
@@ -179,7 +185,7 @@ name='virt'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/de903434-2c5a-4819-9061-5613dea60f41]
-apps=['org.gnome.tweaks.desktop', 'org.gnome.Extensions.desktop']
+apps=['org.gnome.tweaks.desktop', 'org.gnome.Extensions.desktop', 'com.github.tchx84.Flatseal.desktop']
 name='"fix" gnome'
 translate=false
 
@@ -190,6 +196,14 @@ picture-uri='file:///home/nrv/.local/share/backgrounds/2025-02-28-14-10-38-abstr
 picture-uri-dark='file:///home/nrv/.local/share/backgrounds/2025-02-28-14-10-38-abstract-pattern-background-vector.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
+
+[org/gnome/desktop/break-reminders/eyesight]
+play-sound=true
+
+[org/gnome/desktop/break-reminders/movement]
+duration-seconds=uint32 300
+interval-seconds=uint32 1800
+play-sound=true
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
@@ -434,7 +448,7 @@ x=0
 y=0
 
 [org/gnome/gnome-system-monitor]
-current-tab='disks'
+current-tab='processes'
 maximized=true
 show-dependencies=false
 show-whose-processes='user'
@@ -532,7 +546,7 @@ sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'155cb0a3-78ee-4c79-90a3-de455b6a2d5a': <{'position': <0>}>, '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'ad976357-7a99-4967-b274-070a56cf165b': <{'position': <3>}>, '59d0f0f1-0601-459e-99eb-2b842365e5aa': <{'position': <4>}>, '93f1816e-e7fb-458f-9313-8e5a9cb00f6e': <{'position': <5>}>, '11b911e9-b583-4381-add4-79c824bfea83': <{'position': <6>}>, 'de903434-2c5a-4819-9061-5613dea60f41': <{'position': <7>}>, '6b1139bd-6001-427f-9c99-e2279b5bb4a7': <{'position': <8>}>, '81402d79-6776-4487-807e-dc947be0bf87': <{'position': <9>}>, '68e264e9-59b2-4487-a1be-b86a6977605b': <{'position': <10>}>, 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4': <{'position': <11>}>, 'com.github.johnfactotum.Foliate.desktop': <{'position': <12>}>, 'io.mrarm.mcpelauncher.desktop': <{'position': <13>}>}]
+app-picker-layout=[{'155cb0a3-78ee-4c79-90a3-de455b6a2d5a': <{'position': <0>}>, '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'ad976357-7a99-4967-b274-070a56cf165b': <{'position': <3>}>, '59d0f0f1-0601-459e-99eb-2b842365e5aa': <{'position': <4>}>, '93f1816e-e7fb-458f-9313-8e5a9cb00f6e': <{'position': <5>}>, '11b911e9-b583-4381-add4-79c824bfea83': <{'position': <6>}>, 'de903434-2c5a-4819-9061-5613dea60f41': <{'position': <7>}>, '6b1139bd-6001-427f-9c99-e2279b5bb4a7': <{'position': <8>}>, '81402d79-6776-4487-807e-dc947be0bf87': <{'position': <9>}>, '68e264e9-59b2-4487-a1be-b86a6977605b': <{'position': <10>}>, 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4': <{'position': <11>}>, 'com.github.johnfactotum.Foliate.desktop': <{'position': <12>}>, '517b1491-a5db-4934-aeb4-f11da3e7a3d6': <{'position': <13>}>}]
 disable-user-extensions=false
 disabled-extensions=['background-logo@fedorahosted.org', 'tilingshell@ferrarodomenico.com']
 enabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'quick-settings-audio-panel@rayzeq.github.io', 'Vitals@CoreCoding.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io']
@@ -631,7 +645,7 @@ selected-layouts=[['3231629', 'Layout 2'], ['3231629', 'Layout 1']]
 
 [org/gnome/shell/extensions/vitals]
 hide-icons=false
-hot-sensors=['_memory_usage_', '_system_load_1m_', '_processor_frequency_', '_processor_usage_', '_temperature_k10temp_tctl_']
+hot-sensors=['_memory_usage_', '_system_load_1m_', '_processor_frequency_', '_processor_usage_', '_temperature_k10temp_tctl_', '_temperature_k10temp_tccd1_', '_network-tx_wlp4s0_tx_']
 icon-style=1
 position-in-panel=2
 show-fan=true
@@ -640,9 +654,9 @@ show-fan=true
 locations=[<(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1745258617
+check-timestamp=int64 1745509316
 first-run=false
-flatpak-purge-timestamp=int64 1745197650
+flatpak-purge-timestamp=int64 1745457823
 install-timestamp=int64 1744843877
 packagekit-historical-updates-timestamp=uint64 1744845595
 security-timestamp=int64 1739058779808129
@@ -671,8 +685,8 @@ view-type='list'
 window-size=(851, 1400)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.41568627450980394, 0.6588235294117647, 0.30980392156862746, 1.0), (0.22182432432432453, 0.81666666666666676, 0.016333333333333349, 1.0), (0.016199999999999985, 0.27000000000000002, 0.069360810810810844, 1.0), (0.016200000000000016, 0.27000000000000002, 0.069360810810810872, 1.0), (0.10980392156862745, 0.84705882352941175, 0.050980392156862744, 1.0), (0.019607843137254902, 0.8666666666666667, 0.83529411764705885, 1.0), (0.17820000000000008, 0.9900000000000001, 0.67734729729729748, 1.0), (0.074509803921568626, 0.64313725490196083, 0.80392156862745101, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.35666666666666669, 0.43925675675675657, 1.0, 1.0), (0.62, 0.73810810810810801, 1.0, 1.0), (0.44705882352941179, 0.62352941176470589, 0.81176470588235294, 1.0), (0.41568627450980394, 0.6588235294117647, 0.30980392156862746, 1.0), (0.22182432432432453, 0.81666666666666676, 0.016333333333333349, 1.0), (0.016199999999999985, 0.27000000000000002, 0.069360810810810844, 1.0), (0.016200000000000016, 0.27000000000000002, 0.069360810810810872, 1.0), (0.10980392156862745, 0.84705882352941175, 0.050980392156862744, 1.0)]
+selected-color=(true, 0.35666666666666669, 0.43925675675675657, 1.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -681,10 +695,22 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=388
+sidebar-width=351
 sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
 window-position=(26, 23)
 window-size=(960, 1029)
+
+[org/virt-manager/virt-manager]
+manager-window-height=1363
+manager-window-width=2560
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['qemu:///system']
+uris=['qemu:///system']
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=false
+network-traffic=false
