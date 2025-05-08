@@ -1,0 +1,24 @@
+/* Need to be adjusted to your theme. I'm using Adwaita dark theme. */
+@define-color backdrop_color #2d2d2d;
+@define-color standout_color #f3744c;
+@define-color very_standout_color red;
+
+/* border around windows */
+decoration {
+  border: 1px solid @very_standout_color;
+  background: @very_standout_color;
+}
+
+decoration:backdrop {
+  border: 1px solid @backdrop_color;
+  background: @backdrop_color;
+}
+
+/* title/headerbar colors */
+headerbar.titlebar {
+  background: @standout_color;
+}
+
+headerbar.titlebar:backdrop {
+  background: @backdrop_color;
+}
