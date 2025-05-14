@@ -1,7 +1,8 @@
 /* Need to be adjusted to your theme. I'm using Adwaita dark theme. */
 @define-color backdrop_color #2d2d2d;
-@define-color standout_color #f3744c;
+@define-color standout_color #C22C3C;
 @define-color very_standout_color red;
+@define-color standout_text_color white;
 
 /* border around windows */
 decoration {
@@ -17,6 +18,7 @@ decoration:backdrop {
 /* title/headerbar colors */
 headerbar.titlebar {
   background: @standout_color;
+  color: @standout_text_color;
 }
 
 headerbar.titlebar:backdrop {
