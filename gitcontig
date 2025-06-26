@@ -25,7 +25,6 @@
 
 [push]
 	autoSetupRemote = true
-	autoSetupRemote = true
 [commit]
 	verbose = true
 
@@ -46,3 +45,5 @@
 [tag]
 [safe]
 	directory = /var/www/html/
+[branch]
+	autosetupmerge = always

@@ -26,34 +26,10 @@ source $ZSH/oh-my-zsh.sh
 # showkey -a to discover names
 # Cntl + backspace to delete word
 bindkey '^H' backward-delete-word
-## aliases ##
-# pnpm
-alias pm="pnpm"
-# python venv shortcuts
-alias activate=". .env/venv/bin/activate"  # easily enter venv with activate
-# power
-alias down="shutdown -h now"
-alias restart="shutdown -r now"
-# dnf
-alias up="sudo dnf upgrade"
-alias get="sudo dnf install"
-alias rem="sudo dnf remove"
-# ff
-alias ff="firefox"
-# git
-alias gs="git switch" # I have no idea what ghost script is
-alias lg="git log --graph --oneline --decorate --color"
-alias gpa="git push --all"
-# editor
-alias emacs="emacsclient -c"
-alias svim="sudo vim"
-alias e="emacsclient -c"
-# random
-alias serve="autoreload-server"
-alias free="free -g"
-alias lsfs="df -Th"
-alias top="htop"
-alias .="source" # IDK, was not?
+
+# modular af
+source ~/.aliases
+
 # nrv conf fin
 # The following lines were added by compinstall
 zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
@@ -75,13 +51,14 @@ compinit
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
+
 # node version manager
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# wasm web assembly
-export WASMTIME_HOME="$HOME/.wasmtime"
-export PATH="$WASMTIME_HOME/bin:$PATH"
+# java home
+export JAVA_HOME=$(which java)
 
 # enable virtualenvwrapper for "workon" and python venv managment
 source ~/bin/virtualenvwrapper.sh
+

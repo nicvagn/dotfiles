@@ -12,7 +12,6 @@ cp -f /home/nrv/.gitconfig /home/nrv/git/dotfiles/gitcontig
 cp -f /home/nrv/.config/background   /home/nrv/git/dotfiles/background
 
 cp -f /home/nrv/.config/monitors.xml /home/nrv/git/dotfiles/monitors.xml
-cp -f /home/nrv/.config/appimagelauncher.cfg /home/nrv/git/dotfiles/appimagelauncher.cfg
-cp -fr /home/nrv/.config/environment.d/ /home/nrv/git/dotfiles/environment.d
+cp -fr /home/nrv/.config/environment.d/ /home/nrv/git/dotfiles/
 
 cp -fr /home/nrv/.config/enchant /home/nrv/git/dotfiles/dotconfig_enchant
