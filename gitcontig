@@ -7,11 +7,15 @@
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = !/usr/bin/gh auth git-credential
+
 [core]
     autocrlf = input
     whitespace = trailing-space
     pager = less -FX
-    editor= emacsclient -c
+    editor = emacsclient -c
+	fsmonitor = true
+	fsmonitorhookversion= 2
+
 [alias]
     lg = lg1
     lg1 = lg1-specific --all
@@ -19,31 +23,47 @@
     lg3 = lg3-specific --all
 
     lg1-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'
-    lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
-    lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset)%n''          %C(dim white)- %an <%ae> %C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
 
+    lg2-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+
+    lg3-specific = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset) %C(bold cyan)(committed: %cD)%C(reset)%C(auto)%d%C(reset)%n          %C(white)%s%C(reset)%n          %C(dim white)- %an <%ae>%C(reset) %C(dim white)(committer: %cn <%ce>)%C(reset)'
+    git-root = rev-parse --show-toplevel
 
 [push]
 	autoSetupRemote = true
+	default = simple
+
 [commit]
 	verbose = true
 
 [status]
 	submoduleSummary = true
+
 [init]
 	defaultBranch = master
+
 [gui]
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+
 [pull]
 	rebase = false
+
 [color]
 	ui = auto
-[tag]
+
 [safe]
 	directory = /var/www/html/
+	directory = /usr/local/src/intel_gpu/media-driver
+	directory = /opt/intel-gpu-software/media-driver
+    directory = /media/git/
+
 [branch]
-	autosetupmerge = always
+	autoSetupMerge = simple
+
+[maintenance]
+	repo = /media/git/Gambit-Pairing
+    repo = /media/git/emacs-nrv
