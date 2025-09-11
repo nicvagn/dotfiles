@@ -133,7 +133,7 @@ panel-id='world'
 size=(1920, 540)
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='keyboard'
 window-state=(945, 659, false)
 
 [org/gnome/desktop/a11y]
@@ -212,7 +212,7 @@ name='Look'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/93f1816e-e7fb-458f-9313-8e5a9cb00f6e]
-apps=['nvim.desktop', 'emacs.desktop', 'pycharm-community-compiled.desktop', 'emacs-30-1.desktop', 'emacsclient.desktop']
+apps=['nvim.desktop', 'pycharm-community-compiled.desktop', 'emacs-30-1.desktop', 'emacsclient.desktop', 'emacs.desktop']
 name='Editors'
 translate=false
 
@@ -291,7 +291,7 @@ play-sound=true
 current=uint32 0
 mru-sources=[('xkb', 'us+dvorak-l'), ('ibus', 'typing-booster'), ('xkb', 'us')]
 sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us'), ('ibus', 'typing-booster')]
-xkb-options=['caps:escape_shifted_capslock']
+xkb-options=['caps:escape_shifted_capslock', 'lv3:lalt_switch']
 
 [org/gnome/desktop/interface]
 accent-color='red'
@@ -509,7 +509,7 @@ window-ratio=(1.011296295533811, 0.75781892984269617)
 migrated=true
 
 [org/gnome/evolution-data-server/calendar]
-reminders-past=@as []
+reminders-past=['62837035c3474ceb46754b97d440d82cfddc6ac6\ncdb3a082e9e8d31ea86f01cb62750bb096fba690\t20250909T183000\n1757462400\n1757464200\n1757467800\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Regina:20250909T183000\r\nDTEND;TZID=America/Regina:20250909T193000\r\nDTSTAMP:20250907T192424Z\r\nUID:noj0g0c7f5ci1v5nq87k6ff3fk@google.com\r\nCREATED:20250907T191905Z\r\nDESCRIPTION:<a href="https:\r\n //www.makersmakingchange.com/event/a2rJR000000xoC5YAI/clubs-that-care-talk\r\n -to-us-tuesday" target="_blank">https:\r\n //www.makersmakingchange.com/event/a2rJR000000xoC5YAI/clubs-that-care-talk\r\n -to-us-tuesday</a><br> <br>event link <a href="https:\r\n //teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:\r\n meeting_M2ViY2M2M2MtNzE0Zi00YTIxLWJlMTAtYjE0YmYwODBjYjk5@thread.v2/0?conte\r\n xt=%7b%22Tid%22%3a%2262f5c50e-90b9-4599-883b-90b5f7d446ac%22%2c%22Oid%22%3\r\n a%225cd286eb-7b17-4a11-a762-5977d24ebe67%22%2c%22prid%22%3a%225e43c579-5f5\r\n c-4c6e-ba14-4bea11ab53fd%22%2c%22isPublic%22%3atrue%7d&amp\\;\r\n anon=true&amp\\;deeplinkId=a76a45d2-33a6-4946-9fc9-61fc644d63e1">https:\r\n //teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:\r\n meeting_M2ViY2M2M2MtNzE0Zi00YTIxLWJlMTAtYjE0YmYwODBjYjk5@thread.v2/0?conte\r\n xt=%7b%22Tid%22%3a%2262f5c50e-90b9-4599-883b-90b5f7d446ac%22%2c%22Oid%22%3\r\n a%225cd286eb-7b17-4a11-a762-5977d24ebe67%22%2c%22prid%22%3a%225e43c579-5f5\r\n c-4c6e-ba14-4bea11ab53fd%22%2c%22isPublic%22%3atrue%7d&amp\\;\r\n anon=true&amp\\;deeplinkId=a76a45d2-33a6-4946-9fc9-61fc644d63e1</a>\r\nLAST-MODIFIED:20250907T192424Z\r\nLOCATION:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Makers making change event\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63892956264\r\nBEGIN:VALARM\r\nACTION:EMAIL\r\nDESCRIPTION:This is an event reminder\r\nSUMMARY:Alarm notification\r\nATTENDEE:mailto:nicolasvaagen@gmail.com\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:3d3455067740185800c6dd26ea34a9e75a9a06a3\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:cdb3a082e9e8d31ea86f01cb62750bb096fba690\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/evolution]
 default-address-book='4ed4bb9f690f7925e18e5c7fd5a2249143ff402a'
@@ -695,7 +695,7 @@ last-folder-path='/home/nrv/Downloads/distro_cashe'
 last-folder-path='/home/nrv/creation'
 
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
-last-folder-path='/home/nrv/Pictures/icons'
+last-folder-path='/usr/share/emacs/30.2/etc/images/icons/hicolor/48x48/apps'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/nrv/Pictures/backgrounds'
@@ -730,7 +730,7 @@ name='tilix'
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Control><Alt>apostrophe'
 command='emacsclient-wrapper.sh'
-name='emacs client'
+name='emacsclient-wrapper.sh'
 
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=3600
@@ -742,7 +742,7 @@ command-history=['emacs-30.1', 'restart']
 disable-user-extensions=false
 disabled-extensions=['tilingshell@ferrarodomenico.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Vitals@CoreCoding.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'quick-settings-audio-panel@rayzeq.github.io']
-favorite-apps=['org.gnome.Nautilus.desktop', 'org.mozilla.firefox.desktop', 'com.google.Chrome.desktop', 'emacs.desktop', 'discord.desktop', 'com.slack.Slack.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'steam.desktop', 'org.freecad.FreeCAD.desktop', 'com.bambulab.BambuStudio.desktop', 'blender.desktop', 'org.prismlauncher.PrismLauncher.desktop', 'en-croissant.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.mozilla.firefox.desktop', 'com.google.Chrome.desktop', 'discord.desktop', 'com.slack.Slack.desktop', 'emacs.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'steam.desktop', 'org.freecad.FreeCAD.desktop', 'com.bambulab.BambuStudio.desktop', 'blender.desktop', 'org.prismlauncher.PrismLauncher.desktop', 'en-croissant.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.0'
 
@@ -873,9 +873,9 @@ locations=@av []
 locations=[<(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1757349752
+check-timestamp=int64 1757613994
 first-run=false
-flatpak-purge-timestamp=int64 1757294433
+flatpak-purge-timestamp=int64 1757554836
 install-timestamp=int64 1756517567
 packagekit-historical-updates-timestamp=uint64 1756517567
 security-timestamp=int64 1753308262292905
@@ -907,7 +907,7 @@ window-size=(851, 1400)
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.86274510622024536, 0.54117649793624878, 0.86666667461395264, 1.0), (0.40000000596046448, 0.40000000596046448, 0.40000000596046448, 1.0), (0.62352941176470589, 0.62352941176470589, 0.62352941176470589, 1.0), (0.15666666666666673, 0.52135135135135147, 1.0, 1.0), (0.35294117647058826, 0.4392156862745098, 1.0, 1.0), (0.35666666666666669, 0.43925675675675657, 1.0, 1.0), (0.62, 0.73810810810810801, 1.0, 1.0), (0.44705882352941179, 0.62352941176470589, 0.81176470588235294, 1.0)]
-selected-color=(true, 0.38039215686274508, 0.20784313725490197, 0.51372549019607838, 1.0)
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
