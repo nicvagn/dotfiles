@@ -59,6 +59,7 @@ systemctl --user import-environment SSH_AUTH_SOCK
 systemctl --user import-environment DISPLAY
 
 # node version manager
+export NVM_COMPLETION=true
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
