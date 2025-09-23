@@ -174,7 +174,7 @@ name='WIDGET'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/4ce7f7d8-db3d-44e7-bcda-33a02129a2a1]
-apps=['libreoffice-impress.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'simple-scan.desktop']
+apps=['libreoffice-impress.desktop', 'libreoffice-writer.desktop', 'libreoffice-calc.desktop', 'simple-scan.desktop', 'libreoffice-draw.desktop']
 name='Office'
 
 [org/gnome/desktop/app-folders/folders/517b1491-a5db-4934-aeb4-f11da3e7a3d6]
@@ -432,7 +432,7 @@ application-id='pycharm-community-compiled.desktop'
 application-id='steam.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
-numlock-state=true
+numlock-state=false
 
 [org/gnome/desktop/peripherals/mouse]
 left-handed=true
@@ -478,14 +478,21 @@ move-to-monitor-left=['<Alt>Left']
 move-to-monitor-right=['<Alt>Right']
 move-to-workspace-left=['<Super>Left']
 move-to-workspace-right=['<Super>Right']
+switch-to-workspace-1=['<Alt>1']
+switch-to-workspace-2=['<Alt>2']
+switch-to-workspace-3=['<Alt>3']
+switch-to-workspace-4=['<Alt>4']
+switch-to-workspace-left=['<Alt>Up']
+switch-to-workspace-right=['<Alt>Down']
 switch-windows=@as []
 switch-windows-backward=@as []
 toggle-maximized=['<Control>Up']
 unmaximize=['<Control>Down']
 
 [org/gnome/desktop/wm/preferences]
-action-middle-click-titlebar='toggle-maximize'
-focus-mode='sloppy'
+action-middle-click-titlebar='toggle-maximize-vertically'
+auto-raise=false
+focus-mode='mouse'
 mouse-button-modifier='<Super>'
 resize-with-right-button=false
 
@@ -503,13 +510,14 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=148
 sizing-mode='automatic'
-window-ratio=(1.011296295533811, 0.75781892984269617)
+window-ratio=(1.9738562091503269, 1.6098484848484849)
+zoom=1.1785112818082175
 
 [org/gnome/evolution-data-server]
 migrated=true
 
 [org/gnome/evolution-data-server/calendar]
-reminders-past=['62837035c3474ceb46754b97d440d82cfddc6ac6\ncdb3a082e9e8d31ea86f01cb62750bb096fba690\t20250909T183000\n1757462400\n1757464200\n1757467800\nBEGIN:VEVENT\r\nDTSTART;TZID=America/Regina:20250909T183000\r\nDTEND;TZID=America/Regina:20250909T193000\r\nDTSTAMP:20250907T192424Z\r\nUID:noj0g0c7f5ci1v5nq87k6ff3fk@google.com\r\nCREATED:20250907T191905Z\r\nDESCRIPTION:<a href="https:\r\n //www.makersmakingchange.com/event/a2rJR000000xoC5YAI/clubs-that-care-talk\r\n -to-us-tuesday" target="_blank">https:\r\n //www.makersmakingchange.com/event/a2rJR000000xoC5YAI/clubs-that-care-talk\r\n -to-us-tuesday</a><br> <br>event link <a href="https:\r\n //teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:\r\n meeting_M2ViY2M2M2MtNzE0Zi00YTIxLWJlMTAtYjE0YmYwODBjYjk5@thread.v2/0?conte\r\n xt=%7b%22Tid%22%3a%2262f5c50e-90b9-4599-883b-90b5f7d446ac%22%2c%22Oid%22%3\r\n a%225cd286eb-7b17-4a11-a762-5977d24ebe67%22%2c%22prid%22%3a%225e43c579-5f5\r\n c-4c6e-ba14-4bea11ab53fd%22%2c%22isPublic%22%3atrue%7d&amp\\;\r\n anon=true&amp\\;deeplinkId=a76a45d2-33a6-4946-9fc9-61fc644d63e1">https:\r\n //teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:\r\n meeting_M2ViY2M2M2MtNzE0Zi00YTIxLWJlMTAtYjE0YmYwODBjYjk5@thread.v2/0?conte\r\n xt=%7b%22Tid%22%3a%2262f5c50e-90b9-4599-883b-90b5f7d446ac%22%2c%22Oid%22%3\r\n a%225cd286eb-7b17-4a11-a762-5977d24ebe67%22%2c%22prid%22%3a%225e43c579-5f5\r\n c-4c6e-ba14-4bea11ab53fd%22%2c%22isPublic%22%3atrue%7d&amp\\;\r\n anon=true&amp\\;deeplinkId=a76a45d2-33a6-4946-9fc9-61fc644d63e1</a>\r\nLAST-MODIFIED:20250907T192424Z\r\nLOCATION:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Makers making change event\r\nTRANSP:OPAQUE\r\nX-EVOLUTION-CALDAV-ETAG:63892956264\r\nBEGIN:VALARM\r\nACTION:EMAIL\r\nDESCRIPTION:This is an event reminder\r\nSUMMARY:Alarm notification\r\nATTENDEE:mailto:nicolasvaagen@gmail.com\r\nTRIGGER:-PT10M\r\nX-EVOLUTION-ALARM-UID:3d3455067740185800c6dd26ea34a9e75a9a06a3\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:cdb3a082e9e8d31ea86f01cb62750bb096fba690\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+reminders-past=@as []
 
 [org/gnome/evolution]
 default-address-book='4ed4bb9f690f7925e18e5c7fd5a2249143ff402a'
@@ -589,7 +597,7 @@ width=600
 autoar-filter='none'
 autoar-format='zip'
 default-component-id='mail'
-file-chooser-folder='file:///home/nrv/Documents'
+file-chooser-folder='file:///home/nrv/Pictures/ruth_wedding/signs_with_designs'
 folder-bar-width=301
 start-offline=false
 
@@ -689,10 +697,10 @@ last-folder-path='/home/nrv/.ssh'
 last-folder-path='/home/nrv/chess'
 
 [org/gnome/portal/filechooser/org.fedoraproject.MediaWriter]
-last-folder-path='/home/nrv/Downloads/distro_cashe'
+last-folder-path='/home/nrv/Downloads'
 
 [org/gnome/portal/filechooser/org.freecad.FreeCAD]
-last-folder-path='/home/nrv/creation'
+last-folder-path='/home/nrv/creation/3d_printing_models/nrv_made'
 
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
 last-folder-path='/usr/share/emacs/30.2/etc/images/icons/hicolor/48x48/apps'
@@ -730,18 +738,18 @@ name='tilix'
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Control><Alt>apostrophe'
 command='emacsclient-wrapper.sh'
-name='emacsclient-wrapper.sh'
+name='emacsclient'
 
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'155cb0a3-78ee-4c79-90a3-de455b6a2d5a': <{'position': <0>}>, '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'ad976357-7a99-4967-b274-070a56cf165b': <{'position': <3>}>, '81402d79-6776-4487-807e-dc947be0bf87': <{'position': <4>}>, '59d0f0f1-0601-459e-99eb-2b842365e5aa': <{'position': <5>}>, '93f1816e-e7fb-458f-9313-8e5a9cb00f6e': <{'position': <6>}>, '11b911e9-b583-4381-add4-79c824bfea83': <{'position': <7>}>, 'de903434-2c5a-4819-9061-5613dea60f41': <{'position': <8>}>, '6b1139bd-6001-427f-9c99-e2279b5bb4a7': <{'position': <9>}>, '7586826b-63de-4ff3-8da3-449240f6bde5': <{'position': <10>}>, '68e264e9-59b2-4487-a1be-b86a6977605b': <{'position': <11>}>, 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4': <{'position': <12>}>, '517b1491-a5db-4934-aeb4-f11da3e7a3d6': <{'position': <13>}>, 'c0069617-2d8c-4680-ba85-eb3c0c25d4bc': <{'position': <14>}>, '5d35cfcb-1cb6-428a-8e7a-56792f07d383': <{'position': <15>}>}]
+app-picker-layout=[{'155cb0a3-78ee-4c79-90a3-de455b6a2d5a': <{'position': <0>}>, '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'ad976357-7a99-4967-b274-070a56cf165b': <{'position': <3>}>, '81402d79-6776-4487-807e-dc947be0bf87': <{'position': <4>}>, '59d0f0f1-0601-459e-99eb-2b842365e5aa': <{'position': <5>}>, '93f1816e-e7fb-458f-9313-8e5a9cb00f6e': <{'position': <6>}>, '11b911e9-b583-4381-add4-79c824bfea83': <{'position': <7>}>, 'de903434-2c5a-4819-9061-5613dea60f41': <{'position': <8>}>, '6b1139bd-6001-427f-9c99-e2279b5bb4a7': <{'position': <9>}>, '7586826b-63de-4ff3-8da3-449240f6bde5': <{'position': <10>}>, '68e264e9-59b2-4487-a1be-b86a6977605b': <{'position': <11>}>, 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4': <{'position': <12>}>, '517b1491-a5db-4934-aeb4-f11da3e7a3d6': <{'position': <13>}>, 'c0069617-2d8c-4680-ba85-eb3c0c25d4bc': <{'position': <14>}>, '5d35cfcb-1cb6-428a-8e7a-56792f07d383': <{'position': <15>}>, 'c98e6358-0a5f-44a4-a8e4-7ebdcce7ab84': <{'position': <16>}>}]
 command-history=['emacs-30.1', 'restart']
 disable-user-extensions=false
-disabled-extensions=['tilingshell@ferrarodomenico.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Vitals@CoreCoding.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'quick-settings-audio-panel@rayzeq.github.io']
+disabled-extensions=['tilingshell@ferrarodomenico.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Vitals@CoreCoding.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'quick-settings-audio-panel@rayzeq.github.io', 'system-monitor@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['org.gnome.Nautilus.desktop', 'org.mozilla.firefox.desktop', 'com.google.Chrome.desktop', 'discord.desktop', 'com.slack.Slack.desktop', 'emacs.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'steam.desktop', 'org.freecad.FreeCAD.desktop', 'com.bambulab.BambuStudio.desktop', 'blender.desktop', 'org.prismlauncher.PrismLauncher.desktop', 'en-croissant.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.0'
@@ -766,7 +774,7 @@ type='phone'
 custom-battery-notification-value=uint32 80
 
 [org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/notification]
-applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Evolution":{"iconName":"evolution","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Spotify":{"iconName":"com.spotify.Client","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Slack":{"iconName":"com.slack.Slack","enabled":true},"Discord":{"iconName":"system-run-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true},"discord":{"iconName":"","enabled":true}}'
+applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Evolution":{"iconName":"evolution","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Spotify":{"iconName":"com.spotify.Client","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Slack":{"iconName":"com.slack.Slack","enabled":true},"Discord":{"iconName":"system-run-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true},"discord":{"iconName":"","enabled":true},"Fedora Media Writer":{"iconName":"org.fedoraproject.MediaWriter","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/share]
 receive-directory='/home/nrv/Downloads'
@@ -873,13 +881,13 @@ locations=@av []
 locations=[<(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1757613994
+check-timestamp=int64 1758554170
 first-run=false
-flatpak-purge-timestamp=int64 1757554836
+flatpak-purge-timestamp=int64 1758586499
 install-timestamp=int64 1756517567
-packagekit-historical-updates-timestamp=uint64 1756517567
+packagekit-historical-updates-timestamp=uint64 1758045467
 security-timestamp=int64 1753308262292905
-update-notification-timestamp=int64 1756562088
+update-notification-timestamp=int64 1758471394
 
 [org/gnome/system/location]
 enabled=true
