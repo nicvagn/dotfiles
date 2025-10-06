@@ -18,6 +18,7 @@ control-scroll-zoom=true
 focus-follow-mouse=true
 new-instance-mode='new-window'
 prompt-on-close=true
+prompt-on-close-process=false
 tab-position='top'
 terminal-title-show-when-single=false
 terminal-title-style='none'
@@ -134,7 +135,7 @@ size=(1920, 540)
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(945, 659, false)
+window-state=(945, 659, true)
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=true
@@ -148,7 +149,7 @@ high-contrast=true
 show-status-shapes=true
 
 [org/gnome/desktop/a11y/keyboard]
-enable=true
+enable=false
 slowkeys-enable=false
 stickykeys-enable=false
 
@@ -156,7 +157,7 @@ stickykeys-enable=false
 mag-factor=5.0
 
 [org/gnome/desktop/app-folders]
-folder-children=['Utilities', 'YaST', 'Pardus', '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1', '155cb0a3-78ee-4c79-90a3-de455b6a2d5a', 'ad976357-7a99-4967-b274-070a56cf165b', '59d0f0f1-0601-459e-99eb-2b842365e5aa', '93f1816e-e7fb-458f-9313-8e5a9cb00f6e', '11b911e9-b583-4381-add4-79c824bfea83', 'de903434-2c5a-4819-9061-5613dea60f41', '6b1139bd-6001-427f-9c99-e2279b5bb4a7', '81402d79-6776-4487-807e-dc947be0bf87', '68e264e9-59b2-4487-a1be-b86a6977605b', 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4', '517b1491-a5db-4934-aeb4-f11da3e7a3d6', 'c98e6358-0a5f-44a4-a8e4-7ebdcce7ab84', 'b7615fb7-3c08-4ae0-ad85-29606c88f0ed', 'a9be801f-ce14-4d61-b5d1-e4906283b9cf', '7586826b-63de-4ff3-8da3-449240f6bde5', 'c0069617-2d8c-4680-ba85-eb3c0c25d4bc', '140d61f0-8107-4987-b786-8d935cac08ce', '5d35cfcb-1cb6-428a-8e7a-56792f07d383']
+folder-children=['Utilities', 'YaST', 'Pardus', '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1', '155cb0a3-78ee-4c79-90a3-de455b6a2d5a', 'ad976357-7a99-4967-b274-070a56cf165b', '59d0f0f1-0601-459e-99eb-2b842365e5aa', '93f1816e-e7fb-458f-9313-8e5a9cb00f6e', '11b911e9-b583-4381-add4-79c824bfea83', 'de903434-2c5a-4819-9061-5613dea60f41', '6b1139bd-6001-427f-9c99-e2279b5bb4a7', '81402d79-6776-4487-807e-dc947be0bf87', '68e264e9-59b2-4487-a1be-b86a6977605b', 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4', '517b1491-a5db-4934-aeb4-f11da3e7a3d6', 'c98e6358-0a5f-44a4-a8e4-7ebdcce7ab84', 'b7615fb7-3c08-4ae0-ad85-29606c88f0ed', 'a9be801f-ce14-4d61-b5d1-e4906283b9cf', '7586826b-63de-4ff3-8da3-449240f6bde5', 'c0069617-2d8c-4680-ba85-eb3c0c25d4bc', '140d61f0-8107-4987-b786-8d935cac08ce', '5d35cfcb-1cb6-428a-8e7a-56792f07d383', '52a72218-e953-43ec-a33c-1827c5f30861']
 
 [org/gnome/desktop/app-folders/folders/11b911e9-b583-4381-add4-79c824bfea83]
 apps=['org.gnome.SystemMonitor.desktop', 'htop.desktop', 'org.gnome.Logs.desktop', 'nvtop.desktop', 'org.gnome.baobab.desktop']
@@ -164,7 +165,7 @@ name='Monitoring'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/140d61f0-8107-4987-b786-8d935cac08ce]
-apps=['com.bambulab.BambuStudio.desktop', 'blender.desktop']
+apps=['com.bambulab.BambuStudio.desktop', 'org.freecad.FreeCAD.desktop']
 name='Modeling'
 translate=false
 
@@ -178,8 +179,13 @@ apps=['libreoffice-impress.desktop', 'libreoffice-writer.desktop', 'libreoffice-
 name='Office'
 
 [org/gnome/desktop/app-folders/folders/517b1491-a5db-4934-aeb4-f11da3e7a3d6]
-apps=['org.freeciv.gtk4.desktop', 'org.dosbox-staging.dosbox-staging.desktop', 'org.freeciv.gtk4.mp.desktop', 'io.github.yairm210.unciv.desktop']
+apps=['org.freeciv.gtk4.desktop', 'org.dosbox-staging.dosbox-staging.desktop', 'org.freeciv.gtk4.mp.desktop', 'io.github.yairm210.unciv.desktop', 'Burnout Paradise The Ultimate Box.desktop']
 name='Games'
+
+[org/gnome/desktop/app-folders/folders/52a72218-e953-43ec-a33c-1827c5f30861]
+apps=['cgnsview.desktop', 'opencascade-draw.desktop', 'unitconv.desktop', 'cgnsplot.desktop', 'cgnscalc.desktop', 'cgnsnodes.desktop', 'blender.desktop']
+name='Free CAD'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/59d0f0f1-0601-459e-99eb-2b842365e5aa]
 apps=['org.gaphor.Gaphor.desktop', 'sqlitebrowser.desktop', 'filezilla.desktop', 'it.fabiodistasio.AntaresSQL.desktop', 'java-21-openjdk-jconsole.desktop']
@@ -187,7 +193,7 @@ name='Dev-ops'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/5d35cfcb-1cb6-428a-8e7a-56792f07d383]
-apps=['org.qt-project.qtcreator.desktop', 'io.qt.qtdesignstudio.desktop', 'qt6-linguist.desktop', 'qt6-designer.desktop']
+apps=['org.qt-project.qtcreator.desktop', 'io.qt.qtdesignstudio.desktop', 'qt6-linguist.desktop', 'qt6-designer.desktop', 'qt5-linguist.desktop', 'qt5-designer.desktop', 'qt6-assistant.desktop']
 name='Qt'
 translate=false
 
@@ -289,9 +295,9 @@ play-sound=true
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-mru-sources=[('xkb', 'us+dvorak-l'), ('ibus', 'typing-booster'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us'), ('ibus', 'typing-booster')]
 sources=[('xkb', 'us+dvorak-l'), ('xkb', 'us'), ('ibus', 'typing-booster')]
-xkb-options=['caps:escape_shifted_capslock']
+xkb-options=['caps:escape_shifted_capslock', 'lv3:menu_switch']
 
 [org/gnome/desktop/interface]
 accent-color='red'
@@ -315,8 +321,11 @@ toolkit-accessibility=false
 disable-lock-screen=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-software', 'com-discordapp-discord', 'org-mozilla-firefox', 'steam', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-evolution-alarm-notify', 'org-gnome-evolution', 'filezilla', 'org-gnome-seahorse-application', 'com-slack-slack', 'org-gnome-settings', 'org-gnome-extensions', 'org-fedoraproject-mediawriter', 'org-gnome-nautilus', 'org-kde-kdenlive', 'docker-desktop', 'org-gnome-baobab', 'org-gnome-shell-extensions-gsconnect', 'emacs', 'org-gnome-characters', 'io-dbeaver-dbeavercommunity', 'org-gnome-evince', 'gimp', 'com-valvesoftware-steam', 'gnome-wellbeing-panel', 'com-spotify-client', 'libreoffice-writer', 'org-prismlauncher-prismlauncher', 'gnome-printers-panel', 'pycharm-community-compiled', 'com-gexperts-tilix', 'discord', 'emacsclient', 'org-qt-project-qtcreator']
+application-children=['org-gnome-software', 'com-discordapp-discord', 'org-mozilla-firefox', 'steam', 'org-freedesktop-problems-applet', 'gnome-power-panel', 'org-gnome-evolution-alarm-notify', 'org-gnome-evolution', 'filezilla', 'org-gnome-seahorse-application', 'com-slack-slack', 'org-gnome-settings', 'org-gnome-extensions', 'org-fedoraproject-mediawriter', 'org-gnome-nautilus', 'org-kde-kdenlive', 'docker-desktop', 'org-gnome-baobab', 'org-gnome-shell-extensions-gsconnect', 'emacs', 'org-gnome-characters', 'io-dbeaver-dbeavercommunity', 'org-gnome-evince', 'gimp', 'com-valvesoftware-steam', 'gnome-wellbeing-panel', 'com-spotify-client', 'libreoffice-writer', 'org-prismlauncher-prismlauncher', 'gnome-printers-panel', 'pycharm-community-compiled', 'com-gexperts-tilix', 'discord', 'emacsclient', 'org-qt-project-qtcreator', 'org-freecad-freecad', 'com-bambulab-bambustudio']
 show-in-lock-screen=false
+
+[org/gnome/desktop/notifications/application/com-bambulab-bambustudio]
+application-id='com.bambulab.BambuStudio.desktop'
 
 [org/gnome/desktop/notifications/application/com-discordapp-discord]
 application-id='com.discordapp.Discord.desktop'
@@ -375,6 +384,9 @@ application-id='libreoffice-writer.desktop'
 [org/gnome/desktop/notifications/application/org-fedoraproject-mediawriter]
 application-id='org.fedoraproject.MediaWriter.desktop'
 
+[org/gnome/desktop/notifications/application/org-freecad-freecad]
+application-id='org.freecad.FreeCAD.desktop'
+
 [org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
 application-id='org.freedesktop.problems.applet.desktop'
 
@@ -432,7 +444,7 @@ application-id='pycharm-community-compiled.desktop'
 application-id='steam.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
-numlock-state=false
+numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 left-handed=true
@@ -465,7 +477,7 @@ enabled=@as []
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 180
+idle-delay=uint32 300
 
 [org/gnome/desktop/sound]
 event-sounds=true
@@ -584,9 +596,9 @@ maximized=true
 width=960
 
 [org/gnome/evolution/mail/composer-window]
-height=483
-maximized=true
-width=1920
+height=643
+maximized=false
+width=2560
 
 [org/gnome/evolution/mail/send-recv-window]
 height=200
@@ -602,9 +614,9 @@ folder-bar-width=301
 start-offline=false
 
 [org/gnome/evolution/shell/window]
-height=1349
+height=1200
 maximized=true
-width=2560
+width=2289
 x=0
 y=0
 
@@ -700,7 +712,7 @@ last-folder-path='/home/nrv/chess'
 last-folder-path='/home/nrv/Downloads'
 
 [org/gnome/portal/filechooser/org.freecad.FreeCAD]
-last-folder-path='/home/nrv/creation/3d_printing_models/nrv_made'
+last-folder-path='/home/nrv/Downloads/3d_printing_models/nrv_made'
 
 [org/gnome/portal/filechooser/org.gnome.Nautilus]
 last-folder-path='/usr/share/emacs/30.2/etc/images/icons/hicolor/48x48/apps'
@@ -741,16 +753,16 @@ command='emacsclient-wrapper.sh'
 name='emacsclient'
 
 [org/gnome/settings-daemon/plugins/power]
-sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-timeout=4800
 sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'155cb0a3-78ee-4c79-90a3-de455b6a2d5a': <{'position': <0>}>, '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'ad976357-7a99-4967-b274-070a56cf165b': <{'position': <3>}>, '81402d79-6776-4487-807e-dc947be0bf87': <{'position': <4>}>, '59d0f0f1-0601-459e-99eb-2b842365e5aa': <{'position': <5>}>, '93f1816e-e7fb-458f-9313-8e5a9cb00f6e': <{'position': <6>}>, '11b911e9-b583-4381-add4-79c824bfea83': <{'position': <7>}>, 'de903434-2c5a-4819-9061-5613dea60f41': <{'position': <8>}>, '6b1139bd-6001-427f-9c99-e2279b5bb4a7': <{'position': <9>}>, '7586826b-63de-4ff3-8da3-449240f6bde5': <{'position': <10>}>, '68e264e9-59b2-4487-a1be-b86a6977605b': <{'position': <11>}>, 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4': <{'position': <12>}>, '517b1491-a5db-4934-aeb4-f11da3e7a3d6': <{'position': <13>}>, 'c0069617-2d8c-4680-ba85-eb3c0c25d4bc': <{'position': <14>}>, '5d35cfcb-1cb6-428a-8e7a-56792f07d383': <{'position': <15>}>, 'c98e6358-0a5f-44a4-a8e4-7ebdcce7ab84': <{'position': <16>}>}]
+app-picker-layout=[{'155cb0a3-78ee-4c79-90a3-de455b6a2d5a': <{'position': <0>}>, '4ce7f7d8-db3d-44e7-bcda-33a02129a2a1': <{'position': <1>}>, 'Utilities': <{'position': <2>}>, 'ad976357-7a99-4967-b274-070a56cf165b': <{'position': <3>}>, '81402d79-6776-4487-807e-dc947be0bf87': <{'position': <4>}>, '59d0f0f1-0601-459e-99eb-2b842365e5aa': <{'position': <5>}>, '93f1816e-e7fb-458f-9313-8e5a9cb00f6e': <{'position': <6>}>, '11b911e9-b583-4381-add4-79c824bfea83': <{'position': <7>}>, 'de903434-2c5a-4819-9061-5613dea60f41': <{'position': <8>}>, '6b1139bd-6001-427f-9c99-e2279b5bb4a7': <{'position': <9>}>, '7586826b-63de-4ff3-8da3-449240f6bde5': <{'position': <10>}>, '68e264e9-59b2-4487-a1be-b86a6977605b': <{'position': <11>}>, 'd2ebf5c9-6c84-4723-9baf-3a3ee187d2b4': <{'position': <12>}>, '517b1491-a5db-4934-aeb4-f11da3e7a3d6': <{'position': <13>}>, 'c0069617-2d8c-4680-ba85-eb3c0c25d4bc': <{'position': <14>}>, '5d35cfcb-1cb6-428a-8e7a-56792f07d383': <{'position': <15>}>, '52a72218-e953-43ec-a33c-1827c5f30861': <{'position': <16>}>}]
 command-history=['emacs-30.1', 'restart']
 disable-user-extensions=false
 disabled-extensions=['tilingshell@ferrarodomenico.com', 'appindicatorsupport@rgcjonas.gmail.com', 'Vitals@CoreCoding.com', 'background-logo@fedorahosted.org', 'window-list@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['tiling-assistant@leleat-on-github', 'gsconnect@andyholmes.github.io', 'quick-settings-audio-panel@rayzeq.github.io', 'system-monitor@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['org.gnome.Nautilus.desktop', 'org.mozilla.firefox.desktop', 'com.google.Chrome.desktop', 'discord.desktop', 'com.slack.Slack.desktop', 'emacs.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'steam.desktop', 'org.freecad.FreeCAD.desktop', 'com.bambulab.BambuStudio.desktop', 'blender.desktop', 'org.prismlauncher.PrismLauncher.desktop', 'en-croissant.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.mozilla.firefox.desktop', 'com.google.Chrome.desktop', 'discord.desktop', 'com.slack.Slack.desktop', 'emacs.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Evolution.desktop', 'steam.desktop', 'org.freecad.FreeCAD.desktop', 'blender.desktop', 'com.bambulab.BambuStudio.desktop', 'org.prismlauncher.PrismLauncher.desktop', 'en-croissant.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='47.0'
 
@@ -774,7 +786,7 @@ type='phone'
 custom-battery-notification-value=uint32 80
 
 [org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/notification]
-applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Evolution":{"iconName":"evolution","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Spotify":{"iconName":"com.spotify.Client","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Slack":{"iconName":"com.slack.Slack","enabled":true},"Discord":{"iconName":"system-run-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true},"discord":{"iconName":"","enabled":true},"Fedora Media Writer":{"iconName":"org.fedoraproject.MediaWriter","enabled":true}}'
+applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Evolution":{"iconName":"evolution","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color Management":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Spotify":{"iconName":"com.spotify.Client","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Slack":{"iconName":"com.slack.Slack","enabled":true},"Discord":{"iconName":"system-run-symbolic","enabled":true},"Firefox":{"iconName":"","enabled":true},"discord":{"iconName":"","enabled":true},"Fedora Media Writer":{"iconName":"org.fedoraproject.MediaWriter","enabled":true},"FileZilla":{"iconName":"filezilla","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/84b7ba9f_9652_4d6b_b203_5155b1f5b73d/plugin/share]
 receive-directory='/home/nrv/Downloads'
@@ -881,13 +893,13 @@ locations=@av []
 locations=[<(uint32 2, <('Coordinated Universal Time (UTC)', '@UTC', false, @a(dd) [], @a(dd) [])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1758554170
+check-timestamp=int64 1759768746
 first-run=false
-flatpak-purge-timestamp=int64 1758586499
-install-timestamp=int64 1756517567
-packagekit-historical-updates-timestamp=uint64 1758045467
+flatpak-purge-timestamp=int64 1759709606
+install-timestamp=int64 1758939572
+packagekit-historical-updates-timestamp=uint64 1758939572
 security-timestamp=int64 1753308262292905
-update-notification-timestamp=int64 1758471394
+update-notification-timestamp=int64 1758982235
 
 [org/gnome/system/location]
 enabled=true

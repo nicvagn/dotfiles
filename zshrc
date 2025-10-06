@@ -1,4 +1,5 @@
 ### OMZ configuration ###
+setopt auto_cd
 # more zsh-completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # local stuff I found on gh
@@ -12,16 +13,16 @@ zstyle ':omz:update' frequency 13
 # OMZ plugins
 plugins=(
     git
-    python
-    pip
-    pnpm-shell-completion
+    # pip
+    # pnpm-shell-completion
+    zsh-interactive-cd
     safe-paste
     scala
     ssh
     zsh-autosuggestions
     alias-finder
     zsh-syntax-highlighting
-    rust
+    # rust
 )
 source $ZSH/oh-my-zsh.sh
 # nrv conf fin
@@ -55,11 +56,10 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 # import systemctl --user
-systemctl --user import-environment SSH_AUTH_SOCK
-systemctl --user import-environment DISPLAY
+systemctl --user import-environment SSH_AUTH_SOCK 2> /dev/null
+systemctl --user import-environment DISPLAY 2> /dev/null
 
 # node version manager
-export NVM_COMPLETION=true
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -93,15 +93,15 @@ show_venv_prompt() {
     fi
 }
 
+set_prompt_with_venv() {
+    PROMPT="$(show_venv_prompt)$BASE_PROMPT"
+}
+
 # -------------------------------
 # Precmd hook: set PROMPT
 # -------------------------------
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd set_prompt_with_venv
-
-set_prompt_with_venv() {
-    PROMPT="$(show_venv_prompt)$BASE_PROMPT"
-}
 
 # dir env activation
 #  LocalWords:  virtualenvwrapper compinstall crcandy OMZ
