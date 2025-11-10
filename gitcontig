@@ -60,6 +60,9 @@
 	directory = /usr/local/src/intel_gpu/media-driver
 	directory = /opt/intel-gpu-software/media-driver
     directory = /media/git/
+	directory = /usr/local/src/openscad
+	directory = /usr/local/src/mesa
+	directory = /usr/local/src/*
 
 [branch]
 	autoSetupMerge = simple
@@ -67,3 +70,4 @@
 [maintenance]
 	repo = /media/git/Gambit-Pairing
     repo = /media/git/emacs-nrv
+	repo = /media/git/NicLink

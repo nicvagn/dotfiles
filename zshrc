@@ -13,16 +13,15 @@ zstyle ':omz:update' frequency 13
 # OMZ plugins
 plugins=(
     git
-    # pip
-    # pnpm-shell-completion
-    zsh-interactive-cd
+    pip
+    pnpm-shell-completion
     safe-paste
     scala
     ssh
     zsh-autosuggestions
     alias-finder
     zsh-syntax-highlighting
-    # rust
+    rust
 )
 source $ZSH/oh-my-zsh.sh
 # nrv conf fin
