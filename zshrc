@@ -1,5 +1,17 @@
+# start time learning
+#start_t = $(date + "%Y-%m-%d-%H-%M-%S")
+start_t=$(date +"%s")
+
+# set path for tty
+if tty -s; then
+  echo "Running in a TTY"
+  export PATH="/home/nrv/.local/bin:$PATH"
+fi
+
 ### OMZ configuration ###
 setopt auto_cd
+# Let globs expand to themselves if no files match
+setopt NONOMATCH
 # more zsh-completions
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 # local stuff I found on gh
@@ -23,7 +35,9 @@ plugins=(
     zsh-syntax-highlighting
     rust
 )
+
 source $ZSH/oh-my-zsh.sh
+echo "Initialized OMZ, $(($(date +'%s') - $start_t)) spent"
 # nrv conf fin
 # The following lines were added by compinstall
 zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
@@ -47,23 +61,29 @@ bindkey '^H' backward-delete-word
 
 # modular af
 source ~/.aliases
+echo "sourced aliases, $(($(date +'%s') - $start_t)) spent"
 
 ### System configuration ###
 # tilix vte.sh crap
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
+        echo "sourced /etc/profile.d/vte.sh, $(($(date +'%s') - $start_t)) spent"
 fi
 
 # import systemctl --user
-systemctl --user import-environment SSH_AUTH_SOCK 2> /dev/null
-systemctl --user import-environment DISPLAY 2> /dev/null
+systemctl --user import-environment SSH_AUTH_SOCK
+systemctl --user import-environment DISPLAY
+echo "DISPLAY: ($DISPLAY), SSH_AUTH_SOCK: ($SSH_AUTH_SOCK)"
+echo "Initialized systemctl user env, $(($(date +'%s') - $start_t)) spent"
 
 # node version manager
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+echo "Initialized nvm env, $(($(date +'%s') - $start_t)) spent"
 
 # enable .envrc dir environments
 eval "$(direnv hook zsh)"
+echo "Initialized direnv hook, $(($(date +'%s') - $start_t)) spent"
 # enable virtualenvwrapper for "workon" and python venv management
 ## virtualenvwrapper for python
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
@@ -72,7 +92,7 @@ export WORKON_HOME=$HOME/.venvs
 export PROJECT_HOME=$HOME/git
 export VIRTUALENVWRAPPER_WORKON_CD=1
 source ~/.local/bin/virtualenvwrapper.sh
-
+echo "set up VIRTUALENVWRAPPER, $(($(date +'%s') - $start_t)) spent"
 # -------------------------------
 # Base prompt (without venv)
 # -------------------------------
@@ -102,5 +122,6 @@ set_prompt_with_venv() {
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd set_prompt_with_venv
 
+echo "Initialized precmd set_prompt_with_venv, $(($(date +'%s') - $start_t)) spent"
 # dir env activation
-#  LocalWords:  virtualenvwrapper compinstall crcandy OMZ
+#  LocalWords:  virtualenvwrapper compinstall crcandy OMZ basename

@@ -63,6 +63,7 @@
 	directory = /usr/local/src/openscad
 	directory = /usr/local/src/mesa
 	directory = /usr/local/src/*
+	directory = /opt/intel-gpu-software/libva
 
 [branch]
 	autoSetupMerge = simple

@@ -7,15 +7,15 @@
       <scale>1</scale>
       <monitor>
         <monitorspec>
-          <connector>DVI-D-1</connector>
-          <vendor>DEL</vendor>
-          <product>DELL E207WFP</product>
-          <serial>6418069P5PDL</serial>
+          <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
         </monitorspec>
         <mode>
-          <width>1680</width>
-          <height>1050</height>
-          <rate>59.883</rate>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -26,10 +26,10 @@
       <primary>yes</primary>
       <monitor>
         <monitorspec>
-          <connector>HDMI-2</connector>
-          <vendor>ACR</vendor>
-          <product>XZ322QU V3</product>
-          <serial>34140F9513W01</serial>
+          <connector>HDMI-3</connector>
+          <vendor>unknown</vendor>
+          <product>unknown</product>
+          <serial>unknown</serial>
         </monitorspec>
         <mode>
           <width>2560</width>
@@ -79,12 +79,30 @@
       </monitor>
     </logicalmonitor>
     <logicalmonitor>
+      <x>4480</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DVI-D-1</connector>
+          <vendor>DEL</vendor>
+          <product>DELL E207WFP</product>
+          <serial>6418069P5PDL</serial>
+        </monitorspec>
+        <mode>
+          <width>1680</width>
+          <height>1050</height>
+          <rate>59.883</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
       <x>2560</x>
       <y>0</y>
       <scale>1</scale>
       <monitor>
         <monitorspec>
-          <connector>DP-2</connector>
+          <connector>DP-1</connector>
           <vendor>ACR</vendor>
           <product>GF276</product>
           <serial>T8DAA0018511</serial>
@@ -93,24 +111,6 @@
           <width>1920</width>
           <height>1080</height>
           <rate>60.000</rate>
-        </mode>
-      </monitor>
-    </logicalmonitor>
-    <logicalmonitor>
-      <x>4480</x>
-      <y>0</y>
-      <scale>1</scale>
-      <monitor>
-        <monitorspec>
-          <connector>DP-1</connector>
-          <vendor>DEL</vendor>
-          <product>DELL E207WFP</product>
-          <serial>6418069P5PDL</serial>
-        </monitorspec>
-        <mode>
-          <width>1280</width>
-          <height>720</height>
-          <rate>59.855</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -124,7 +124,7 @@
       <primary>yes</primary>
       <monitor>
         <monitorspec>
-          <connector>HDMI-3</connector>
+          <connector>HDMI-2</connector>
           <vendor>ACR</vendor>
           <product>XZ322QU V3</product>
           <serial>34140F9513W01</serial>
@@ -137,8 +137,48 @@
       </monitor>
     </logicalmonitor>
     <logicalmonitor>
-      <x>4480</x>
-      <y>111</y>
+      <x>2560</x>
+      <y>360</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
+          <vendor>ACR</vendor>
+          <product>XZ322QU V3</product>
+          <serial>34140F9513W01</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.951</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>2560</x>
+      <y>0</y>
       <scale>1</scale>
       <monitor>
         <monitorspec>
@@ -155,12 +195,12 @@
       </monitor>
     </logicalmonitor>
     <logicalmonitor>
-      <x>2560</x>
-      <y>111</y>
+      <x>4480</x>
+      <y>0</y>
       <scale>1</scale>
       <monitor>
         <monitorspec>
-          <connector>DP-2</connector>
+          <connector>DP-3</connector>
           <vendor>ACR</vendor>
           <product>GF276</product>
           <serial>T8DAA0018511</serial>
@@ -240,7 +280,7 @@
       <primary>yes</primary>
       <monitor>
         <monitorspec>
-          <connector>HDMI-2</connector>
+          <connector>DP-2</connector>
           <vendor>ACR</vendor>
           <product>XZ322QU V3</product>
           <serial>34140F9513W01</serial>
@@ -254,7 +294,47 @@
     </logicalmonitor>
     <logicalmonitor>
       <x>2560</x>
-      <y>360</y>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-3</connector>
+          <vendor>ACR</vendor>
+          <product>XZ322QU V3</product>
+          <serial>34140F9513W01</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.951</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>2560</x>
+      <y>203</y>
       <scale>1</scale>
       <monitor>
         <monitorspec>
@@ -267,6 +347,82 @@
           <width>1920</width>
           <height>1080</height>
           <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>4480</x>
+      <y>203</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>2560</x>
+      <y>229</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>4480</x>
+      <y>229</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DP-3</connector>
+          <vendor>ACR</vendor>
+          <product>XZ322QU V3</product>
+          <serial>34140F9513W01</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.951</rate>
         </mode>
       </monitor>
     </logicalmonitor>
@@ -293,8 +449,87 @@
       </monitor>
     </logicalmonitor>
     <logicalmonitor>
+      <x>2560</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
       <x>4480</x>
       <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-1</connector>
+          <vendor>DEL</vendor>
+          <product>DELL E207WFP</product>
+          <serial>6418069P5PDL</serial>
+        </monitorspec>
+        <mode>
+          <width>1280</width>
+          <height>720</height>
+          <rate>59.855</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>1920</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>4480</x>
+      <y>360</y>
       <scale>1</scale>
       <monitor>
         <monitorspec>
@@ -311,12 +546,31 @@
       </monitor>
     </logicalmonitor>
     <logicalmonitor>
-      <x>2560</x>
+      <x>0</x>
       <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-2</connector>
+          <vendor>ACR</vendor>
+          <product>XZ322QU V3</product>
+          <serial>34140F9513W01</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.951</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>2560</x>
+      <y>360</y>
       <scale>1</scale>
       <monitor>
         <monitorspec>
-          <connector>DP-1</connector>
+          <connector>DP-2</connector>
           <vendor>ACR</vendor>
           <product>GF276</product>
           <serial>T8DAA0018511</serial>
@@ -375,6 +629,104 @@
       <monitor>
         <monitorspec>
           <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
+          <vendor>ACR</vendor>
+          <product>XZ322QU V3</product>
+          <serial>34140F9513W01</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.951</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>2560</x>
+      <y>0</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>HDMI-3</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+  </configuration>
+  <configuration>
+    <layoutmode>logical</layoutmode>
+    <logicalmonitor>
+      <x>0</x>
+      <y>0</y>
+      <scale>1</scale>
+      <primary>yes</primary>
+      <monitor>
+        <monitorspec>
+          <connector>DP-1</connector>
+          <vendor>ACR</vendor>
+          <product>XZ322QU V3</product>
+          <serial>34140F9513W01</serial>
+        </monitorspec>
+        <mode>
+          <width>2560</width>
+          <height>1440</height>
+          <rate>59.951</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>4480</x>
+      <y>192</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-3</connector>
+          <vendor>ACR</vendor>
+          <product>GF276</product>
+          <serial>T8DAA0018511</serial>
+        </monitorspec>
+        <mode>
+          <width>1920</width>
+          <height>1080</height>
+          <rate>60.000</rate>
+        </mode>
+      </monitor>
+    </logicalmonitor>
+    <logicalmonitor>
+      <x>2560</x>
+      <y>192</y>
+      <scale>1</scale>
+      <monitor>
+        <monitorspec>
+          <connector>DP-2</connector>
           <vendor>ACR</vendor>
           <product>GF276</product>
           <serial>T8DAA0018511</serial>
