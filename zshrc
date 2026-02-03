@@ -3,7 +3,7 @@
 start_t=$(date +"%s")
 
 # set path for tty
-if tty -s; then
+if [ "$XDG_SESSION_TYPE" = "tty" ]; then
   echo "Running in a TTY"
   export PATH="/home/nrv/.local/bin:$PATH"
 fi
@@ -91,7 +91,7 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv
 export WORKON_HOME=$HOME/.venvs
 export PROJECT_HOME=$HOME/git
 export VIRTUALENVWRAPPER_WORKON_CD=1
-source ~/.local/bin/virtualenvwrapper.sh
+source /usr/bin/virtualenvwrapper.sh
 echo "set up VIRTUALENVWRAPPER, $(($(date +'%s') - $start_t)) spent"
 # -------------------------------
 # Base prompt (without venv)
@@ -112,15 +112,23 @@ show_venv_prompt() {
     fi
 }
 
-set_prompt_with_venv() {
-    PROMPT="$(show_venv_prompt)$BASE_PROMPT"
+show_distrobox_container() {
+    if [ -n "$CONTAINER_ID" ]; then
+        echo "%F{220}[${CONTAINER_ID}]%f"
+    else
+        echo ""
+    fi
+}
+
+set_prompt() {
+    PROMPT="$(show_distrobox_container)$(show_venv_prompt)$BASE_PROMPT"
 }
 
 # -------------------------------
 # Precmd hook: set PROMPT
 # -------------------------------
 autoload -Uz add-zsh-hook
-add-zsh-hook precmd set_prompt_with_venv
+add-zsh-hook precmd set_prompt
 
 echo "Initialized precmd set_prompt_with_venv, $(($(date +'%s') - $start_t)) spent"
 # dir env activation

@@ -64,11 +64,9 @@
 	directory = /usr/local/src/mesa
 	directory = /usr/local/src/*
 	directory = /opt/intel-gpu-software/libva
-
-[branch]
-	autoSetupMerge = simple
-
 [maintenance]
 	repo = /media/git/Gambit-Pairing
     repo = /media/git/emacs-nrv
 	repo = /media/git/NicLink
+[branch]
+	autosetupmerge = true
