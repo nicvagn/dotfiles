@@ -68,5 +68,8 @@
 	repo = /media/git/Gambit-Pairing
     repo = /media/git/emacs-nrv
 	repo = /media/git/NicLink
+	repo = /media/git/gambit-pairing
+	auto = true
+	scheduler = systemd
 [branch]
 	autosetupmerge = true

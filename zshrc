@@ -27,12 +27,12 @@ plugins=(
     git
     pip
     pnpm-shell-completion
-    safe-paste
     scala
     ssh
     zsh-autosuggestions
-    alias-finder
+    zsh-history-substring-search
     zsh-syntax-highlighting
+    alias-finder
     rust
 )
 
@@ -56,10 +56,21 @@ compinit
 ### User configuration ###
 ## keybindings ##
 # showkey -a to discover names
-# Cntl + backspace to delete word
-bindkey '^H' backward-delete-word
+bindkey -e # Emacs bindings
 
-# modular af
+# Cntl + backspace to delete word
+# Word delete
+bindkey -M emacs '^[\x7f' backward-delete-word
+
+# Autosuggestions
+bindkey -M emacs '\e[15~' autosuggest-accept        # F5
+
+# History substring search
+bindkey -M emacs '\e[17~' history-substring-search-up   # F6
+bindkey -M emacs '\e[18~' history-substring-search-down # F7
+
+
+# modular AF
 source ~/.aliases
 echo "sourced aliases, $(($(date +'%s') - $start_t)) spent"
 
@@ -133,3 +144,4 @@ add-zsh-hook precmd set_prompt
 echo "Initialized precmd set_prompt_with_venv, $(($(date +'%s') - $start_t)) spent"
 # dir env activation
 #  LocalWords:  virtualenvwrapper compinstall crcandy OMZ basename
+#  LocalWords:  showkey
